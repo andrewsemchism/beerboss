@@ -6,10 +6,10 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 
   const connection = mysql.createConnection({
-    host : "localhost",
-    user : "root",
-    password : "andrew123",
-    database : "mydatabase"
+    host : "us-cdbr-east-02.cleardb.com",
+    user : "b295efe6037c4c",
+    password : "8b12d852",
+    database : "heroku_85f2e11d0809ba2"
   })
 
   connection.query('SELECT * FROM beer', (err, rows, fields) => {

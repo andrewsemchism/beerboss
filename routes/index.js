@@ -22,6 +22,8 @@ router.get('/', function(req, res, next) {
     res.render('index', data)
   })
 
+  connection.end()
+
 });
 
 module.exports = router;

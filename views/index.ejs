@@ -123,7 +123,9 @@
   <script>
     $(document).ready( function () {
 
-      $('#beerTable').DataTable();
+      $('#beerTable').DataTable( {
+        "order": [[9, "asc"]]
+      } );
 
       //Scroll to beer table when clicking start now
       $(".startnow").click(function() {

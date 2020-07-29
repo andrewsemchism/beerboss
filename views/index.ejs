@@ -120,22 +120,7 @@
   <!-- Datatables.net Responsive Table-->
   <script src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
   <script src="https://cdn.datatables.net/colreorder/1.5.2/js/dataTables.colReorder.min.js"></script>
-  <script>
-    $(document).ready( function () {
-
-      $('#beerTable').DataTable( {
-        "order": [[9, "asc"]]
-      } );
-
-      //Scroll to beer table when clicking start now
-      $(".startnow").click(function() {
-        $('html,body').animate({
-          scrollTop: $("#allbeerprices").offset().top},
-          'slow');
-      });
-
-    });
-  </script>
+  <script src="/javascripts/index.js"></script>
 
 </body>
 </html>

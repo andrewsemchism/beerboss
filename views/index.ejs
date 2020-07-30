@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
   <!-- Datatables.net-->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
 </head>
 
 <body>
@@ -70,6 +71,7 @@
     <p>This table contains a list of all beer store products in every quatity avalible. There are over 800 beers and 3000 purchasing options!
       Use the search bar and filters to narrow down your options. By default, the table is sorted so the best value beers appear at the top (lowest cost per drink).</p>
 
+    <div class="text-center"><button type="button" class="btn btn-success" id="depositButton">Include Bottle/Can Deposit</button></div>
     <div class="container-fluid mx-auto">
       <table class="table table-hover" id='beerTable'>
         <thead>
@@ -120,6 +122,8 @@
   <!-- Datatables.net Responsive Table-->
   <script src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
   <script src="https://cdn.datatables.net/colreorder/1.5.2/js/dataTables.colReorder.min.js"></script>
+  <!-- Datatables.net Buttons-->
+  <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
   <script src="/javascripts/index.js"></script>
 
 </body>

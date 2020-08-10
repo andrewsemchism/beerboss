@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Beer Boss</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!--Bebas Neue-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="/" class="navbar-brand">BEER BOSS</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarmenu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">ALL BEER PRICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">ABOUT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- FAQ -->
+  <h1 class="text-center">FAQ</h1>
+
+  <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          What is the purpose of this website? What can I do with it?
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        You can use this site to make smart purchasing decisions when buying from The Beer Store. This site makes it easy for you to compare beers so you get the most bang for your buck!
+        If you arn't picky about what beer you drink, and want to get the most alcohol for the least amount of money, you can simple sort by cost per drink to decide what beer has the best value.
+        <br>
+        <br>
+        If you have your mind set on one particular beer, use the seach bar to filter for that beer and then sort by cost per drink. This will allow you to see which pack has the best value (larger packs are frequently the best value, but not always!)
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          What is "Cost per Drink" in the table?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        One drink is a regular can of beer (355ml) with a 5% ABV. A standard drink contains 17.75 ml of pure alcohol (355ml * 5% = 17.75ml). A 6 pack of 355ml cans of Budweiser costs $13.25. Budweiser has an ABV of 5%. The cost per drink for that pack is $2.21.
+        Here is the formula behind it:
+        <br>
+        <img src="images/equation1.png">
+        <br>
+        Knowing the cost per drink allows you to compare beers to find the best value.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Who made this?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        My name is Andrew Semchism. I'm currently pursuring a Bachlor's of Computer Science at the University of Waterloo.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- slim jQuerry for bootstrap. Not needed -->
+  <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="/javascripts/index.js"></script>
+
+</body>
+</html>

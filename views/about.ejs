@@ -31,6 +31,7 @@
   <!-- FAQ -->
   <h1 class="text-center">FAQ</h1>
 
+  <div class="container-fluid faq">
   <div id="accordion">
   <div class="card">
     <div class="card-header" id="headingOne">
@@ -41,7 +42,7 @@
       </h5>
     </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
         You can use this site to make smart purchasing decisions when buying from The Beer Store. This site makes it easy for you to compare beers so you get the most bang for your buck!
         If you arn't picky about what beer you drink, and want to get the most alcohol for the least amount of money, you can simple sort by cost per drink to decide what beer has the best value.
@@ -61,7 +62,7 @@
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
-        One drink is a regular can of beer (355ml) with a 5% ABV. A standard drink contains 17.75 ml of pure alcohol (355ml * 5% = 17.75ml). A 6 pack of 355ml cans of Budweiser costs $13.25. Budweiser has an ABV of 5%. The cost per drink for that pack is $2.21.
+        Cost per drink is the most important metric in determining beer value. One drink is a regular can of beer (355ml) with a 5% ABV. A standard drink contains 17.75 ml of pure alcohol (355ml * 5% = 17.75ml). A 6 pack of 355ml cans of Budweiser costs $13.25. Budweiser has an ABV of 5%. The cost per drink for that pack is $2.21.
         Here is the formula behind it:
         <br>
         <img src="images/equation1.png">
@@ -74,16 +75,31 @@
     <div class="card-header" id="headingThree">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Who made this?
+          Why do I see the same beer appearing multiple times?
         </button>
       </h5>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
       <div class="card-body">
-        My name is Andrew Semchism. I'm currently pursuring a Bachlor's of Computer Science at the University of Waterloo.
+        The table lists every purchasing option avalible for each beer. (24 pack, 6 pack, bottles, cans, etc.) This is why you will see the same beer name multiple times.
       </div>
     </div>
   </div>
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Who made this?
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+        My name is Andrew Semchism. I made this project to improve my web development skills.
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 

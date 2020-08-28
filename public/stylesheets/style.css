@@ -6,12 +6,12 @@
 .navbar-brand {
   font-family: "Bebas Neue";
   color: #e99a2c !important;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 .nav-link {
   font-family: "Bebas Neue";
   color: white !important;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 h1 {
   font-family: "Bebas Neue";
@@ -20,6 +20,15 @@ h1 {
 h2 {
   font-family: "Bebas Neue";
   font-size: 2.6rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.navbar-toggler-icon{
+  width: 60px !important;
+  height:60px !important;
 }
 
 /* Adjust carousel caption placement */
@@ -34,7 +43,7 @@ h2 {
 }
 
 #allbeerprices p {
-  padding: 2% 10% 0 10%;
+  padding: 2% 10% 1% 10%;
 }
 
 
@@ -56,4 +65,12 @@ h2 {
   .faq {
     width: 80%;
   }
+}
+
+.card-body {
+  font-size: 1.3rem;
+}
+
+.card-header .btn {
+  font-size: 1.8rem;
 }

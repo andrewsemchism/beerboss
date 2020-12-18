@@ -1,6 +1,13 @@
 $(document).ready(function() {
 
 var table = $('#beerTable').DataTable({
+  "columnDefs" : [
+          {
+              "targets": [ 2,4 ],
+              "visible": false,
+              "searchable": false
+          }],
+    "scrollX": true,
     "order": [
       [9, "asc"]
     ]

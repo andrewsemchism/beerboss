@@ -23,7 +23,9 @@ Currently, the python script is not included in the repository.
 
 ## Built With
 
+* Bootstrap
+* [DataTables](https://github.com/DataTables/DataTables)
 * NodeJS
 * Express
 * MySQL
-* Python (beautiful soup, requests)
+* Python (beautifulsoup, requests, MySQL Connector)

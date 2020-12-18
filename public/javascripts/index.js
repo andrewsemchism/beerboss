@@ -7,7 +7,6 @@ var table = $('#beerTable').DataTable({
               "visible": false,
               "searchable": false
           }],
-    "scrollX": true,
     "order": [
       [9, "asc"]
     ]

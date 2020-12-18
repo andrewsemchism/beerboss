@@ -106,13 +106,6 @@ p {
   }
 }
 
-.category {
-  display: none;
-}
-
-.country {
-  display: none;
-}
 
 /* Changes to table for mobile */
 @media only screen and (min-width: 600px) {

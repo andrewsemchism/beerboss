@@ -10,9 +10,14 @@
 }
 .nav-link {
   font-family: "Bebas Neue";
-  color: white !important;
   font-size: 3rem;
 }
+
+.navbar-nav > li{
+  padding-left:15px;
+  padding-right:5px;
+}
+
 h1 {
   font-family: "Bebas Neue";
   font-size: 5rem;

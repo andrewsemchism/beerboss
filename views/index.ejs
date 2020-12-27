@@ -99,7 +99,7 @@
          <tbody>
          <% print.forEach(function (data) { %>
             <tr>
-                <td><%= data.name %></td>
+                <td><a href="<%= data.urls %>" target="_blank" rel="noopener noreferrer"><%= data.name %></a></td>
                 <td><%= data.type %></td>
                 <td class="category"><%= data.category %></td>
                 <td><%= data.ABV %>%</td>

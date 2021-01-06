@@ -2,14 +2,14 @@ $(document).ready(function() {
 
 var table = $('#beerTable').DataTable({
   "columnDefs" : [
-          {
-              "targets": [ 2,4 ],
-              "visible": false,
-              "searchable": false
-          }],
-    "order": [
-      [9, "asc"]
-    ]
+    {
+        "targets": [ 2,4 ],
+        "visible": false,
+        "searchable": false
+    }],
+  "order": [
+    [9, "asc"]
+  ]
   });
 
   $('#depositButton').click(function() {
@@ -77,4 +77,47 @@ var table = $('#beerTable').DataTable({
       },
       'slow');
   });
+
+
+  // The filters
+  $("#bottle").click(function() {
+    toggleOnOff($(this))
+    containerRefresh()
+  });
+
+  $("#can").click(function() {
+    toggleOnOff($(this))
+    containerRefresh()
+  });
+
+  $("#keg").click(function() {
+    toggleOnOff($(this))
+    containerRefresh()
+  });
+
+  function toggleOnOff(button) {
+    button.toggleClass('btn-success')
+    button.toggleClass('btn-danger')
+  }
+
+  function containerRefresh() {
+    if ($("#bottle").hasClass('btn-success') && $("#can").hasClass('btn-success') && $("#keg").hasClass('btn-success')) {
+      table.column(7).search('').draw()
+    } else if ($("#bottle").hasClass('btn-success') && $("#can").hasClass('btn-success')) {
+      table.column(7).search('bottle|can', true, false).draw()
+    } else if ($("#bottle").hasClass('btn-success') && $("#keg").hasClass('btn-success')) {
+      table.column(7).search('bottle|keg', true, false).draw()
+    } else if ($("#can").hasClass('btn-success') && $("#keg").hasClass('btn-success')) {
+      table.column(7).search('can|keg', true, false).draw()
+    } else if ($("#bottle").hasClass('btn-success')) {
+      table.column(7).search('bottle').draw()
+    } else if ($("#can").hasClass('btn-success')) {
+      table.column(7).search('can').draw()
+    } else if ($("#keg").hasClass('btn-success')) {
+      table.column(7).search('keg').draw()
+    } else {
+      table.column(7).search('none').draw()
+    }
+  }
+
 });

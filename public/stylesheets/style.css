@@ -122,3 +122,8 @@ p {
 .footer {
   height: 80px;
 }
+
+/* Deposit Button */
+#depositButton {
+  margin: 0.2em 2em;
+}

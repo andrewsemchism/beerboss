@@ -127,3 +127,11 @@ p {
 #depositButton {
   margin: 0.2em 2em;
 }
+
+#beerTable_filter label {
+  font-size: 1.5em;
+}
+
+.filters {
+  margin-bottom: 1em;
+}

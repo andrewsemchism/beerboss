@@ -9,7 +9,10 @@ var table = $('#beerTable').DataTable({
     }],
   "order": [
     [9, "asc"]
-  ]
+  ],
+  "language": {
+    "search": "Search Beers:"
+  }
   });
 
   $('#depositButton').click(function() {

@@ -49,6 +49,10 @@ p {
   line-height: 0.85;
 }
 
+.startnow {
+  width: 9rem;
+}
+
 /* All Beer Prices Section*/
 #allbeerpricestitle {
   padding-top: 1.5rem;
@@ -142,3 +146,26 @@ p {
 .filters {
   margin-bottom: 1em;
 }
+
+
+/* ----------Best Value Analyzer---------- */
+
+.best-value-analyzer {
+  padding-top: 20px;
+}
+
+.beer-dropdown {
+  padding-bottom: 10px;
+}
+
+
+/*---------------------------------------- */
+
+
+
+
+
+
+
+
+

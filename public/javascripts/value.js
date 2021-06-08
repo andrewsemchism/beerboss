@@ -1,18 +1,45 @@
-function getColor(value) {
-    //value from 0 to 1
-    value = value * 4 <= 1 ? value * 4 : 1
-    var hue = ((1 - value) * 120).toString(10);
-    return ["hsl(", hue, ",100%, 80%)"].join("");
-}
-
-// If percentage is over 1 return 1
-function getPercentage(basePrice, price) {
-    let percentage = (price / basePrice) - 1;
-    console.log(percentage);
-    return percentage <= 1 ? percentage : 1;
-}
-
 $(document).ready(function () {
+    function getColor(value) {
+        //value from 0 to 1
+        value = value * 4 <= 1 ? value * 4 : 1
+        var hue = ((1 - value) * 120).toString(10);
+        return ["hsl(", hue, ",100%, 80%)"].join("");
+    }
+    
+    // If percentage is over 1 return 1
+    function getPercentage(basePrice, price) {
+        let percentage = (price / basePrice) - 1;
+        console.log(percentage);
+        return percentage <= 1 ? percentage : 1;
+    }
+
+    function updateTable() {
+        if ($('#include-bottles').is(':checked') && $('#include-cans').is(':checked') && $('#include-kegs').is(':checked')) {
+            table.column(3).search('', true, false).draw()
+        } else if ($('#include-bottles').is(':checked') && $('#include-cans').is(':checked')) {
+            table.column(3).search('bottle|can', true, false).draw()
+        } else if ($('#include-bottles').is(':checked') && $('#include-kegs').is(':checked')) {
+            table.column(3).search('bottle|keg', true, false).draw()
+        } else if ($('#include-cans').is(':checked') && $('#include-kegs').is(':checked')) {
+            table.column(3).search('can|keg', true, false).draw()
+        } else if ($('#include-cans').is(':checked')) {
+            table.column(3).search('can', true, false).draw()
+        } else if ($('#include-bottles').is(':checked')) {
+            table.column(3).search('bottle', true, false).draw()
+        } else if ($('#include-kegs').is(':checked')) {
+            table.column(3).search('keg', true, false).draw()
+        } else {
+            table.column(3).search('none', true, false).draw()
+        }
+        /*
+        if (this.attr('id') == 'include-cans') {
+            
+        } else if (this.attr('id') == 'include-kegs') {
+            toggleKegs();
+        }
+        */
+    }
+
     var table = $('#value-table').DataTable(
         {
             "order": [
@@ -20,23 +47,27 @@ $(document).ready(function () {
             ],
             "sDom": 'lrtip',
             "language": {
-                "zeroRecords": "Please select a beer"
+                "zeroRecords": "No results. Please select a beer and filters."
             },
             "pageLength": 100,
         }
     );
-    
+
     // Display no beers initially
     table.column('0').search("^" + 'N/A' + "$", true, false).draw()
 
     $('#beer-picker').change(function () {
-        // FIll the table with the correct beer
+        // Clear filters temporarily
+        table.column(3).search('', true, false).draw()
+
+        // Fill the table with the correct beer
         let val = $(this).val();
-        console.log('^'+val+'$')
+        console.log('^' + val + '$')
         table.column('0').search("^" + val + "$", true, false).draw()
 
         // Colour code the cost per serving
         // Get list of all table rows
+        table.page.len(50).draw()
         let allRows = $("#value-table > tbody > tr")
         console.log(allRows);
         let allPrices = [];
@@ -54,8 +85,14 @@ $(document).ready(function () {
             price.style.backgroundColor = colour;
         }
 
+        // Re-add filters.
+        updateTable();
         table.page.len(25).draw()
-
-        console.log(allPrices)
     });
+
+    // Change of filters
+    $(":checkbox").change(function () {
+        updateTable();
+    });
+
 });

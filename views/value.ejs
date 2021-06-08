@@ -32,9 +32,13 @@
 
 <body>
   <%- include partials/nav.ejs %>
-
     <section class="best-value-analyzer">
       <h1 class="text-center">Best Value Analyzer</h1>
+      <div id="value-loader">
+        <h1 class="text-center">Best Value Analyzer</h1>
+        <img class=" mg-fluid mx-auto d-block" src="/images/beer-loader.gif" alt="loader">
+        <h2 class="text-center loading-p">Loading...</h2>
+      </div>
       <div class="value-introduction">
         <div class="value-text container-fluid">
           <div class="row">
@@ -186,7 +190,8 @@
       </div>
     </div>
 
-    <div class="footer"></div>
+    <div class="footer"></div> 
+
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    
+    $('#value-loader').hide();
+
     function getColor(value) {
         //value from 0 to 1
         value = value * 4 <= 1 ? value * 4 : 1

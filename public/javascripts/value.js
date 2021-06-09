@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+
     $('#value-loader').hide();
 
     function getColor(value) {
@@ -8,7 +8,7 @@ $(document).ready(function () {
         var hue = ((1 - value) * 120).toString(10);
         return ["hsl(", hue, ",100%, 80%)"].join("");
     }
-    
+
     // If percentage is over 1 return 1
     function getPercentage(basePrice, price) {
         let percentage = (price / basePrice) - 1;
@@ -97,5 +97,18 @@ $(document).ready(function () {
     $(":checkbox").change(function () {
         updateTable();
     });
+
+    // mobile media query
+    function toggleMobile(x) {
+        if (x.matches) { // If media query matches
+            $('#beer-picker').attr('data-mobile', 'true');
+        } else {
+            $('#beer-picker').attr('data-mobile', 'false');
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 992px)")
+    toggleMobile(x) // Call listener function at run time
+    x.addListener(toggleMobile) // Attach listener function on state changes
 
 });

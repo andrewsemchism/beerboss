@@ -101,9 +101,9 @@ $(document).ready(function () {
     // mobile media query
     function toggleMobile(x) {
         if (x.matches) { // If media query matches
-            $('#beer-picker').attr('data-mobile', 'true');
+            //$('#beer-picker').attr('selectpicker', 'mobile');
         } else {
-            $('#beer-picker').attr('data-mobile', 'false');
+            //$('#beer-picker').attr('selectpicker', 'desktop');
         }
     }
 

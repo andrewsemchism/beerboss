@@ -193,6 +193,12 @@ p {
   .beer-dropdown .filter-option {
     font-size: 3rem;
   }
+  .dropdown-item {
+    font-size: 3rem;
+  }
+  .form-control[type="search"] {
+    font-size: 3rem;
+  }
   .beer-filter {
     font-size: 3rem;
   }

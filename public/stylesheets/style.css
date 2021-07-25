@@ -99,6 +99,24 @@ p {
   padding-top: 10px;
 }
 
+.faq .card-header {
+  background-color: #fff;
+}
+
+.faq .card-header .btn-link {
+  color: black;
+}
+
+.faq .card-header .btn.focus, .btn:focus {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.faq .card-header .btn:hover {
+  text-decoration: none;
+  color: #777777;
+}
+
 /* New Changes to FAQ sizing for mobile */
 
 @media (min-width: 576px) {

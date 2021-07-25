@@ -59,12 +59,14 @@ $(document).ready(function () {
     // Display no beers initially
     table.column('0').search("^" + 'N/A' + "$", true, false).draw()
 
-    $('#beer-picker').change(function () {
+    $('#beer-picker').change(redrawTable);
+    
+    function redrawTable() {
         // Clear filters temporarily
         table.column(3).search('', true, false).draw()
 
         // Fill the table with the correct beer
-        let val = $(this).val();
+        let val = $('#beer-picker').val();
         console.log('^' + val + '$')
         table.column('0').search("^" + val + "$", true, false).draw()
 
@@ -91,7 +93,7 @@ $(document).ready(function () {
         // Re-add filters.
         updateTable();
         table.page.len(25).draw()
-    });
+    }
 
     // Change of filters
     $(":checkbox").change(function () {
@@ -111,4 +113,13 @@ $(document).ready(function () {
     toggleMobile(x) // Call listener function at run time
     x.addListener(toggleMobile) // Attach listener function on state changes
 
+    // Quick picks buttons
+    var buttons = document.querySelectorAll("#quick-picks button");
+    buttons.forEach((button) => {
+        var beerText = button.innerHTML;
+        button.addEventListener('click', () => {
+            $('#beer-picker').selectpicker('val', beerText);
+            redrawTable()
+        })
+    });
 });

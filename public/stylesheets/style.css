@@ -260,6 +260,12 @@ p {
 /*------- Best value analyzer table --------- */
 @media only screen and (max-width: 992px) {
   .best-value-analyzer #value-table_wrapper {
+    font-size: 1.7rem;
+  }
+  .best-value-analyzer #value-table_wrapper thead {
+    font-size: 1.5rem;
+  }
+  .best-value-analyzer #value-table_wrapper .cost-per-serving {
     font-size: 2rem;
   }
   .best-value-analyzer .custom-select {

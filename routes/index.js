@@ -30,6 +30,33 @@ router.get('/', function (req, res, next) {
 
 });
 
+/* GET All Beer Prices page. */
+router.get('/all', function (req, res, next) {
+
+  const connection = mysql.createConnection({
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
+  })
+
+  connection.query('SELECT * FROM beer', (err, rows, fields) => {
+    if (err) {
+      console.log("Error fetching data");
+      res.sendStatus(500)
+      return
+    }
+    data = {
+      print: rows,
+      page_name: 'all'
+    }
+    res.render('all', data);
+  })
+
+  connection.end()
+
+});
+
 /* GET about page. */
 router.get('/about', function (req, res, next) {
   data = {

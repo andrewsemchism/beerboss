@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Beer Boss</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <!--Bebas Neue-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Datatables.net-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+
+  <!-- Bootstrap-select - Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+  <!-- My stylesheets -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175176340-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-175176340-1');
+  </script>
+</head>
+
+<body>
+    <%- include partials/nav.ejs %>
+    
+    <section id="allbeerprices">
+        <h1 id="allbeerpricestitle" class="text-center">All Beer Prices</h1>
+        <div id="value-loader">
+            <h1 class="text-center">All Beer Prices</h1>
+            <img class=" mg-fluid mx-auto d-block" src="/images/beer-loader.gif" alt="loader">
+            <h2 class="text-center loading-p">Loading...</h2>
+        </div>
+        <p>
+          This table contains a list of all beer store products in every quantity available. There are over 800 beers and 3000 purchasing options!
+          Use the search bar and filters to narrow down your options. By default, the table is sorted so the best value beers appear at the top (lowest cost per serving of alcohol).
+        </p>
+    
+        <div class="container-fluid filters">
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <table class="table table-sm">
+                <thead class="text-center">
+                  <tr>
+                    <th colspan="3" scope="col">Container Type</th>
+                  </tr>
+                </thead>
+                <tbody class="text-center">
+                  <tr>
+                    <td><button id="bottle" class="btn btn-success">Bottle</button></td>
+                    <td><button id="can" class="btn btn-success">Can</button></td>
+                    <td><button id="keg" class="btn btn-success">Keg</button></td>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="text-center">
+                <label for="depositButton">This button will subtract the bottle/can deposit money from the final price:</label>
+                <button type="button" class="btn btn-success" id="depositButton">Include Bottle/Can Deposit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid mx-auto">
+          <table class="table table-hover" id='beerTable'>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th class="category">Category</th>
+                    <th>ABV</th>
+                    <th class="country">Country</th>
+                    <th>Quantity</th>
+                    <th>Container Size (ml)</th>
+                    <th>Container Type</th>
+                    <th>Price</th>
+                    <th>Cost per Serving of Alcohol</th>
+                </tr>
+            </thead>
+             <tbody>
+             <% print.forEach(function (data) { %>
+                <tr>
+                    <td><a href="<%= data.urls %>" target="_blank" rel="noopener noreferrer"><%= data.name %></a></td>
+                    <td><%= data.type %></td>
+                    <td class="category"><%= data.category %></td>
+                    <td><%= data.ABV %>%</td>
+                    <td class="country"><%= data.country %></td>
+                    <td><%= data.quantity %></td>
+                    <td><%= data.size_container %></td>
+                    <td><%= data.type_container %></td>
+                    <td>$<%= data.price.toFixed(2) %></td>
+                    <td>$<%= data.dollar_drink.toFixed(2) %></td>
+                </tr>
+             <% }) %>
+             </tbody>
+        </table>
+        </div>
+    
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slim jQuerry for bootstrap. Not needed -->
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- Datatables.net-->
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Datatables.net Responsive Table-->
+    <script src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/colreorder/1.5.2/js/dataTables.colReorder.min.js"></script>
+    <!-- Datatables.net Buttons-->
+    <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="/javascripts/index.js"></script>
+    <script src="/javascripts/all.js"></script>
+</body>
+
+
+</html>

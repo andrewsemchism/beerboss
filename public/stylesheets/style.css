@@ -59,6 +59,11 @@ p {
 }
 
 /* All Beer Prices Section*/
+#allbeerprices {
+  padding-top: 20px;
+  position: relative;
+}
+
 #allbeerpricestitle {
   padding-top: 1.5rem;
 }
@@ -215,10 +220,48 @@ p {
   margin-bottom: 10px;
 }
 
+.sf-card-pic {
+  width:150px;
+  display:block;
+  margin:auto;
+}
+
+#using-beerboss {
+  padding-top: 20px;
+}
+
+.index-card {
+  margin-bottom: 30px;
+}
+
+.btn-box {
+  height: 40px;
+}
+
+.btn-card {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  text-align: center;
+}
 
 @media only screen and (max-width: 992px) {
+  .btn-card {
+    font-size: 2.5rem;
+    width:420px;
+  }
+  .btn-box {
+    height: 80px;
+  }
+  h5 {
+    font-size: 3rem;
+  }
   h2 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   h3 {
     font-size: 4rem;

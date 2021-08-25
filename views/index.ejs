@@ -28,76 +28,44 @@
   <%- include partials/nav.ejs %>
 
   <%- include partials/main-banner.ejs %>
-  
-
-  <section id="allbeerprices">
-    <h1 id="allbeerpricestitle" class="text-center">All Beer Prices</h1>
-    <p>
-      This table contains a list of all beer store products in every quantity available. There are over 800 beers and 3000 purchasing options!
-      Use the search bar and filters to narrow down your options. By default, the table is sorted so the best value beers appear at the top (lowest cost per serving of alcohol).
-    </p>
-
-    <div class="container-fluid filters">
+  <section id="using-beerboss">
+    <div class="container">
+      <h2 class="text-center">Using Beer Boss</h2>
+      <p class="text-center">Beer Boss has two main tools. Pick the one that best fits your needs.</p>
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="col-md-12 col-lg-6">
-          <table class="table table-sm">
-            <thead class="text-center">
-              <tr>
-                <th colspan="3" scope="col">Container Type</th>
-              </tr>
-            </thead>
-            <tbody class="text-center">
-              <tr>
-                <td><button id="bottle" class="btn btn-success">Bottle</button></td>
-                <td><button id="can" class="btn btn-success">Can</button></td>
-                <td><button id="keg" class="btn btn-success">Keg</button></td>
-            </tbody>
-          </table>
+        <div class="col-12 col-lg-6 d-flex align-items-stretch">
+          <div class="card index-card">
+            <div class="card-body">
+              <h5 class="card-title text-center">All Beer Prices</h5>
+              
+                <img class="sf-card-pic" src="./images/sf-1.png" alt="">
+
+                <p class="card-text">This tool is a table with every beer and every purchasing option available from the Beer Store. This allows you to find the absolute cheapest beer available. If you are trying to get the most alcohol per dollar, then this is the tool for you.</p>
+              <div class="text-center btn-box">
+                <a href="/all" class="btn btn-dark btn-card">All Beer Prices</a>
+              </div> 
+              
+            </div>
+          </div>
         </div>
-        <div class="col-md-12 col-lg-6">
-          <div class="text-center">
-            <label for="depositButton">This button will subtract the bottle/can deposit money from the final price:</label>
-            <button type="button" class="btn btn-success" id="depositButton">Include Bottle/Can Deposit</button>
+        <div class="col-12 col-lg-6 d-flex align-items-stretch">
+          <div class="card index-card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Best Value Analyzer</h5>
+              <img class="sf-card-pic" src="./images/sf-2.png" alt="">
+              <p class="card-text">If you already have a specific beer in mind, this is the tool for you. This tool allows you to select a single beer and find the most cost effective purchasing option.</p>
+              <div class="text-center btn-box">
+                <a href="/value" class="btn btn-dark btn-card">Best Value Analyzer</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid mx-auto">
-      <table class="table table-hover" id='beerTable'>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th class="category">Category</th>
-                <th>ABV</th>
-                <th class="country">Country</th>
-                <th>Quantity</th>
-                <th>Container Size (ml)</th>
-                <th>Container Type</th>
-                <th>Price</th>
-                <th>Cost per Serving of Alcohol</th>
-            </tr>
-        </thead>
-         <tbody>
-         <% print.forEach(function (data) { %>
-            <tr>
-                <td><a href="<%= data.urls %>" target="_blank" rel="noopener noreferrer"><%= data.name %></a></td>
-                <td><%= data.type %></td>
-                <td class="category"><%= data.category %></td>
-                <td><%= data.ABV %>%</td>
-                <td class="country"><%= data.country %></td>
-                <td><%= data.quantity %></td>
-                <td><%= data.size_container %></td>
-                <td><%= data.type_container %></td>
-                <td>$<%= data.price.toFixed(2) %></td>
-                <td>$<%= data.dollar_drink.toFixed(2) %></td>
-            </tr>
-         <% }) %>
-         </tbody>
-    </table>
-    </div>
+</section>
 
-  </section>
   <div class="footer"></div>
 
   <!-- jQuery -->

@@ -76,7 +76,7 @@ var table = $('#beerTable').DataTable({
   //Scroll to beer table when clicking start now
   $(".startnow").click(function() {
     $('html,body').animate({
-        scrollTop: $("#allbeerprices").offset().top
+        scrollTop: $("#using-beerboss").offset().top
       },
       'slow');
   });

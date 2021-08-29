@@ -72,6 +72,17 @@ p {
   padding: 2% 1% 1% 1%;
 }
 
+.btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:visited {
+  background-color: rgba(170,175, 180, 0.9) !important;
+  border-color: rgba(170,175, 180, 0.9) !important;
+}
+
+
+.btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
+  background-color: #343a40 !important;
+  border-color: #343a40 !important;
+}
+
 @media (min-width: 992px) {
   #allbeerprices {
     padding: 0 9%;

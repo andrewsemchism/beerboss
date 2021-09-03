@@ -48,6 +48,15 @@ $(document).ready(function () {
             "order": [
                 [5, "asc"]
             ],
+            "columns": [
+                { "orderable": false },
+                { "orderable": false },
+                { "orderable": false },
+                { "orderable": false },
+                { "orderable": false },
+                { "orderable": false },
+                { "orderable": false }
+            ],
             "sDom": 'lrtip',
             "language": {
                 "zeroRecords": "No results. Please select a beer and filters."

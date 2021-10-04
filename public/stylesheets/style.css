@@ -1,5 +1,6 @@
-.carousel {
+.carousel .carousel-inner .carousel-item {
   overflow: hidden;
+  max-height: 600px;
 }
 
 /* Change fonts */
@@ -44,6 +45,7 @@ p {
 
 /* Adjust carousel caption placement */
 .carousel-caption {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -247,6 +249,11 @@ p {
 
 .btn-box {
   height: 40px;
+}
+
+.btn-box .btn-dark:hover {
+  background-color: #6a6d70;
+  border-color: #6a6d70;
 }
 
 .btn-card {

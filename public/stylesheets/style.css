@@ -61,6 +61,11 @@ p {
 }
 
 /* All Beer Prices Section*/
+
+#beerTable {
+  display: none;
+}
+
 #allbeerprices {
   padding-top: 20px;
   position: relative;
@@ -162,12 +167,36 @@ p {
   }
 }
 
-
 /* Changes to table for mobile */
 @media only screen and (max-width: 992px) {
   #beerTable td {
+    font-size: 1.5rem;
+  }
+  #beerTable th {
     font-size: 1.2rem;
   }
+  .filters {
+    font-size: 2rem;
+  }
+  .filters button {
+    font-size: 1.8rem;
+  }
+  .pagination li {
+    font-size: 1.8rem;
+  }
+  #beerTable_info {
+    font-size: 1.2rem;
+  }
+  #beerTable_length label {
+    font-size: 1.8rem;
+  }
+  #beerTable_length select {
+    font-size: 1.5rem;
+  }
+  #beerTable_length option {
+    font-size: 1.3rem;
+  }
+
 }
 
 /* Footer */

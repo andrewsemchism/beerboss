@@ -12,7 +12,9 @@ var table = $('#beerTable').DataTable({
   ],
   "language": {
     "search": "Search Beers:"
-  }
+  },
+  "lengthMenu": [10, 15, 25, 50],
+  "pageLength": 15
   });
 
   $('#depositButton').click(function() {

@@ -112,9 +112,9 @@ $(document).ready(function () {
     // mobile media query
     function toggleMobile(x) {
         if (x.matches) { // If media query matches
-            //$('#beer-picker').attr('selectpicker', 'mobile');
+            $('#beer-picker').attr('selectpicker', 'mobile');
         } else {
-            //$('#beer-picker').attr('selectpicker', 'desktop');
+            $('#beer-picker').attr('selectpicker', 'desktop');
         }
     }
 

@@ -1,6 +1,6 @@
 # BeerBoss.ca
 
-Beerboss.ca is a tool to make buying beer from The Beer Store easier. Since
+[Beerboss.ca](http://beerboss.ca/) is a tool to make buying beer from The Beer Store easier. Since
 alcohol sales are regulated by the government in Ontario, there are very few
 options when buying beer. The official Beer Store website does not give you the information needed to make educated choices when buying beer.
 

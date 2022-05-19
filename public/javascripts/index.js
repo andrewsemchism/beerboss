@@ -41,6 +41,14 @@ var table = $('#beerTable').DataTable({
           data['8'] = "$" + ((parseFloat(data['8'].replace("$", "")) - parseFloat(data['5'])*0.2).toFixed(2)).toString()
           price = parseFloat(data['8'].replace("$", ""))
           data['9'] = "$" + (price / (size*quantity*abv/17.75)).toFixed(2)
+        } else if ((container == "Keg" && size < 30000)) {
+          data['8'] = "$" + ((parseFloat(data['8'].replace("$", "")) - parseFloat(data['5'])*20).toFixed(2)).toString()
+          price = parseFloat(data['8'].replace("$", ""))
+          data['9'] = "$" + (price / (size*quantity*abv/17.75)).toFixed(2)
+        } else if ((container == "Keg" && size >= 30000)) {
+          data['8'] = "$" + ((parseFloat(data['8'].replace("$", "")) - parseFloat(data['5'])*50).toFixed(2)).toString()
+          price = parseFloat(data['8'].replace("$", ""))
+          data['9'] = "$" + (price / (size*quantity*abv/17.75)).toFixed(2)
         }
         datas.push(data);
       });
@@ -63,6 +71,14 @@ var table = $('#beerTable').DataTable({
           data['9'] = "$" + (price / (size*quantity*abv/17.75)).toFixed(2)
         } else if ((container == "Can" && size > 1000) || (container == "Bottle" && size > 630)) {
           data['8'] = "$" + ((parseFloat(data['8'].replace("$", "")) + parseFloat(data['5'])*0.2).toFixed(2)).toString()
+          price = parseFloat(data['8'].replace("$", ""))
+          data['9'] = "$" + (price / (size*quantity*abv/17.75)).toFixed(2)
+        } else if ((container == "Keg" && size < 30000)) {
+          data['8'] = "$" + ((parseFloat(data['8'].replace("$", "")) + parseFloat(data['5'])*20).toFixed(2)).toString()
+          price = parseFloat(data['8'].replace("$", ""))
+          data['9'] = "$" + (price / (size*quantity*abv/17.75)).toFixed(2)
+        } else if ((container == "Keg" && size >= 30000)) {
+          data['8'] = "$" + ((parseFloat(data['8'].replace("$", "")) + parseFloat(data['5'])*50).toFixed(2)).toString()
           price = parseFloat(data['8'].replace("$", ""))
           data['9'] = "$" + (price / (size*quantity*abv/17.75)).toFixed(2)
         }

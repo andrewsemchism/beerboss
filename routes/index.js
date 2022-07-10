@@ -5,28 +5,11 @@ require('dotenv').config()
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-
-  const connection = mysql.createConnection({
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE
-  })
-
-  connection.query('SELECT * FROM beer', (err, rows, fields) => {
-    if (err) {
-      console.log("Error fetching data");
-      res.sendStatus(500)
-      return
-    }
-    data = {
-      print: rows,
-      page_name: 'index'
-    }
-    res.render('index', data);
-  })
-
-  connection.end()
+  data = {
+    print: {},
+    page_name: 'all'
+  }
+  res.render('index', data);
 
 });
 
@@ -84,8 +67,6 @@ router.get('/value', function (req, res, next) {
     let beerNames = rows.map(beer => beer.name);
     let beerNamesUnique = [...new Set(beerNames)];
     beerNamesUnique.sort();
-    console.log("beer names:")
-    console.log(beerNamesUnique);
     data = {
       print: rows,
       page_name: 'value-analyzer',

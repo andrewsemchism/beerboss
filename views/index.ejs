@@ -3,16 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Beer Boss</title>
+  <!-- Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!--Bebas Neue-->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <!--Favicon-->
   <link rel="icon" type="image/png" href="images/favicon.png"/>
-  <!--Bebas Neue-->
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="/stylesheets/style.css">
-  <!-- Datatables.net-->
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/stylesheets/global.css">
+  <link rel="stylesheet" href="/stylesheets/index.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175176340-1"></script>
   <script>
@@ -28,10 +33,11 @@
   <%- include partials/nav.ejs %>
 
   <%- include partials/main-banner.ejs %>
+  
   <section id="using-beerboss">
-    <div class="container">
+    <div class="container-md">
       <h2 class="text-center">How to use Beer Boss</h2>
-      <p class="text-center">Beer Boss scrapes all the data from the official Ontario Beer Store website and finds the best prices. Beer Boss has two main tools:</p>
+      <p>Beer Boss scrapes all the data from the official Ontario Beer Store website and finds the best prices. Beer Boss has two main tools:</p>
     </div>
     <div class="container">
       <div class="row">
@@ -69,20 +75,11 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- slim jQuerry for bootstrap. Not needed -->
-  <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-  <!-- Datatables.net-->
-  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-  <!-- Datatables.net Responsive Table-->
-  <script src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
-  <script src="https://cdn.datatables.net/colreorder/1.5.2/js/dataTables.colReorder.min.js"></script>
-  <!-- Datatables.net Buttons-->
-  <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
-  <script src="/javascripts/index.js"></script>
+  <!-- Animations -->
+  <script src="/javascripts/lottie.js"></script>
+  <script src="/javascripts/home.js"></script>
 
 </body>
 </html>

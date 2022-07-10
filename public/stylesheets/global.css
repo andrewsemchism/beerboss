@@ -1,0 +1,17 @@
+/* Navbar Styles */
+
+.navbar-brand {
+  font-family: "Bebas Neue";
+  color: #e99a2c !important;
+  font-size: 36px;
+}
+
+.nav-link {
+  font-family: "Bebas Neue";
+  font-size: 28px;
+  line-height: 24px;
+}
+
+.navbar-nav > li{
+  padding-left:10px;
+}

@@ -1,0 +1,92 @@
+/* Banner */
+
+.banner {
+  background-color: #3a4047;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "Bebas Neue";
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 14px;
+}
+
+.startNowButton {
+  display: none;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  padding-top: 8px;
+}
+
+@media (min-width:350px)  {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width:390px)  {
+  h1 {
+    font-size: 34px;
+  }
+}
+
+@media (min-width:420px)  {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width:500px)  {
+  h1 {
+    font-size: 44px;
+  }
+}
+
+@media (min-width:600px)  {
+  h1 {
+    font-size: 52px;
+  }
+}
+
+@media (min-width:992px)  {
+  .startNowButton {
+    display: block;
+  }
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width:1140px)  {
+  h1 {
+    font-size: 72px;
+  }
+}
+
+/* How to use Beer Boss */
+
+h2 {
+  font-family: "Bebas Neue";
+  font-size: 36px;
+}
+
+@media (min-width:650px)  {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+p {
+  font-size: 14px;
+  font-family: Roboto;
+}
+
+@media (min-width:520px)  {
+  p {
+    text-align: center;
+    font-size: 18px;
+  }
+}

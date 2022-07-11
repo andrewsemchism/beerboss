@@ -80,6 +80,7 @@ h2 {
 }
 
 p {
+  font-weight: 300;
   font-size: 14px;
   font-family: Roboto;
 }
@@ -90,6 +91,48 @@ p {
     font-size: 18px;
   }
 }
+
+/* Cards */
+
+h5 {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.allBeerPrices {
+  margin-bottom: 15px;
+}
+
+.bestValueAnalyzer {
+  margin-bottom: 15px;
+}
+
+.btn-card {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.card-pic {
+  height: 125px;
+  display:block;
+  margin:auto;
+}
+
+@media (min-width:992px)  {
+  .card-pic {
+    height: 200px;
+  }
+}
+
+@media (min-width:500px)  {
+  .card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  }
+}
+
+/* Footer */
 
 .footer {
   height: 50px;

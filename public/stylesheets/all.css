@@ -4,6 +4,11 @@
 
 .filters {
   display: none;
+  margin-bottom: 10px;
+}
+
+#beerTable_filter label {
+  font-family: Roboto;
 }
 
 h1 {

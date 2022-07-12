@@ -12,7 +12,7 @@ var table = $('#beerTable').DataTable({
     [9, "asc"]
   ],
   "language": {
-    "search": "Search Beers:"
+    "search": "Search Beers: "
   },
   "lengthMenu": [10, 15, 25, 50],
   "pageLength": 15,

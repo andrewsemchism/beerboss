@@ -20,3 +20,9 @@ html {
 .navbar-nav > li{
   padding-left:10px;
 }
+
+/* Footer */
+
+.footer {
+  height: 50px;
+}

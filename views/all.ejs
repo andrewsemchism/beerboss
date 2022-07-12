@@ -3,21 +3,33 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Beer Boss</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=block" rel="stylesheet">
   <!--Favicon-->
   <link rel="icon" type="image/png" href="images/favicon.png" />
+  <!-- Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300;500&display=block" rel="stylesheet">
   <!--Bebas Neue-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <!-- Datatables.net-->
+  <!-- Datatables.net
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">  
+  <link rel="stylesheet" href="https://cdn.datatables.net/rowreorder/1.2.8/css/rowReorder.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
+  -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.12.1/b-2.2.3/r-2.3.0/datatables.min.css"/>
 
+  
   <!-- Bootstrap-select - Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
   <!-- My stylesheets -->
-  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/global.css">
+  <link rel="stylesheet" href="/stylesheets/all.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175176340-1"></script>
@@ -36,73 +48,77 @@
     <section id="allbeerprices">
         <h1 id="allbeerpricestitle" class="text-center">All Beer Prices</h1>
         <div id="value-loader">
-            <h1 class="text-center">All Beer Prices</h1>
             <img class=" mg-fluid mx-auto d-block" src="/images/beer-loader.gif" alt="loader">
             <h2 class="text-center loading-p">Loading...</h2>
         </div>
-        <p>
-          This table contains a list of all beer store products in every package size available. There are over 800 beers and 3000 purchasing options!
-          Use the search bar and filters to narrow down your options. By default, the table is sorted so the best value beers appear at the top (lowest cost per serving of alcohol).
-        </p>
-    
         <div class="container-fluid filters">
-          <div class="row">
-            <div class="col-md-12 col-lg-6">
-              <table class="table table-sm">
-                <thead class="text-center">
-                  <tr>
-                    <th colspan="3" scope="col">Container Type</th>
-                  </tr>
-                </thead>
-                <tbody class="text-center">
-                  <tr class="d-flex flex-row justify-content-between">
-                    <td class="flex-fill"><button id="bottle" class="btn w-100 btn-success">Bottle</button></td>
-                    <td class="flex-fill"><button id="can" class="btn w-100 btn-success">Can</button></td>
-                    <td class="flex-fill"><button id="keg" class="btn w-100 btn-success">Keg</button></td>
-                </tbody>
-              </table>
-            </div>
-            <div class="col-md-12 col-lg-6">
-              <div class="text-center">
-                <label for="depositButton">This button will subtract the bottle/can deposit money from the final price:</label>
-                <button type="button" class="btn btn-success" id="depositButton">Include Bottle/Can Deposit</button>
+          <div class="container">
+            <p>
+              This table contains a list of all beer store products in every package size available. There are over 800 beers and 3000 purchasing options!
+              Use the search bar and filters to narrow down your options. <b>By default, the table is sorted so the best value beers appear at the top (lowest cost per serving of alcohol).</b>
+            </p>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <table class="table table-sm">
+                  <thead class="text-center">
+                    <tr>
+                      <th colspan="3" scope="col">Container Type</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-center">
+                    <tr class="d-flex flex-row justify-content-between">
+                      <td class="flex-fill"><button id="bottle" class="btn w-100 btn-success">Bottle</button></td>
+                      <td class="flex-fill"><button id="can" class="btn w-100 btn-success">Can</button></td>
+                      <td class="flex-fill"><button id="keg" class="btn w-100 btn-success">Keg</button></td>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <div class="text-center">
+                  <label for="depositButton">This button will subtract the bottle/can deposit money from the final price:</label>
+                  <button type="button" class="btn btn-success" id="depositButton">Include Bottle/Can Deposit</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container-fluid mx-auto">
-          <table class="table table-hover" id='beerTable'>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th class="category">Category</th>
-                    <th>ABV</th>
-                    <th class="country">Country</th>
-                    <th>Quantity</th>
-                    <th>Container Size (ml)</th>
-                    <th>Container Type</th>
-                    <th>Price</th>
-                    <th>Cost per Serving of Alcohol</th>
-                </tr>
-            </thead>
-             <tbody>
-             <% print.forEach(function (data) { %>
-                <tr>
-                    <td><a href="<%= data.urls %>" target="_blank" rel="noopener noreferrer"><%= data.name %></a></td>
-                    <td><%= data.type %></td>
-                    <td class="category"><%= data.category %></td>
-                    <td><%= data.ABV %>%</td>
-                    <td class="country"><%= data.country %></td>
-                    <td><%= data.quantity %></td>
-                    <td><%= data.size_container %></td>
-                    <td><%= data.type_container %></td>
-                    <td>$<%= data.price.toFixed(2) %></td>
-                    <td>$<%= data.dollar_drink.toFixed(2) %></td>
-                </tr>
-             <% }) %>
-             </tbody>
-        </table>
+        <div class="container-lg">
+
+        
+            <table class="table" id='beerTable' width="100%">
+              <thead>
+                  <tr>
+                      <th data-priority="1">Name</th>
+                      <th>Type</th>
+                      <th class="category">Category</th>
+                      <th>ABV</th>
+                      <th class="country">Country</th>
+                      <th data-priority="5">Quantity</th>
+                      <th data-priority="6">Container Size (ml)</th>
+                      <th data-priority="4">Container Type</th>
+                      <th data-priority="3">Price</th>
+                      <th data-priority="2">Cost per Serving of Alcohol</th>
+                  </tr>
+              </thead>
+               <tbody>
+               <% print.forEach(function (data) { %>
+                  <tr>
+                      <td><a href="<%= data.urls %>" target="_blank" rel="noopener noreferrer"><%= data.name %></a></td>
+                      <td><%= data.type %></td>
+                      <td class="category"><%= data.category %></td>
+                      <td><%= data.ABV %>%</td>
+                      <td class="country"><%= data.country %></td>
+                      <td><%= data.quantity %></td>
+                      <td><%= data.size_container %></td>
+                      <td><%= data.type_container %></td>
+                      <td>$<%= data.price.toFixed(2) %></td>
+                      <td>$<%= data.dollar_drink.toFixed(2) %></td>
+                  </tr>
+               <% }) %>
+               </tbody>
+          </table>
         </div>
     </section>
     <div class="footer"></div>
@@ -120,8 +136,13 @@
     <!-- Datatables.net Responsive Table-->
     <script src="https://cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/colreorder/1.5.2/js/dataTables.colReorder.min.js"></script>
-    <!-- Datatables.net Buttons-->
+    <!-- Datatables.net Buttons
     <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/rowreorder/1.2.8/js/dataTables.rowReorder.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css"></script>
+    -->
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.12.1/b-2.2.3/r-2.3.0/datatables.min.js"></script>
+
     <script src="/javascripts/index.js"></script>
     <script src="/javascripts/all.js"></script>
 </body>

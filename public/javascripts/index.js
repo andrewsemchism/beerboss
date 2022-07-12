@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
 var table = $('#beerTable').DataTable({
+  responsive: true,
   "columnDefs" : [
     {
         "targets": [ 2,4 ],
         "visible": false,
-        "searchable": false
+        "searchable": false,
     }],
   "order": [
     [9, "asc"]
@@ -14,7 +15,8 @@ var table = $('#beerTable').DataTable({
     "search": "Search Beers:"
   },
   "lengthMenu": [10, 15, 25, 50],
-  "pageLength": 15
+  "pageLength": 15,
+ 
   });
 
   $('#depositButton').click(function() {

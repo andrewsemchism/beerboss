@@ -131,9 +131,3 @@ h5 {
     transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   }
 }
-
-/* Footer */
-
-.footer {
-  height: 50px;
-}

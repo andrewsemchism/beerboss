@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     $('#value-loader').hide();
+    $('.value-introduction').show();
 
     function getColor(value) {
         //value from 0 to 1
@@ -45,6 +46,7 @@ $(document).ready(function () {
 
     var table = $('#value-table').DataTable(
         {
+            responsive: true,
             "order": [
                 [5, "asc"]
             ],
@@ -108,7 +110,7 @@ $(document).ready(function () {
     $(":checkbox").change(function () {
         updateTable();
     });
-
+    /*
     // mobile media query
     function toggleMobile(x) {
         if (x.matches) { // If media query matches
@@ -121,7 +123,7 @@ $(document).ready(function () {
     var x = window.matchMedia("(max-width: 992px)")
     toggleMobile(x) // Call listener function at run time
     x.addListener(toggleMobile) // Attach listener function on state changes
-
+    */
     // Quick picks buttons
     var buttons = document.querySelectorAll("#quick-picks button");
     buttons.forEach((button) => {

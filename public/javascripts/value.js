@@ -2,6 +2,8 @@ $(document).ready(function () {
 
     $('#value-loader').hide();
     $('.value-introduction').show();
+    
+    $('#beer-picker').selectpicker({ virtualScroll: false });
 
     function getColor(value) {
         //value from 0 to 1

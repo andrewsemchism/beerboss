@@ -51,7 +51,7 @@ h1 {
   }
 }
 
-@media (min-width:992px)  {
+@media (min-width:992px) and (max-height: 800px) {
   .startNowButton {
     display: block;
   }

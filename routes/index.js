@@ -50,13 +50,13 @@ router.get('/value', function (req, res, next) {
     password: process.env.PASSWORD,
     database: process.env.DATABASE
   })
-  connection.query('SELECT * FROM beer', (err, rows, fields) => {
+  connection.query('SELECT * FROM beer_data', (err, rows, fields) => {
     if (err) {
       console.log("Error fetching data");
       res.sendStatus(500)
       return
     }
-    let beerNames = rows.map(beer => beer.name);
+    let beerNames = rows.map(beer => beer.beer_name_formatted);
     let beerNamesUnique = [...new Set(beerNames)];
     beerNamesUnique.sort();
     data = {

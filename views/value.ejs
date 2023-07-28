@@ -212,22 +212,22 @@
                     <% print.forEach(function (data) { %>
                       <tr>
                         <td>
-                          <%= data.name %>
+                          <%= data.beer_name_formatted %>
                         </td>
                         <td>
                           <%= data.quantity %>
                         </td>
                         <td>
-                          <%= data.size_container %>
+                          <%= data.size_ml %>
                         </td>
                         <td>
-                          <%= data.type_container %>
+                          <%= data.case_type %>
                         </td>
-                        <td>$<%= data.price.toFixed(2) %>
+                        <td>$<%= data.main_price.toFixed(2) %>
                         </td>
-                        <td class="cost-per-serving">$<%= (data.price / ((data.quantity * data.size_container) / 355)).toFixed(2) %>
+                        <td class="cost-per-serving">$<%= (data.main_price / ((data.quantity * data.size_ml) / 355)).toFixed(2) %>
                         </td>
-                        <td>$<%= data.dollar_drink.toFixed(2) %>
+                        <td>$<%= data.dollars_per_drink.toFixed(2) %>
                         </td>
                       </tr>
                       <% }) %>

@@ -99,22 +99,26 @@
                       <th data-priority="6">Container Size (ml)</th>
                       <th data-priority="4">Container Type</th>
                       <th data-priority="3">Price</th>
-                      <th data-priority="2">Cost per Serving of Alcohol</th>
+                      <th data-priority="3">Price</th>
+                      <th data-priority="2" class="cost-serving">Cost per Serving of Alcohol</th>
+                      <th data-priority="2" class="cost-serving">Cost per Serving of Alcohol</th>
                   </tr>
               </thead>
                <tbody>
                <% print.forEach(function (data) { %>
                   <tr>
-                      <td><a href="<%= data.urls %>" target="_blank" rel="noopener noreferrer"><%= data.name %></a></td>
-                      <td><%= data.type %></td>
+                      <td><a href="<%= data.url %>" target="_blank" rel="noopener noreferrer"><%= data.beer_name_formatted %></a></td>
+                      <td><%= data.beer_type %></td>
                       <td class="category"><%= data.category %></td>
-                      <td><%= data.ABV %>%</td>
+                      <td><%= data.abv %>%</td>
                       <td class="country"><%= data.country %></td>
                       <td><%= data.quantity %></td>
-                      <td><%= data.size_container %></td>
-                      <td><%= data.type_container %></td>
-                      <td>$<%= data.price.toFixed(2) %></td>
-                      <td>$<%= data.dollar_drink.toFixed(2) %></td>
+                      <td><%= data.size_ml %></td>
+                      <td><%= data.case_type %></td>
+                      <td>$<%= data.main_price.toFixed(2) %></td>
+                      <td>$<%= data.deposit_price.toFixed(2) %></td>
+                      <td>$<%= data.dollars_per_drink.toFixed(2) %></td>
+                      <td>$<%= data.dollars_per_drink_after_deposit.toFixed(2) %></td>
                   </tr>
                <% }) %>
                </tbody>

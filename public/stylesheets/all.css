@@ -11,6 +11,12 @@
   font-family: Roboto;
 }
 
+@media (min-width:992px)  {
+  #beerTable .cost-serving {
+    min-width: 130px;
+  }
+}
+
 h1 {
   font-family: "Bebas Neue";
   text-align: center;

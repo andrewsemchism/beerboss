@@ -19,7 +19,7 @@ router.get('/all', function (req, res, next) {
     password: process.env.PASSWORD,
     database: process.env.DATABASE
   })
-  connection.query('SELECT * FROM beer', (err, rows, fields) => {
+  connection.query('SELECT * FROM beer_data', (err, rows, fields) => {
     if (err) {
       console.log("Error fetching data");
       res.sendStatus(500)

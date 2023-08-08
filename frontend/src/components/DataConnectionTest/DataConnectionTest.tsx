@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 
-interface DataItem {
+interface BeerDataItem {
   //id: number;
   name: string;
   // Add more properties as needed
 }
 
 const DataFetchingComponent: React.FC = () => {
-  const [data, setData] = useState<DataItem[]>([]);
+  const [data, setData] = useState<any>();
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('http://localhost:3001'); // Replace with your API endpoint
-        const jsonData: DataItem[] = await response.json();
+        const response = await fetch('http://localhost:3001/get'); // Replace with your API endpoint
+        const jsonData = await response.json();
         setData(jsonData);
         setLoading(false);
       } catch (error) {

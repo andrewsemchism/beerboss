@@ -3,10 +3,11 @@ const mysql = require('mysql2');
 const cors = require('cors');
 
 const db = mysql.createPool({
-  host: 'mysql_db', // the host name MYSQL_DATABASE: node_mysql
-  user: 'MYSQL_USER', // database user MYSQL_USER: MYSQL_USER
-  password: 'MYSQL_PASSWORD', // database user password MYSQL_PASSWORD: MYSQL_PASSWORD
-  database: 'beers' // database name MYSQL_HOST_IP: mysql_db
+  host: 'backend-db', 
+  user: 'user', 
+  password: 'password',
+  database: 'db',
+  port: '3306'
 })
 
 const app = express();
@@ -24,12 +25,16 @@ app.get('/', (req, res) => {
 });
 
 app.get('/get', (req, res) => {
-  /*
-  const SelectQuery = " SELECT * FROM beers";
+  
+  const SelectQuery = "SELECT * FROM beer_data";
   db.query(SelectQuery, (err, result) => {
-    res.send(result)
+    if (err) {
+      console.error('Error executing database query:', err);
+      return res.status(500).json({ error: 'An error occurred while fetching data' });
+    }
+    res.json(result)
   })
-  */
+  
 })
 
 app.listen('3001', () => { })

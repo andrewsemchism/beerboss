@@ -14,7 +14,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "3001:3001"
     environment:
       DB_HOST: backend-db
       DB_USER: your_db_user
@@ -26,9 +26,10 @@ services:
   backend-db:
     image: mysql:latest
     ports:
-      - "3306:3306"
+      - "3308:3308"
     environment:
       MYSQL_ROOT_PASSWORD: root_password
       MYSQL_USER: your_db_user
       MYSQL_PASSWORD: your_db_password
       MYSQL_DATABASE: your_db_name
+      

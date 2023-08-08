@@ -16,22 +16,23 @@ services:
     ports:
       - "3001:3001"
     environment:
-      DB_HOST: backend-db
-      DB_USER: user
-      DB_PASSWORD: password
-      DB_DATABASE: test_database
+      - DB_HOST=${DB_HOST:-backend-db}
+      - DB_USER=${DB_USER:-user}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
+      - DB_DATABASE=${DB_DATABASE:-sample_data}
     depends_on:
       - backend-db
 
   backend-db:
     image: mysql:8.0
     ports:
-      - "3307:3306"
+      # Use port 9906 to avoid conflicts with a locally installed MySQL.
+      - "9906:3306"
     environment:
-      MYSQL_DATABASE: 'db'
-      MYSQL_USER: 'user'
-      MYSQL_PASSWORD: 'password'
-      MYSQL_ROOT_PASSWORD: 'password'
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-sample_data}
+      - MYSQL_USER=${MYSQL_USER:-user}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-password}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-password}
     volumes:
-      - ./test_database.sql:/docker-entrypoint-initdb.d/test_database.sql
+      - ./sample_data.sql:/docker-entrypoint-initdb.d/sample_data.sql
       

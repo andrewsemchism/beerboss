@@ -25,7 +25,7 @@ const DataFetchingComponent: React.FC = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('http://localhost:3001/allbeer');
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/allbeer`);
         const jsonData = await response.json();
         setData(jsonData);
         setLoading(false);

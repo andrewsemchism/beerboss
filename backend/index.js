@@ -14,17 +14,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-  const data = [
-    { name: 'Item 1' },
-    { name: 'Item 2' },
-  ];
-
-  res.json(data);
-});
-
-app.get('/get', (req, res) => {
-  
+app.get('/allbeer', (req, res) => {
   const SelectQuery = "SELECT * FROM beer_data";
   db.query(SelectQuery, (err, result) => {
     if (err) {

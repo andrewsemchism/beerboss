@@ -1,0 +1,88 @@
+.mainBanner {
+  background-color: #3a4047;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.mainBanner h1 {
+  font-family: "Bebas Neue";
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 14px;
+}
+
+.startNowButton {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.startNowButton {
+  display: none;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  padding-top: 8px;
+  width: 140px;
+  background-color: white;
+  border: 2px solid #999;
+  color: #333;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.startNowButton:hover {
+  background-color: #f5f5f5;
+}
+
+.startNowButton:active {
+  transform: translateY(2px);
+  background-color: #e0e0e0;
+}
+
+
+@media (min-width:350px)  {
+  .mainBanner h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width:390px)  {
+  .mainBanner h1 {
+    font-size: 34px;
+  }
+}
+
+@media (min-width:420px)  {
+  .mainBanner h1 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width:500px)  {
+  .mainBanner h1 {
+    font-size: 44px;
+  }
+}
+
+@media (min-width:600px)  {
+  .mainBanner h1 {
+    font-size: 58px;
+  }
+}
+
+@media (min-width:992px) {
+  .startNowButton {
+    display: block;
+  }
+  .mainBanner h1 {
+    font-size: 72px;
+  }
+}
+
+@media (min-width:1140px)  {
+  .mainBanner h1 {
+    font-size: 92px;
+  }
+}

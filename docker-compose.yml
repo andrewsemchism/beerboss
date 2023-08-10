@@ -1,5 +1,8 @@
+# For development: docker compose --profile dev up
+# For production: docker compose --profile prod up
 version: "3"
 services:
+  # Prod specific services
   frontend:
     build:
       context: ./frontend
@@ -10,8 +13,44 @@ services:
       - "3000:3000"
     depends_on:
       - backend
-
+    profiles:
+      - prod
+    
   backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - DB_HOST=${DB_HOST:-backend-db}
+      - DB_USER=${DB_USER:-user}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
+      - DB_DATABASE=${DB_DATABASE:-sample_data}
+    profiles:
+      - prod
+    
+  # Dev specific services
+  frontend-dev:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      - REACT_APP_BACKEND_URL=${REACT_APP_BACKEND_URL:-http://localhost:3001}
+      - CHOKIDAR_USEPOLLING=true # For hot reloading
+      - WATCHPACK_POLLING=true #  For hot reloading
+      - WDS_SOCKET_HOST=127.0.0.1 # For hot reloading
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend-dev
+    volumes:
+      - "./frontend:/app"
+      - "/app/node_modules"
+    profiles:
+      - dev
+
+  backend-dev:
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -24,6 +63,8 @@ services:
       - DB_DATABASE=${DB_DATABASE:-sample_data}
     depends_on:
       - backend-db
+    profiles:
+      - dev
 
   backend-db:
     image: mysql:8.0
@@ -37,4 +78,6 @@ services:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-password}
     volumes:
       - ./sample_data.sql:/docker-entrypoint-initdb.d/sample_data.sql
+    profiles:
+      - dev
       

@@ -1,0 +1,32 @@
+#beerNav {
+  color: rgb(52, 58, 64);
+  padding: 10px 12px;
+}
+
+#beerNav .navbar-brand {
+  font-family: "Bebas Neue";
+  color: #e99a2c;
+  font-size: 36px;
+}
+
+#beerNav .nav-item {
+  font-family: "Bebas Neue";
+  font-size: 28px;
+  padding-left:12px;
+  padding-right: 12px;
+  text-align: start;
+  padding-top: 0;
+}
+
+#beerNav .nav-link {
+  padding: 0;
+}
+
+/* Remove bootstrap outline on focus */
+#beerNav .navbar-toggler:focus,
+#beerNav .navbar-toggler:active,
+#beerNav .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+

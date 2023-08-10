@@ -4,6 +4,14 @@
   margin-bottom: 10px;
 }
 
+.mainBanner > div {
+  max-width: 1000px;
+}
+
+.mainBanner svg {
+  max-height: 450px;
+}
+
 .mainBanner h1 {
   font-family: "Bebas Neue";
   color: white;
@@ -83,6 +91,6 @@
 
 @media (min-width:1140px)  {
   .mainBanner h1 {
-    font-size: 92px;
+    font-size: 82px;
   }
 }

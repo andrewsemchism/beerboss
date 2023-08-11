@@ -1,0 +1,20 @@
+/* FilterButton.module.css */
+
+.filterButton {
+  height: 40px;
+  border: 1px solid #de9d12;
+  border-radius: 4px;
+  color: #de9d12;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 8px;
+}
+
+.enabled {
+  /* Styles for the enabled state */
+}
+
+.disabled {
+  opacity: 0.6;
+}

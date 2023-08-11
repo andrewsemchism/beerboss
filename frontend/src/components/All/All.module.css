@@ -1,0 +1,11 @@
+.allBeerPrices h1 {
+  font-size: 48px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+}
+
+.filterHeading {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}

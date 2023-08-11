@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import CustomNav from './components/CustomNav/CustomNav';
+import All from './components/All/All';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -13,7 +14,7 @@ function App() {
         <CustomNav/>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/all" element={<h1>All</h1>} />
+          <Route path="/all" element={<All/>} />
           <Route path="/value" element={<h1>Value</h1>} />
         </Routes>
       </div>

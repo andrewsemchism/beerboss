@@ -1,0 +1,12 @@
+.howTo > h2 {
+  margin-top: 10px;
+  font-size: 48px;
+  font-family: "Bebas Neue";
+  text-align: center;
+}
+
+.howTo > p {
+  font-size: 20px;
+  font-family: "Roboto";
+  text-align: center;
+}

@@ -1,5 +1,5 @@
-# For development: docker compose --profile dev up
-# For production: docker compose --profile prod up
+# For development: docker compose --profile dev up --build
+# For production: docker compose --profile prod up --build
 version: "3"
 services:
   # Prod specific services
@@ -15,7 +15,7 @@ services:
       - backend
     profiles:
       - prod
-    
+
   backend:
     build:
       context: ./backend
@@ -29,7 +29,7 @@ services:
       - DB_DATABASE=${DB_DATABASE:-sample_data}
     profiles:
       - prod
-    
+
   # Dev specific services
   frontend-dev:
     build:
@@ -80,4 +80,3 @@ services:
       - ./sample_data.sql:/docker-entrypoint-initdb.d/sample_data.sql
     profiles:
       - dev
-      

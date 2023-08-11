@@ -1,4 +1,4 @@
-import React, { useState, useEffect}  from 'react';
+import React, { useState, useEffect, useMemo}  from 'react';
 import { MaterialReactTable } from 'material-react-table';
 import { type MRT_ColumnDef } from 'material-react-table';
 
@@ -24,6 +24,37 @@ const All: React.FC = () => {
   const [data, setData] = useState<BeerDataItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
+  const columns = useMemo<MRT_ColumnDef<BeerDataItem>[]>(
+    () => [
+      {
+        header: 'Beer Name',
+        accessorKey: 'beer_name_formatted', //using accessorKey dot notation to access nested data
+      },
+      {
+        header: 'Quentity',
+        accessorKey: 'quantity',
+      },
+      {
+        header: 'Case Type',
+        accessorKey: 'case_type',
+      },
+      {
+        header: 'Size (ml)',
+        accessorKey: 'size_ml',
+      },
+      {
+        header: 'Price',
+        accessorKey: 'main_price',
+      },
+      {
+        header: 'ABV',
+        accessorKey: 'abv',
+      }
+    ],
+    [],
+  );
+  
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -46,26 +77,10 @@ const All: React.FC = () => {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <div>
-          {data.map((beer) => (
-            <div key={beer.id} style={{ border: '1px solid #ccc', padding: '1rem', margin: '1rem' }}>
-              <h3>{beer.beer_name_formatted}</h3>
-              <p>Quantity: {beer.quantity}</p>
-              <p>Case Type: {beer.case_type}</p>
-              <p>Size (ml): {beer.size_ml}</p>
-              <p>Main Price: ${beer.main_price}</p>
-              <p>Original Price: ${beer.original_price}</p>
-              <p>Deposit Price: ${beer.deposit_price}</p>
-              <p>ABV: {beer.abv}%</p>
-              <p>Country: {beer.country}</p>
-              <p>Category: {beer.category}</p>
-              <p>Beer Type: {beer.beer_type}</p>
-              <p>URL: <a href={beer.url}>{beer.url}</a></p>
-              <p>Dollars per Drink: ${beer.dollars_per_drink}</p>
-              <p>Dollars per Drink after Deposit: ${beer.dollars_per_drink_after_deposit}</p>
-            </div>
-          ))}
-        </div>
+        <MaterialReactTable
+          columns={columns}
+          data={data}
+          />
       )}
     </div>
   );

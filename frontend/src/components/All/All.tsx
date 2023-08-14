@@ -31,7 +31,22 @@ interface filters {
   smallKeg: boolean;
   largeKeg: boolean;
   packs: number[];
+  packsOther: boolean;
   name: string[];
+}
+
+function toggleItemInList(list: number[], item: number): number[] {
+  const index = list.indexOf(item);
+
+  if (index !== -1) {
+    // Item is present, remove it
+    list.splice(index, 1);
+  } else {
+    // Item is not present, add it
+    list.push(item);
+  }
+
+  return list;
 }
 
 const All: React.FC = () => {
@@ -45,7 +60,8 @@ const All: React.FC = () => {
     largeBottle: true,
     smallKeg: true,
     largeKeg: true,
-    packs: [1, 6, 12, 15, 18, 24, 30, 36, 48, 60, 72, 84, 96],
+    packs: [1,6,12,15,18,20,24,28,30,48],
+    packsOther: true,
     name: [],
   });
 
@@ -65,7 +81,8 @@ const All: React.FC = () => {
   }
 
   const packFilter = (item: BeerDataItem, newFilter: filters) => {
-    return newFilter.packs.includes(item.quantity);
+    const packFilterOptions = [1,6,12,15,18,20,24,28,30,48];
+    return newFilter.packs.includes(item.quantity) || (newFilter.packsOther && !packFilterOptions.includes(item.quantity));
   }
 
   const handleFilterChange = (newFilter: filters) => {
@@ -145,61 +162,87 @@ const All: React.FC = () => {
         </Col>
       </Row>
       <Row>
-        <Col xs={6} lg={3}> {/* Cans, Bottles, Kegs Filter */}
+        <Col xs={12} md={6} lg={3}> {/* Cans, Bottles, Kegs Filter */}
           <Row>
             <Col className={styles.filterHeading}>
               Can
             </Col>
             <Col className={styles.filterHeading}>
-              Botle
+              Bottle
             </Col>
             <Col className={styles.filterHeading}>
               Keg
             </Col>
           </Row>
           <Row>
-            <Col>
-              <FilterButton width="100%" text="Regular" isEnabled={filters.regularCan} onClick={() => handleFilterChange({...filters, regularCan: !filters.regularCan})}/>
+            <Col className="p-0">
+              <FilterButton width="95%" text="Regular" isEnabled={filters.regularCan} onClick={() => handleFilterChange({...filters, regularCan: !filters.regularCan})}/>
             </Col>
-            <Col>
-              <FilterButton width="100%" text="Regular" isEnabled={filters.regularBottle} onClick={() => handleFilterChange({...filters, regularBottle: !filters.regularBottle})}/>
+            <Col className="p-0">
+              <FilterButton width="95%" text="Regular" isEnabled={filters.regularBottle} onClick={() => handleFilterChange({...filters, regularBottle: !filters.regularBottle})}/>
             </Col>
-            <Col>
-              <FilterButton width="100%" text="< 30 L" isEnabled={filters.smallKeg} onClick={() => handleFilterChange({...filters, smallKeg: !filters.smallKeg})}/>
+            <Col className="p-0">
+              <FilterButton width="95%" text="< 30 L" isEnabled={filters.smallKeg} onClick={() => handleFilterChange({...filters, smallKeg: !filters.smallKeg})}/>
             </Col>
           </Row>
           <Row>
-            <Col>
-              <FilterButton width="100%" text="TallBoy" isEnabled={filters.tallboyCan} onClick={() => handleFilterChange({...filters, tallboyCan: !filters.tallboyCan})}/>
+            <Col className="p-0">
+              <FilterButton width="95%" text="TallBoy" isEnabled={filters.tallboyCan} onClick={() => handleFilterChange({...filters, tallboyCan: !filters.tallboyCan})}/>
             </Col>
-            <Col>
-            <FilterButton width="100%" text="Large" isEnabled={filters.largeBottle} onClick={() => handleFilterChange({...filters, largeBottle: !filters.largeBottle})}/>
+            <Col className="p-0">
+            <FilterButton width="95%" text="Large" isEnabled={filters.largeBottle} onClick={() => handleFilterChange({...filters, largeBottle: !filters.largeBottle})}/>
             </Col>
-            <Col>
-              <FilterButton width="100%" text="30 L +" isEnabled={filters.largeKeg} onClick={() => handleFilterChange({...filters, largeKeg: !filters.largeKeg})}/>
+            <Col className="p-0">
+              <FilterButton width="95%" text="30 L +" isEnabled={filters.largeKeg} onClick={() => handleFilterChange({...filters, largeKeg: !filters.largeKeg})}/>
             </Col>
           </Row>
         </Col>
-        <Col xs={6} lg={3}>
+        <Col xs={12} md={6} lg={3}>
           <Row>
             <Col className={styles.filterHeading}>
               Pack Size
             </Col>
           </Row>
           <Row>
-            <Col>
-              <FilterButton width="100%" text="1" isEnabled={true} onClick={() => {}}/>
+            <Col className="p-0">
+              <FilterButton width="95%" text="1" isEnabled={filters.packs.includes(1)} onClick={() => handleFilterChange({...filters, packs: toggleItemInList(filters.packs, 1)})}/>
             </Col>
-            <Col>
-              <FilterButton width="100%" text="6" isEnabled={true} onClick={() => {}}/>
+            <Col className="p-0">
+              <FilterButton width="95%" text="6" isEnabled={filters.packs.includes(6)} onClick={() => handleFilterChange({...filters, packs: toggleItemInList(filters.packs, 6)})}/>
             </Col>
-            <Col>
-              <FilterButton width="100%" text="12" isEnabled={true} onClick={() => {}}/>
+            <Col className="p-0">
+              <FilterButton width="95%" text="12" isEnabled={filters.packs.includes(12)} onClick={() => handleFilterChange({...filters, packs: toggleItemInList(filters.packs, 12)})}/>
             </Col>
-            <Col>
-              <FilterButton width="100%" text="15" isEnabled={true} onClick={() => {}}/>
+            <Col className="p-0">
+              <FilterButton width="95%" text="15" isEnabled={filters.packs.includes(15)} onClick={() => handleFilterChange({...filters, packs: toggleItemInList(filters.packs, 15)})}/>
             </Col>
           </Row>
+          <Row>
+            <Col className="p-0">
+              <FilterButton width="95%" text="18" isEnabled={filters.packs.includes(18)} onClick={() => handleFilterChange({...filters, packs: toggleItemInList(filters.packs, 18)})}/>
+            </Col>
+            <Col className="p-0">
+              <FilterButton width="95%" text="20" isEnabled={filters.packs.includes(20)} onClick={() => handleFilterChange({...filters, packs: toggleItemInList(filters.packs, 20)})}/>
+            </Col>
+            <Col className="p-0">
+              <FilterButton width="95%" text="24" isEnabled={filters.packs.includes(24)} onClick={() => handleFilterChange({...filters, packs: toggleItemInList(filters.packs, 24)})}/>
+            </Col>
+            <Col className="p-0">
+              <FilterButton width="95%" text="28" isEnabled={filters.packs.includes(28)} onClick={() => handleFilterChange({...filters, packs: toggleItemInList(filters.packs, 28)})}/>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={3} className="p-0">
+              <FilterButton width="95%" text="30" isEnabled={filters.packs.includes(30)} onClick={() => handleFilterChange({...filters, packs: toggleItemInList(filters.packs, 30)})}/>
+            </Col>
+            <Col xs={3} className="p-0">
+              <FilterButton width="95%" text="48" isEnabled={filters.packs.includes(48)} onClick={() => handleFilterChange({...filters, packs: toggleItemInList(filters.packs, 48)})}/>
+            </Col>
+            <Col className="p-0">
+              <FilterButton width="95%" text="Other" isEnabled={filters.packsOther} onClick={() => handleFilterChange({...filters, packsOther: !filters.packsOther})}/>
+            </Col>
+          </Row>
+
         </Col>
         <Col xs={6} lg={3}>
           

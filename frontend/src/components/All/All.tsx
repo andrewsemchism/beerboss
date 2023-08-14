@@ -264,7 +264,7 @@ const All: React.FC = () => {
           </Row>
           <Row>
             <Col className="p-0">
-              <FilterButton width="100%" text="Subtract Deposit From Price" isEnabled={filters.subtractDeposit} onClick={() => handleFilterChange({...filters, onSale: !filters.subtractDeposit})}/>
+              <FilterButton width="100%" text="Subtract Deposit From Price" isEnabled={filters.subtractDeposit} onClick={() => handleFilterChange({...filters, subtractDeposit: !filters.subtractDeposit})}/>
             </Col>
           </Row>
         </Col>
@@ -282,7 +282,7 @@ const All: React.FC = () => {
               const selectedNames = new Set<string>(selectedOptions.map((option) => option.value));
               handleFilterChange({ ...filters, names: selectedNames });
             }}
-            placeholder="Select Beers..."
+            placeholder="Select Beers"
           />
         </Col>
       </Row>

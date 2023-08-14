@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import FilterButton from '../FilterButton/FilterButton';
 import { MaterialReactTable } from 'material-react-table';
 import { type MRT_ColumnDef } from 'material-react-table';
+import Select from 'react-select';
 import styles from './All.module.css';
 
 interface BeerDataItem {
@@ -34,7 +35,7 @@ interface filters {
   packsOther: boolean;
   onSale: boolean;
   subtractDeposit: boolean;
-  name: string[];
+  names: Set<string>;
 }
 
 function toggleItemInList(list: number[], item: number): number[] {
@@ -55,6 +56,7 @@ const All: React.FC = () => {
   const [data, setData] = useState<BeerDataItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [filteredData, setFilteredData] = useState<BeerDataItem[]>([]);
+  const [beerNames, setBeerNames] = useState<Set<string>>(new Set());
   const [filters, setFilters] = useState<filters>({
     regularCan: true,
     tallboyCan: true,
@@ -66,7 +68,7 @@ const All: React.FC = () => {
     packsOther: true,
     onSale: false,
     subtractDeposit: false,
-    name: [],
+    names: new Set(),
   });
 
   const containerFilter = (item: BeerDataItem, newFilter: filters) => {
@@ -81,7 +83,7 @@ const All: React.FC = () => {
   }
 
   const nameFilter = (item: BeerDataItem, newFilter: filters) => {
-    return newFilter.name.includes(item.beer_name_formatted) || newFilter.name.length === 0;
+    return newFilter.names.has(item.beer_name_formatted) || newFilter.names.size === 0;
   }
 
   const packFilter = (item: BeerDataItem, newFilter: filters) => {
@@ -139,6 +141,7 @@ const All: React.FC = () => {
         const jsonData = await response.json();
         const parsedData: BeerDataItem[] = jsonData;
         setData(parsedData);
+        setBeerNames(new Set(parsedData.map((item) => item.beer_name_formatted)));
         setFilteredData(parsedData.filter((item) => {
           // Filter by bottle/can/keg type
           return containerFilter(item, filters) && packFilter(item, filters) && nameFilter(item, filters)
@@ -266,7 +269,21 @@ const All: React.FC = () => {
           </Row>
         </Col>
         <Col xs={12} md={6} lg={3}>
-          
+          <Row>
+            <Col className={styles.filterHeading}>
+              Beer Filter
+            </Col>
+          </Row>
+          <Select
+            isMulti
+            options={Array.from(beerNames).map((name) => ({ value: name, label: name }))}
+            value={Array.from(filters.names).map((name) => ({ value: name, label: name }))}
+            onChange={(selectedOptions) => {
+              const selectedNames = new Set<string>(selectedOptions.map((option) => option.value));
+              handleFilterChange({ ...filters, names: selectedNames });
+            }}
+            placeholder="Select Beers..."
+          />
         </Col>
       </Row>
       {loading ? (

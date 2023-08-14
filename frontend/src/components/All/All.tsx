@@ -32,6 +32,8 @@ interface filters {
   largeKeg: boolean;
   packs: number[];
   packsOther: boolean;
+  onSale: boolean;
+  subtractDeposit: boolean;
   name: string[];
 }
 
@@ -62,6 +64,8 @@ const All: React.FC = () => {
     largeKeg: true,
     packs: [1,6,12,15,18,20,24,28,30,48],
     packsOther: true,
+    onSale: false,
+    subtractDeposit: false,
     name: [],
   });
 
@@ -244,10 +248,24 @@ const All: React.FC = () => {
           </Row>
 
         </Col>
-        <Col xs={6} lg={3}>
-          
+        <Col xs={12} md={6} lg={3}>
+          <Row>
+            <Col className={styles.filterHeading}>
+              Options
+            </Col>
+          </Row>
+          <Row>
+            <Col className="p-0">
+              <FilterButton width="100%" text="Only Show Items On Sale" isEnabled={filters.onSale} onClick={() => handleFilterChange({...filters, onSale: !filters.onSale})}/>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="p-0">
+              <FilterButton width="100%" text="Subtract Deposit From Price" isEnabled={filters.subtractDeposit} onClick={() => handleFilterChange({...filters, onSale: !filters.subtractDeposit})}/>
+            </Col>
+          </Row>
         </Col>
-        <Col xs={6} lg={3}>
+        <Col xs={12} md={6} lg={3}>
           
         </Col>
       </Row>

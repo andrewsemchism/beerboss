@@ -42,10 +42,8 @@ function toggleItemInList(list: number[], item: number): number[] {
   const index = list.indexOf(item);
 
   if (index !== -1) {
-    // Item is present, remove it
     list.splice(index, 1);
   } else {
-    // Item is not present, add it
     list.push(item);
   }
 
@@ -70,6 +68,8 @@ const All: React.FC = () => {
     subtractDeposit: false,
     names: new Set(),
   });
+  // Todo: Find a better way to force the table to update the columns when enabling the "Subtract Depot" filter
+  const [tableKey, setTableKey] = useState<number>(0);
 
   const containerFilter = (item: BeerDataItem, newFilter: filters) => {
     return (
@@ -91,13 +91,19 @@ const All: React.FC = () => {
     return newFilter.packs.includes(item.quantity) || (newFilter.packsOther && !packFilterOptions.includes(item.quantity));
   }
 
+  const saleFilter = (item: BeerDataItem, newFilter: filters) => {
+    return newFilter.onSale ? item.original_price !== -1 : true;
+  }
+
   const handleFilterChange = (newFilter: filters) => {
+    // Increment table key
+    setTableKey((prevKey) => prevKey + 1);
     // Set the filters
     setFilters(newFilter);
     // Update the filtered data
     setFilteredData(data.filter((item) => {
       // Filter by bottle/can/keg type
-      return containerFilter(item, newFilter) && packFilter(item, newFilter) && nameFilter(item, newFilter)
+      return containerFilter(item, newFilter) && packFilter(item, newFilter) && nameFilter(item, newFilter) && saleFilter(item, newFilter);
     }));
   }
 
@@ -106,28 +112,57 @@ const All: React.FC = () => {
       {
         header: 'Beer Name',
         accessorKey: 'beer_name_formatted', //using accessorKey dot notation to access nested data
-        filterFn: 'nameFilterFn',
+        maxSize: 100,
       },
       {
-        header: 'Quantity',
-        accessorKey: 'quantity',
-        filterFn: 'quantityFilterFn',
-      },
-      {
-        header: 'Case Type',
-        accessorKey: 'case_type',
-      },
-      {
-        header: 'Size (ml)',
-        accessorKey: 'size_ml',
-      },
-      {
-        header: 'Price',
-        accessorKey: 'main_price',
+        header: 'Type',
+        accessorKey: 'beer_type',
+        maxSize: 50,
       },
       {
         header: 'ABV',
         accessorKey: 'abv',
+        Cell: ({ cell }) => <span>{cell.getValue<number>()}%</span>,
+        maxSize: 50,
+      },
+      {
+        header: 'Quantity',
+        accessorKey: 'quantity',
+        maxSize: 25,
+      },
+      {
+        header: 'Size (ml)',
+        accessorKey: 'size_ml',
+        maxSize: 50,
+      },
+      {
+        header: 'Container Type',
+        accessorKey: 'case_type',
+        maxSize: 50,
+      },
+      {
+        header: 'Price',
+        accessorKey: 'main_price',
+        Cell: ({ cell }) => <span>${cell.getValue<number>().toFixed(2)}</span>,
+        maxSize: 50,
+      },
+      {
+        header: 'Price Minus Deposit',
+        accessorKey: 'deposit_price',
+        Cell: ({ cell }) => <span>${cell.getValue<number>().toFixed(2)}</span>,
+        maxSize: 50,
+      },
+      {
+        header: 'Cost per Serving of Alcohol',
+        accessorKey: 'dollars_per_drink',
+        Cell: ({ cell }) => <span>${cell.getValue<number>().toFixed(2)}</span>,
+        maxSize: 150,
+      },
+      {
+        header: 'Cost per Serving of Alcohol (after deposit)',
+        accessorKey: 'dollars_per_drink_after_deposit',
+        Cell: ({ cell }) => <span>${cell.getValue<number>().toFixed(2)}</span>,
+        maxSize: 150,
       }
     ],
     [],
@@ -276,7 +311,7 @@ const All: React.FC = () => {
           </Row>
           <Select
             isMulti
-            options={Array.from(beerNames).map((name) => ({ value: name, label: name }))}
+            options={Array.from(beerNames).map((name) => ({ value: name, label: name })).sort((a, b) => a.label.localeCompare(b.label))}
             value={Array.from(filters.names).map((name) => ({ value: name, label: name }))}
             onChange={(selectedOptions) => {
               const selectedNames = new Set<string>(selectedOptions.map((option) => option.value));
@@ -290,9 +325,17 @@ const All: React.FC = () => {
         <p>Loading...</p>
       ) : (
         <MaterialReactTable
+          key={tableKey}
           columns={columns}
           data={filteredData}
           enableColumnFilters={false}
+          initialState= {{columnVisibility: {
+              deposit_price: filters.subtractDeposit,
+              dollars_per_drink_after_deposit: filters.subtractDeposit,
+              main_price: !filters.subtractDeposit,
+              dollars_per_drink: !filters.subtractDeposit,
+          }}}
+          enableHiding={false}
           />
       )}
     </Container>

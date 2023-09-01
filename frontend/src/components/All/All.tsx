@@ -329,13 +329,22 @@ const All: React.FC = () => {
           columns={columns}
           data={filteredData}
           enableColumnFilters={false}
-          initialState= {{columnVisibility: {
+          initialState={{
+            columnVisibility: {
               deposit_price: filters.subtractDeposit,
               dollars_per_drink_after_deposit: filters.subtractDeposit,
               main_price: !filters.subtractDeposit,
               dollars_per_drink: !filters.subtractDeposit,
-          }}}
+            },
+            sorting: [
+              {
+                id: filters.subtractDeposit ? 'dollars_per_drink_after_deposit' : 'dollars_per_drink',
+                desc: false,
+              },
+            ]
+          }}
           enableHiding={false}
+          enableTopToolbar={false}
           />
       )}
     </Container>

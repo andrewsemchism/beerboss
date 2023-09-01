@@ -113,6 +113,11 @@ const All: React.FC = () => {
         header: 'Beer Name',
         accessorKey: 'beer_name_formatted', //using accessorKey dot notation to access nested data
         maxSize: 100,
+        Cell: ({ cell }) => (
+          <a href={cell.row.original.url} target="_blank" rel="noopener noreferrer">
+            {cell.row.original.beer_name_formatted}
+          </a>
+        ),
       },
       {
         header: 'Type',

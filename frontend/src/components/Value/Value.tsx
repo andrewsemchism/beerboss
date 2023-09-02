@@ -68,8 +68,38 @@ const Value: React.FC = () => {
     subtractDeposit: false,
     name: "",
   });
+
   // Todo: Find a better way to force the table to update the columns when enabling the "Subtract Depot" filter
   const [tableKey, setTableKey] = useState<number>(0);
+
+  const getColor = (costPerServing: number, bestPrice: number) => {
+    const getColorInRange = (startColor: number[], endColor: number[], percent: number) => {
+      const r = Math.min(startColor[0] + (endColor[0] - startColor[0]) * percent, 255);
+      const g = Math.min(startColor[1] + (endColor[1] - startColor[1]) * percent, 255);
+      const b = Math.min(startColor[2] + (endColor[2] - startColor[2]) * percent, 255);
+      return `rgb(${r}, ${g}, ${b})`;
+    };
+  
+    const percentDifference = ((costPerServing - bestPrice) / bestPrice);
+  
+    if (percentDifference >= 0 && percentDifference <= 0.1) {
+      // Generate a color between green and yellow
+      const percentInRange = percentDifference / 0.1;
+      return getColorInRange([153, 255, 153], [255, 255, 153], percentInRange);
+    } else if (percentDifference > 0.1 && percentDifference <= 0.2) {
+      // Generate a color between yellow and red
+      const percentInRange = (percentDifference - 0.1) / 0.1;
+      return getColorInRange([255, 255, 153], [255, 204, 153], percentInRange);
+    } else if (percentDifference > 0.2) {
+      // Generate a red
+      const percentInRange = Math.min((percentDifference - 0.2) / 0.4, 1);
+      return getColorInRange([255, 204, 153], [247, 121, 116], percentInRange);
+    } else {
+      // Default color (shouldn't happen)
+      return 'rgb(255, 255, 255)';
+    }
+  };
+  
 
   const containerFilter = (item: BeerDataItem, newFilter: filters) => {
     return (
@@ -113,16 +143,23 @@ const Value: React.FC = () => {
         header: 'Cost per Serving (355ml)',
         accessorKey: 'dollars_per_drink',
         Cell: ({ cell }) => {
-          const mainPrice = cell.row.original.main_price;
+          const price = cell.row.original.main_price;
           const sizeMl = cell.row.original.size_ml;
           const quantity = cell.row.original.quantity;
   
-          if (mainPrice && sizeMl && quantity) {
-            const costPerServing = ((mainPrice / (sizeMl * quantity))*355).toFixed(2);
-            return <span>${costPerServing}</span>;
+          if (price && sizeMl && quantity) {
+            const costPerServing = ((price / (sizeMl * quantity))*355);
+            const bestPriceType = filters.subtractDeposit ? 'deposit_price' : 'main_price';
+            const bestPriceCostPerServing = ((filteredData[0][bestPriceType] / (filteredData[0].size_ml * filteredData[0].quantity))*355);
+            return <div style={{
+              backgroundColor: getColor(costPerServing, bestPriceCostPerServing),
+              width: '100%',
+              height: '100%',
+              padding: '12px'
+            }}>${costPerServing.toFixed(2)}</div>;
           }
   
-          return <span>-</span>; // Display a placeholder if any required data is missing
+          return <span>-</span>;
         },
         maxSize: 150,
         enableSorting: false,
@@ -136,11 +173,20 @@ const Value: React.FC = () => {
           const quantity = cell.row.original.quantity;
   
           if (price && sizeMl && quantity) {
-            const costPerServing = ((price / (sizeMl * quantity))*355).toFixed(2);
-            return <span>${costPerServing}</span>;
+            const costPerServing = ((price / (sizeMl * quantity))*355);
+            const bestPriceType = filters.subtractDeposit ? 'deposit_price' : 'main_price';
+            const bestPriceCostPerServing = ((filteredData[0][bestPriceType] / (filteredData[0].size_ml * filteredData[0].quantity))*355);
+            console.log("Best Price", bestPriceCostPerServing)
+            console.log(bestPriceCostPerServing)
+            return <div style={{
+              backgroundColor: getColor(costPerServing, bestPriceCostPerServing),
+              width: '100%',
+              height: '100%',
+              padding: '12px'
+            }}>${costPerServing.toFixed(2)}</div>;
           }
   
-          return <span>-</span>; // Display a placeholder if any required data is missing
+          return <span>-</span>;
         },
         maxSize: 150,
         enableSorting: false,
@@ -178,7 +224,7 @@ const Value: React.FC = () => {
         enableSorting: false,
       },
     ],
-    [],
+    [filteredData, filters],
   );
   
 
@@ -224,7 +270,10 @@ const Value: React.FC = () => {
               Select Beer
             </Col>
           </Row>
+          { /* Temporary solution to fix the menu being hidden by the table. (menuPortalTarget and styles) */ }
           <Select
+            menuPortalTarget={document.body} 
+            styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
             options={Array.from(beerNames).map((name) => ({ value: name, label: name })).sort((a, b) => a.label.localeCompare(b.label))}
             value={{ value: filters.name, label: filters.name }}
             onChange={(selectedOption) => {
@@ -234,7 +283,8 @@ const Value: React.FC = () => {
             placeholder="Select Beer"
           />
         </Col>
-        <Col xs={12} md={6} lg={3} xl={3}> {/* Cans, Bottles, Kegs Filter */}
+        {/* Cans, bottles, and keg filters are disabled on this page for now.
+        <Col xs={12} md={6} lg={3} xl={3}>
           <Row>
             <Col className={styles.filterHeading}>
               Can
@@ -269,6 +319,7 @@ const Value: React.FC = () => {
             </Col>
           </Row>
         </Col>
+        */ }
         <Col xs={12} md={6} lg={3} xl={2}>
           <Row>
             <Col className={styles.filterHeading}>
@@ -292,6 +343,7 @@ const Value: React.FC = () => {
               columns={columns}
               data={filteredData}
               enableColumnFilters={false}
+              enablePagination={false}
               renderEmptyRowsFallback={() => <p className={styles.noSelectedBeerMessage}>Please select a beer above.</p>}
               initialState={{
                 columnVisibility: {
@@ -311,6 +363,11 @@ const Value: React.FC = () => {
               muiTableHeadCellProps={{
                 sx: {
                   paddingRight: '0',
+                }
+              }}
+              muiTableBodyCellProps={{
+                sx: {
+                  padding: '0 0 0 5px'
                 }
               }}
               />

@@ -114,21 +114,11 @@ const All: React.FC = () => {
         accessorKey: 'beer_name_formatted', //using accessorKey dot notation to access nested data
         maxSize: 100,
         Cell: ({ cell }) => (
-          <a href={cell.row.original.url} target="_blank" rel="noopener noreferrer">
+          <a href={cell.row.original.url} className={styles.beerLink} target="_blank" rel="noopener noreferrer">
             {cell.row.original.beer_name_formatted}
           </a>
         ),
-      },
-      {
-        header: 'Type',
-        accessorKey: 'beer_type',
-        maxSize: 50,
-      },
-      {
-        header: 'ABV',
-        accessorKey: 'abv',
-        Cell: ({ cell }) => <span>{cell.getValue<number>()}%</span>,
-        maxSize: 50,
+        enableSorting: false,
       },
       {
         header: 'Quantity',
@@ -141,8 +131,15 @@ const All: React.FC = () => {
         maxSize: 50,
       },
       {
-        header: 'Container Type',
+        header: 'Container',
         accessorKey: 'case_type',
+        maxSize: 50,
+        enableSorting: false,
+      },
+      {
+        header: 'ABV',
+        accessorKey: 'abv',
+        Cell: ({ cell }) => <span>{cell.getValue<number>()}%</span>,
         maxSize: 50,
       },
       {
@@ -168,7 +165,7 @@ const All: React.FC = () => {
         accessorKey: 'dollars_per_drink_after_deposit',
         Cell: ({ cell }) => <span>${cell.getValue<number>().toFixed(2)}</span>,
         maxSize: 150,
-      }
+      },
     ],
     [],
   );
@@ -197,19 +194,19 @@ const All: React.FC = () => {
 
   
   return (
-    <Container className={styles.allBeerPrices}>
+    <Container fluid className={styles.allBeerPrices}>
       <Row>
         <Col>
           <h1>All Beer Prices</h1>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <p>This table contains a list of all beer store products in every package size available. There are over 800 beers and 3000 purchasing options! Use the search bar and filters to narrow down your options. By default, the table is sorted so the best value beers appear at the top (lowest cost per serving of alcohol).</p>
+      <Row className="justify-content-center">
+        <Col xs={12} lg={10}>
+          <p>This table contains a list of all beer store products in every package size available. There are over 800 beers and 3000 purchasing options! Use the filters to narrow down your options. <b>By default, the table is sorted so the best value beers appear at the top (lowest cost per serving of alcohol).</b></p>
         </Col>
       </Row>
-      <Row>
-        <Col xs={12} md={6} lg={3}> {/* Cans, Bottles, Kegs Filter */}
+      <Row className="mb-3 justify-content-center">
+        <Col xs={12} md={6} lg={3} xl={3}> {/* Cans, Bottles, Kegs Filter */}
           <Row>
             <Col className={styles.filterHeading}>
               Can
@@ -244,7 +241,7 @@ const All: React.FC = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={12} md={6} lg={3}>
+        <Col xs={12} md={6} lg={3} xl={2}>
           <Row>
             <Col className={styles.filterHeading}>
               Pack Size
@@ -291,7 +288,7 @@ const All: React.FC = () => {
           </Row>
 
         </Col>
-        <Col xs={12} md={6} lg={3}>
+        <Col xs={12} md={6} lg={3} xl={2}>
           <Row>
             <Col className={styles.filterHeading}>
               Options
@@ -308,7 +305,7 @@ const All: React.FC = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={12} md={6} lg={3}>
+        <Col xs={12} md={6} lg={3} xl={3}>
           <Row>
             <Col className={styles.filterHeading}>
               Beer Filter
@@ -326,32 +323,46 @@ const All: React.FC = () => {
           />
         </Col>
       </Row>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <MaterialReactTable
-          key={tableKey}
-          columns={columns}
-          data={filteredData}
-          enableColumnFilters={false}
-          initialState={{
-            columnVisibility: {
-              deposit_price: filters.subtractDeposit,
-              dollars_per_drink_after_deposit: filters.subtractDeposit,
-              main_price: !filters.subtractDeposit,
-              dollars_per_drink: !filters.subtractDeposit,
-            },
-            sorting: [
-              {
-                id: filters.subtractDeposit ? 'dollars_per_drink_after_deposit' : 'dollars_per_drink',
-                desc: false,
-              },
-            ]
-          }}
-          enableHiding={false}
-          enableTopToolbar={false}
-          />
-      )}
+      <Row className="justify-content-center">
+        <Col xs={12} xl={11}>
+          {loading ? (
+            <p>Loading...</p>
+          ) : (
+            <MaterialReactTable
+              key={tableKey}
+              columns={columns}
+              data={filteredData}
+              enableColumnFilters={false}
+              initialState={{
+                columnVisibility: {
+                  deposit_price: filters.subtractDeposit,
+                  dollars_per_drink_after_deposit: filters.subtractDeposit,
+                  main_price: !filters.subtractDeposit,
+                  dollars_per_drink: !filters.subtractDeposit,
+                },
+                sorting: [
+                  {
+                    id: filters.subtractDeposit ? 'dollars_per_drink_after_deposit' : 'dollars_per_drink',
+                    desc: false,
+                  },
+                ]
+              }}
+              enableHiding={false}
+              enableTopToolbar={false}
+              muiTableHeadCellColumnActionsButtonProps={{
+                sx: {
+                  display: 'none',
+                },
+              }}
+              muiTableHeadCellProps={{
+                sx: {
+                  paddingRight: '0',
+                }
+              }}
+              />
+          )}
+        </Col>
+      </Row>
     </Container>
   );
 }

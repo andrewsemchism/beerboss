@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo}  from 'react';
+import ColourPopupModal from '../ColourPopupModal/ColourPopupModal';
 import { Container, Row, Col } from 'react-bootstrap';
 import FilterButton from '../FilterButton/FilterButton';
 import { MaterialReactTable } from 'material-react-table';
@@ -260,7 +261,7 @@ const Value: React.FC = () => {
       <Row className="justify-content-center">
         <Col xs={12} lg={10}>
           <p>The best value analyzer helps you find the best purchasing option for any beer. Simply select your desired drink and the table will show you all the purchasing options. The table will be sorted with the best value options at the top.</p>
-          <p>The “Cost per serving” column is colour coded from green to red to indicate the relative value of each purchasing option. Click here to view details.</p>
+          <p>The “Cost per serving” column is colour coded from green to red to indicate the relative value of each purchasing option. <ColourPopupModal/></p>
         </Col>
       </Row>
       <Row className="mb-3 justify-content-center">

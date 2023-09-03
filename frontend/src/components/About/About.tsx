@@ -15,7 +15,7 @@ const About: React.FC = () => {
           <h1>FAQ</h1>
         </Col>
       </Row>
-      <Accordion defaultActiveKey="0" flush>
+      <Accordion flush>
         <Accordion.Item eventKey="0">
           <Accordion.Header>What is the purpose of this website? What can I do with it?</Accordion.Header>
           <Accordion.Body>

@@ -1,0 +1,29 @@
+.about h1 {
+  font-size: 48px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.about {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.about button {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.about button:focus {
+  background-color: white;
+}
+
+.github {
+  margin: 10px 0;
+}
+
+.github > div {
+  display: inline-block;
+  width: 10px;
+}

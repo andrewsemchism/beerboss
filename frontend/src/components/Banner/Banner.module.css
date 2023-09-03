@@ -98,3 +98,9 @@
     font-size: 82px;
   }
 }
+
+@media (min-width: 2000px) {
+  .startNowButton {
+    display: none;
+  }
+}

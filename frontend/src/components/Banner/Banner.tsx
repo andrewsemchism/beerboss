@@ -22,6 +22,13 @@ const Banner: React.FC = () => {
     return () => lottie.destroy();
   }, []);
 
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <div className={styles.mainBanner}>
@@ -31,7 +38,7 @@ const Banner: React.FC = () => {
               <h1>SAVE MONEY ON BEER FROM THE BEER STORE</h1>
               <Row className={`${styles.startNowButtonRow} justify-content-center`}>
                 <Col className="d-flex justify-content-center">
-                  <button className={styles.startNowButton}>Start Now</button>
+                  <button className={styles.startNowButton} onClick={scrollToBottom}>Start Now</button>
                 </Col>
               </Row>
             </Col>

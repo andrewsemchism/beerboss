@@ -10,7 +10,7 @@ services:
       args:
         - REACT_APP_BACKEND_URL=${REACT_APP_BACKEND_URL:-http://localhost:3001}
     ports:
-      - "8080:80"
+      - "80:80"
     depends_on:
       - backend
     profiles:

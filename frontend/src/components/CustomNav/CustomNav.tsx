@@ -6,16 +6,18 @@ import './CustomNav.css'
 const CustomNav: React.FC = () => {
   const navigate = useNavigate();
   const [activePage, setActivePage] = useState<string>('');
+  const [expanded, setExpanded] = useState(false);
 
   const handleNavLinkClick = (page: string) => {
+    setExpanded(false);
     setActivePage(page);
     navigate('/' + page);
   };
 
   return (
-    <Navbar id="beerNav" bg="dark" expand="lg" variant="dark">
+    <Navbar id="beerNav" bg="dark" expand="lg" variant="dark" expanded={expanded}>
       <Navbar.Brand onClick={() => handleNavLinkClick('')}>BEER BOSS</Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbarmenu" />
+      <Navbar.Toggle aria-controls="navbarmenu" onClick={() => setExpanded(!expanded)} />
       <Navbar.Collapse id="navbarmenu">
         <Nav className="mr-auto">
           <Nav.Item>

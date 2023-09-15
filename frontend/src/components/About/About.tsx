@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './About.module.css';
 import Accordion from 'react-bootstrap/Accordion';
 import Container from 'react-bootstrap/Container'
@@ -7,6 +7,11 @@ import Col from 'react-bootstrap/Col'
 import GitHubButton from 'react-github-btn'
 
 const About: React.FC = () => {
+
+  useEffect(() => {
+    document.title = "Beer Boss - About"
+  }, []);
+
   return (
     <>
     <Container className={styles.about}>

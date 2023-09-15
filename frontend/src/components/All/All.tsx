@@ -192,6 +192,11 @@ const All: React.FC = () => {
     fetchData();
   }, []);
 
+
+  useEffect(() => {
+    document.title = "Beer Boss - All Beer Prices"
+  }, []);
+
   
   return (
     <Container fluid className={styles.allBeerPrices}>

@@ -250,6 +250,10 @@ const Value: React.FC = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    document.title = "Beer Boss - Best Value Analyzer"
+  }, []);
+
   
   return (
     <Container fluid className={styles.allBeerPrices}>

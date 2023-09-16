@@ -12,6 +12,7 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    restart: always
     depends_on:
       - backend
     profiles:
@@ -23,6 +24,7 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - "3001:3001"
+    restart: always
     environment:
       - DB_HOST=${DB_HOST:-backend-db}
       - DB_USER=${DB_USER:-user}

@@ -10,5 +10,8 @@ RUN npm run build
 
 FROM nginx
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+# SSL config files (stored on the server only)
+COPY beerboss_ca_chain.crt /etc/ssl/beerboss_ca_chain.crt 
+COPY server.key /etc/ssl/server.key
 COPY --from=build /app/build /usr/share/nginx/html
 

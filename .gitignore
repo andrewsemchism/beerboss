@@ -1,2 +1,4 @@
 .env
 **/node_modules
+server.key
+beerboss_ca_chain.crt

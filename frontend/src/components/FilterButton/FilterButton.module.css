@@ -1,0 +1,31 @@
+.filterButton {
+  height: 40px;
+  border: 1px solid #e99a2c;
+  border-radius: 4px;
+  color: #e99a2c; 
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/*
+
+Button hover effect removed due to mobile issues.
+
+.filterButton:hover {
+  background-color: #e99a2c; 
+  color: white;
+}
+
+*/
+
+.disabled {
+  opacity: 0.6;
+  border: 1px solid #8d8678;
+  color: #8d8678;
+  background-color: #f2f2f2;
+}

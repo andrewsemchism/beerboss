@@ -16,6 +16,11 @@ A python script scrapes every product on The Beer Store website and uploads it
 to a MySQL database. The website reads this data and displays it for the user.
 Currently, the python script is not included in the repository.
 
+## Running locally
+
+To run the site locally for development, install [Docker](https://docs.docker.com/get-docker/) and run
+`docker compose --profile dev up`
+
 <!-- Update this section for new tech stack
 
 ## Built With

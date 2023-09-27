@@ -8,17 +8,14 @@ import beer from './beer.png';
 import money from './money.png';
 
 const HowTo: React.FC = () => {
-
   const navigate = useNavigate();
 
   const handleNavigateToAll = () => {
-    navigate('/all'); // Navigate to the "/all" page
+    navigate('/all');
   };
-
   const handleNavigateToValue = () => {
-    navigate('/value'); // Navigate to the "/all" page
+    navigate('/value');
   };
-
 
   return (
     <Container className={styles.howTo}>

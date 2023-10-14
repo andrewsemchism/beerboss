@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo}  from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import FilterButton from '../FilterButton/FilterButton';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 import { MaterialReactTable } from 'material-react-table';
 import { type MRT_ColumnDef } from 'material-react-table';
 import Select from 'react-select';
@@ -331,7 +332,7 @@ const All: React.FC = () => {
       <Row className="justify-content-center">
         <Col xs={12} xl={11}>
           {loading ? (
-            <p>Loading...</p>
+            <LoadingSpinner />
           ) : (
             <MaterialReactTable
               key={tableKey}

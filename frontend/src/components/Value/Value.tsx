@@ -213,8 +213,13 @@ const Value: React.FC = () => {
       },
       {
         header: 'Price',
-        accessorKey: 'main_price',
-        Cell: ({ cell }) => <span>${cell.getValue<number>().toFixed(2)}</span>,
+        accessorFn: (row) => {
+          if (row.original_price === -1) {
+            return <span>${row.main_price.toFixed(2)}</span>
+          } else {
+            return <span><div className={styles.originalPrice}>${row.original_price.toFixed(2)}</div>${row.main_price.toFixed(2)}</span>
+          }
+        },
         maxSize: 50,
         enableSorting: false,
       },

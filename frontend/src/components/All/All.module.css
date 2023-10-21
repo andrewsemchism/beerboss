@@ -25,3 +25,8 @@
 .beerLink:hover {
   text-decoration: underline;
 }
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #868686;
+}

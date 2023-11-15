@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo}  from 'react';
+import { BeerDataItem } from '../../shared/BeerDataItem';
 import ColourPopupModal from '../ColourPopupModal/ColourPopupModal';
 import { Container, Row, Col } from 'react-bootstrap';
 import FilterButton from '../FilterButton/FilterButton';
@@ -7,24 +8,6 @@ import { MaterialReactTable } from 'material-react-table';
 import { type MRT_ColumnDef } from 'material-react-table';
 import Select from 'react-select';
 import styles from './Value.module.css';
-
-interface BeerDataItem {
-  id: number;
-  beer_name_formatted: string
-  quantity: number;
-  case_type: string;
-  size_ml: number;
-  main_price: number;
-  original_price: number;
-  deposit_price: number;
-  abv: number;
-  country: string;
-  category: string;
-  beer_type: string;
-  url: string;
-  dollars_per_drink: number;
-  dollars_per_drink_after_deposit: number;
-}
 
 interface filters {
   regularCan: boolean;
@@ -38,18 +21,6 @@ interface filters {
   onSale: boolean;
   subtractDeposit: boolean;
   name: string;
-}
-
-function toggleItemInList(list: number[], item: number): number[] {
-  const index = list.indexOf(item);
-
-  if (index !== -1) {
-    list.splice(index, 1);
-  } else {
-    list.push(item);
-  }
-
-  return list;
 }
 
 const Value: React.FC = () => {

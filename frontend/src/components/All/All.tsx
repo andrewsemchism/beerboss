@@ -127,12 +127,32 @@ const All: React.FC = () => {
         maxSize: 50,
       },
       {
-        header: 'Price',
+        header: "Original Price",
+        accessorKey: "original_price",
         accessorFn: (row) => {
-          if (row.original_price === -1) {
-            return <span>${row.main_price.toFixed(2)}</span>
+          return row.original_price.toFixed(2);
+        },
+        maxSize: 50,
+      },
+      {
+        header: "Price",
+        accessorKey: "main_price",
+        accessorFn: (row) => {
+          return row.main_price.toFixed(2);
+        },
+        Cell: ({ cell }) => {
+          console.log(cell.row.getValue("original_price"));
+          if (cell.row.getValue("original_price") === "-1.00") {
+            return <span>${cell.getValue<number>()}</span>;
           } else {
-            return <span><div className={styles.originalPrice}>${row.original_price.toFixed(2)}</div>${row.main_price.toFixed(2)}</span>
+            return (
+              <span>
+                <div className={styles.originalPrice}>
+                  ${cell.row.getValue("original_price")}
+                </div>
+                ${cell.getValue<number>()}
+              </span>
+            );
           }
         },
         maxSize: 50,
@@ -333,6 +353,7 @@ const All: React.FC = () => {
                   dollars_per_drink_after_deposit: filters.subtractDeposit,
                   main_price: !filters.subtractDeposit,
                   dollars_per_drink: !filters.subtractDeposit,
+                  original_price: false,
                 },
                 sorting: [
                   {

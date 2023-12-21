@@ -1,16 +1,11 @@
-.howTo {
-  margin-bottom: 30px;
-}
-
-.howTo > h2 {
+.stats > h2 {
   margin-top: 10px;
   font-size: 48px;
   font-family: "Bebas Neue";
   text-align: center;
 }
 
-.howTo > p {
+.stats > p {
   font-size: 20px;
   font-family: "Roboto";
-  text-align: center;
 }

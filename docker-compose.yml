@@ -27,6 +27,7 @@ services:
     restart: always
     environment:
       - DB_HOST=${DB_HOST:-backend-db}
+      - DB_PORT=${DB_PORT:-3306}
       - DB_USER=${DB_USER:-user}
       - DB_PASSWORD=${DB_PASSWORD:-password}
       - DB_DATABASE=${DB_DATABASE:-sample_data}
@@ -62,6 +63,7 @@ services:
       - "3001:3001"
     environment:
       - DB_HOST=${DB_HOST:-backend-db}
+      - DB_PORT=${DB_PORT:-3306}
       - DB_USER=${DB_USER:-user}
       - DB_PASSWORD=${DB_PASSWORD:-password}
       - DB_DATABASE=${DB_DATABASE:-sample_data}

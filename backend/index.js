@@ -2,33 +2,26 @@ const express = require("express");
 const http = require("http");
 const https = require("https");
 const fs = require("fs");
-const mysql = require("mysql2");
 const cors = require("cors");
+const Database = require("better-sqlite3");
 
-const db = mysql.createPool({
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT || 3306,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_DATABASE,
-});
+// Open SQLite DB file (mounted into container)
+const db = new Database("beer_data.sqlite");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Example route
 app.get("/allbeer", (req, res) => {
-  const SelectQuery = "SELECT * FROM beer_data";
-  db.query(SelectQuery, (err, result) => {
-    if (err) {
-      console.error("Error executing database query:", err);
-      return res
-        .status(500)
-        .json({ error: "An error occurred while fetching data" });
-    }
-    res.json(result);
-  });
+  try {
+    const rows = db.prepare("SELECT * FROM beer_data").all();
+    res.json(rows);
+  } catch (err) {
+    console.error("Error executing SQLite query:", err);
+    res.status(500).json({ error: "An error occurred while fetching data" });
+  }
 });
 
 let server;
@@ -46,5 +39,5 @@ if (process.env.NODE_ENV === "production") {
 }
 
 server.listen(3001, () => {
-  console.log("Backend server is running!");
+  console.log("Backend server is running with SQLite!");
 });

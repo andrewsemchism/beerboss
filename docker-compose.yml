@@ -25,6 +25,8 @@ services:
     ports:
       - "3001:3001"
     restart: always
+    volumes:
+      - ./backend/beer_data.sqlite:/app/beer_data.sqlite
     environment:
       - DB_HOST=${DB_HOST:-backend-db}
       - DB_PORT=${DB_PORT:-3306}
@@ -61,28 +63,13 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - "3001:3001"
+    volumes:
+      - ./backend/beer_data.sqlite:/app/beer_data.sqlite
     environment:
       - DB_HOST=${DB_HOST:-backend-db}
       - DB_PORT=${DB_PORT:-3306}
       - DB_USER=${DB_USER:-user}
       - DB_PASSWORD=${DB_PASSWORD:-password}
       - DB_DATABASE=${DB_DATABASE:-sample_data}
-    depends_on:
-      - backend-db
-    profiles:
-      - dev
-
-  backend-db:
-    image: mysql:8.0
-    ports:
-      # Use port 9906 to avoid conflicts with a locally installed MySQL.
-      - "9906:3306"
-    environment:
-      - MYSQL_DATABASE=${MYSQL_DATABASE:-sample_data}
-      - MYSQL_USER=${MYSQL_USER:-user}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-password}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-password}
-    volumes:
-      - ./sample_data.sql:/docker-entrypoint-initdb.d/sample_data.sql
     profiles:
       - dev

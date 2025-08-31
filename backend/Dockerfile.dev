@@ -1,6 +1,9 @@
 FROM node:18
 WORKDIR /app
+# Install build tools so better-sqlite3 can compile from source
+RUN apt-get update && apt-get install -y python3 make g++ \
+    && rm -rf /var/lib/apt/lists/*
 COPY package*.json ./
-RUN npm install
+RUN npm install --build-from-source better-sqlite3
 COPY . .
 CMD ["npm", "start"]

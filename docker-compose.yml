@@ -10,8 +10,7 @@ services:
       args:
         - REACT_APP_BACKEND_URL=${REACT_APP_BACKEND_URL:-http://localhost:3001}
     ports:
-      - "80:80"
-      - "443:443"
+      - "127.0.0.1:8080:80"
     restart: always
     depends_on:
       - backend

@@ -1,7 +1,5 @@
 const express = require("express");
 const http = require("http");
-const https = require("https");
-const fs = require("fs");
 const cors = require("cors");
 const Database = require("better-sqlite3");
 
@@ -24,20 +22,9 @@ app.get("/allbeer", (req, res) => {
   }
 });
 
-let server;
-
-if (process.env.NODE_ENV === "production") {
-  // Production: HTTPS
-  const privateKey = fs.readFileSync("server.key", "utf8");
-  const certificate = fs.readFileSync("beerboss_ca_chain.crt", "utf8");
-  const credentials = { key: privateKey, cert: certificate };
-
-  server = https.createServer(credentials, app);
-} else {
-  // Development: HTTP
-  server = http.createServer(app);
-}
+// Always use plain HTTP — Nginx handles HTTPS outside the container
+const server = http.createServer(app);
 
 server.listen(3001, () => {
-  console.log("Backend server is running with SQLite!");
+  console.log("Backend server is running with SQLite on port 3001 (HTTP)!");
 });

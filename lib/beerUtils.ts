@@ -12,7 +12,7 @@ export function getContainerSubType(beer: Beer): ContainerSubType {
   return size_ml < 30000 ? "keg-small" : "keg-large";
 }
 
-export const NAMED_PACK_SIZES = [6, 12, 15, 18, 20, 24, 28, 30, 48];
+export const NAMED_PACK_SIZES = [1, 6, 12, 15, 18, 20, 24, 28, 30, 48];
 
 export function isOtherPackSize(quantity: number): boolean {
   return !NAMED_PACK_SIZES.includes(quantity);
@@ -43,6 +43,7 @@ export interface BeerStats {
 
 export function computeBeerStats(beers: Beer[]): BeerStats {
   const dpd = beers
+    .filter((b) => b.abv >= 1)
     .map((b) => b.dollars_per_serving_of_alcohol)
     .filter((v): v is number => v != null && v > 0);
 
@@ -58,15 +59,3 @@ export function computeBeerStats(beers: Beer[]): BeerStats {
   };
 }
 
-export type ValueColor = "green" | "yellow" | "red";
-
-export function getValueColor(
-  dpd: number | null,
-  best: number
-): ValueColor {
-  if (dpd == null) return "red";
-  const ratio = dpd / best;
-  if (ratio <= 1.1) return "green";
-  if (ratio <= 1.2) return "yellow";
-  return "red";
-}

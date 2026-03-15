@@ -23,7 +23,7 @@ const columns = [
         href={info.row.original.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-amber-700 hover:underline font-medium"
+        className="text-amber-700 hover:underline font-medium block max-w-[220px] whitespace-normal sm:whitespace-nowrap sm:max-w-none"
       >
         {info.getValue()}
       </a>
@@ -62,7 +62,11 @@ const columns = [
   columnHelper.accessor("dollars_per_serving_of_alcohol", {
     header: "$/Drink",
     cell: (info) => formatDollarsPerDrink(info.getValue()),
-    sortUndefined: "last",
+    sortingFn: (a, b) => {
+      const av = a.original.dollars_per_serving_of_alcohol ?? Infinity;
+      const bv = b.original.dollars_per_serving_of_alcohol ?? Infinity;
+      return av - bv;
+    },
   }),
   columnHelper.accessor("abv", {
     header: "ABV",
@@ -133,7 +137,7 @@ export default function BeerTable({ data }: Props) {
             {table.getRowModel().rows.map((row) => (
               <tr key={row.id} className="hover:bg-zinc-50">
                 {row.getVisibleCells().map((cell) => (
-                  <td key={cell.id} className="px-3 py-2 text-zinc-800 whitespace-nowrap">
+                  <td key={cell.id} className="px-3 py-2 text-zinc-800">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}

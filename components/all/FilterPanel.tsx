@@ -9,6 +9,7 @@ interface Props {
   filters: FilterState;
   onChange: (filters: FilterState) => void;
   allBeerNames: string[];
+  allCountries: string[];
   resultCount: number;
 }
 
@@ -21,7 +22,7 @@ const CONTAINER_OPTIONS: { key: ContainerSubType; label: string }[] = [
   { key: "keg-large", label: "Large Keg" },
 ];
 
-export default function FilterPanel({ filters, onChange, allBeerNames, resultCount }: Props) {
+export default function FilterPanel({ filters, onChange, allBeerNames, allCountries, resultCount }: Props) {
   function toggleContainer(key: ContainerSubType) {
     const has = filters.containerSubTypes.includes(key);
     onChange({
@@ -47,8 +48,10 @@ export default function FilterPanel({ filters, onChange, allBeerNames, resultCou
       containerSubTypes: [],
       packSizes: [],
       onSaleOnly: false,
+      nonAlcoholicOnly: false,
       abvRange: [0, 15],
       selectedNames: [],
+      selectedCountries: [],
     });
   }
 
@@ -56,9 +59,11 @@ export default function FilterPanel({ filters, onChange, allBeerNames, resultCou
     filters.containerSubTypes.length > 0 ||
     filters.packSizes.length > 0 ||
     filters.onSaleOnly ||
+    filters.nonAlcoholicOnly ||
     filters.abvRange[0] !== 0 ||
     filters.abvRange[1] !== 15 ||
-    filters.selectedNames.length > 0;
+    filters.selectedNames.length > 0 ||
+    filters.selectedCountries.length > 0;
 
   return (
     <div className="bg-white rounded-lg border border-zinc-200 p-4 space-y-5">
@@ -127,7 +132,7 @@ export default function FilterPanel({ filters, onChange, allBeerNames, resultCou
                     : "border-zinc-300 text-zinc-600 hover:border-amber-400 hover:text-amber-700"
                 }`}
               >
-                {size === -1 ? "Other" : `×${size}`}
+                {size === -1 ? "Other" : size}
               </button>
             );
           })}
@@ -157,6 +162,23 @@ export default function FilterPanel({ filters, onChange, allBeerNames, resultCou
         <span className="text-sm text-zinc-700">On sale only</span>
       </label>
 
+      {/* Non-alcoholic only */}
+      <label className="flex items-center gap-2 cursor-pointer select-none">
+        <div
+          className={`relative w-9 h-5 rounded-full transition-colors ${
+            filters.nonAlcoholicOnly ? "bg-amber-500" : "bg-zinc-300"
+          }`}
+          onClick={() => onChange({ ...filters, nonAlcoholicOnly: !filters.nonAlcoholicOnly })}
+        >
+          <div
+            className={`absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform ${
+              filters.nonAlcoholicOnly ? "translate-x-4" : "translate-x-0"
+            }`}
+          />
+        </div>
+        <span className="text-sm text-zinc-700">Non-alcoholic only (&lt;1% ABV)</span>
+      </label>
+
       {/* Beer name search */}
       <div>
         <p className="text-xs font-medium text-zinc-500 mb-2 uppercase tracking-wide">
@@ -169,6 +191,38 @@ export default function FilterPanel({ filters, onChange, allBeerNames, resultCou
           placeholder="Search beer names..."
           multi={true}
         />
+      </div>
+
+      {/* Country */}
+      <div>
+        <p className="text-xs font-medium text-zinc-500 mb-2 uppercase tracking-wide">
+          Country
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {allCountries.map((country) => {
+            const active = filters.selectedCountries.includes(country);
+            return (
+              <button
+                key={country}
+                onClick={() =>
+                  onChange({
+                    ...filters,
+                    selectedCountries: active
+                      ? filters.selectedCountries.filter((c) => c !== country)
+                      : [...filters.selectedCountries, country],
+                  })
+                }
+                className={`px-3 py-1 rounded-full text-xs font-medium border transition-colors ${
+                  active
+                    ? "bg-amber-500 border-amber-500 text-white"
+                    : "border-zinc-300 text-zinc-600 hover:border-amber-400 hover:text-amber-700"
+                }`}
+              >
+                {country}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

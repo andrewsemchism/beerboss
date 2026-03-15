@@ -49,9 +49,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Footer wave */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/footer.svg" alt="" className="w-full block" style={{ marginBottom: "-1px" }} />
     </>
   );
 }

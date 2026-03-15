@@ -5,7 +5,6 @@ export default function AboutPage() {
         <h1 className="text-2xl font-bold text-zinc-900">About BeerBoss</h1>
         <p className="mt-2 text-zinc-600">
           BeerBoss is a free tool for comparing beer prices at The Beer Store in Ontario.
-          It is not affiliated with or endorsed by The Beer Store.
         </p>
       </div>
 
@@ -24,28 +23,8 @@ export default function AboutPage() {
           </p>
         </FaqItem>
 
-        <FaqItem question="Where does the data come from?">
-          <p>
-            Prices are scraped daily from{" "}
-            <a
-              href="https://www.thebeerstore.ca"
-              className="text-amber-700 underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              thebeerstore.ca
-            </a>{" "}
-            via their public Algolia search API, filtered to Ontario (store ID 3543).
-          </p>
-        </FaqItem>
-
         <FaqItem question="How often is the data updated?">
-          <p>
-            A GitHub Action runs the scraper every morning and commits updated data
-            to the repository. Cloudflare Pages automatically deploys the update.
-            You can see when the data was last updated on the{" "}
-            <a href="/" className="text-amber-700 underline">home page</a>.
-          </p>
+          <p>Daily.</p>
         </FaqItem>
 
         <FaqItem question="Why are some beers missing a $/Drink value?">
@@ -55,31 +34,16 @@ export default function AboutPage() {
           </p>
         </FaqItem>
 
-        <FaqItem question="What do the colours mean on the Best Value page?">
-          <div className="space-y-1.5 mt-1">
-            <p className="flex items-center gap-2">
-              <span className="inline-block w-3 h-3 rounded-full bg-green-400" />
-              <strong className="text-green-800">Green</strong> — within 10% of the best $/drink option
-            </p>
-            <p className="flex items-center gap-2">
-              <span className="inline-block w-3 h-3 rounded-full bg-yellow-400" />
-              <strong className="text-yellow-800">Yellow</strong> — 10–20% above the best option
-            </p>
-            <p className="flex items-center gap-2">
-              <span className="inline-block w-3 h-3 rounded-full bg-red-400" />
-              <strong className="text-red-800">Red</strong> — more than 20% above the best option
-            </p>
-          </div>
-        </FaqItem>
 
         <FaqItem question="Does this include bottle deposit?">
           <p>
-            No. Prices shown are the shelf prices from The Beer Store&apos;s website and do not
-            include bottle deposit fees. Deposit amounts vary by container type and size.
+            No — prices shown are the shelf prices from The Beer Store&apos;s website and do not
+            include taxes or bottle deposit fees. As long as you&apos;re returning your bottles and
+            cans, and kegs, the deposit doesn&apos;t change the relative value between options.
           </p>
         </FaqItem>
 
-        <FaqItem question="Something is wrong / I have feedback">
+        <FaqItem question="Something is wrong / I have feedback / I have a suggestion">
           <p>
             Please open an issue on{" "}
             <a
@@ -94,6 +58,18 @@ export default function AboutPage() {
           </p>
         </FaqItem>
       </div>
+
+      <p className="text-sm text-zinc-500">
+        Made by{" "}
+        <a
+          href="https://semchism.me"
+          className="underline hover:text-zinc-800"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Andrew Semchism
+        </a>
+      </p>
     </div>
   );
 }

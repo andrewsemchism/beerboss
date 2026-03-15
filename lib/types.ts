@@ -32,8 +32,10 @@ export interface FilterState {
   containerSubTypes: ContainerSubType[];
   packSizes: number[]; // empty = show all; -1 = "Other"
   onSaleOnly: boolean;
+  nonAlcoholicOnly: boolean;
   abvRange: [number, number];
   selectedNames: string[]; // empty = show all
+  selectedCountries: string[]; // empty = show all
 }
 
 export type SortField =

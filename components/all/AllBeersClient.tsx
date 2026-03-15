@@ -11,8 +11,10 @@ const DEFAULT_FILTERS: FilterState = {
   containerSubTypes: [],
   packSizes: [],
   onSaleOnly: false,
+  nonAlcoholicOnly: false,
   abvRange: [0, 15],
   selectedNames: [],
+  selectedCountries: [],
 };
 
 export default function AllBeersClient() {
@@ -23,6 +25,11 @@ export default function AllBeersClient() {
   const allBeerNames = useMemo(() => {
     if (!data) return [];
     return [...new Set(data.beers.map((b) => b.beer_name))].sort();
+  }, [data]);
+
+  const allCountries = useMemo(() => {
+    if (!data) return [];
+    return [...new Set(data.beers.map((b) => b.country))].sort();
   }, [data]);
 
   const filtered = useMemo(() => {
@@ -41,10 +48,16 @@ export default function AllBeersClient() {
       }
       // On sale
       if (filters.onSaleOnly && beer.original_price == null) return false;
+      // Non-alcoholic only
+      if (filters.nonAlcoholicOnly && beer.abv >= 1) return false;
       // ABV range
       if (beer.abv < filters.abvRange[0] || beer.abv > filters.abvRange[1]) return false;
       // Beer names
       if (filters.selectedNames.length > 0 && !filters.selectedNames.includes(beer.beer_name)) {
+        return false;
+      }
+      // Country
+      if (filters.selectedCountries.length > 0 && !filters.selectedCountries.includes(beer.country)) {
         return false;
       }
       return true;
@@ -72,11 +85,15 @@ export default function AllBeersClient() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 space-y-4">
-      {/* Mobile filter toggle */}
-      <div className="flex items-center justify-between">
+      {/* Header */}
+      <div>
         <h1 className="text-2xl font-bold text-zinc-900">All Beers</h1>
+        <p className="mt-1 text-sm text-zinc-500">
+          Every Beer Store product in every available package size — over {data?.beers ? new Set(data.beers.map(b => b.beer_name)).size.toLocaleString() : "700"} beers and {data?.count ? data.count.toLocaleString() : "2,500"}+ purchasing options.
+          Use the filters to narrow things down. <strong>Sorted by lowest cost per serving of alcohol ($/Drink) by default.</strong>
+        </p>
         <button
-          className="sm:hidden px-3 py-1.5 rounded-md border border-zinc-300 text-sm text-zinc-700 hover:bg-zinc-100"
+          className="sm:hidden mt-2 px-3 py-1.5 rounded-md border border-zinc-300 text-sm text-zinc-700 hover:bg-zinc-100"
           onClick={() => setShowFilters((v) => !v)}
         >
           {showFilters ? "Hide filters" : "Show filters"}
@@ -90,6 +107,7 @@ export default function AllBeersClient() {
             filters={filters}
             onChange={setFilters}
             allBeerNames={allBeerNames}
+            allCountries={allCountries}
             resultCount={filtered.length}
           />
         </div>

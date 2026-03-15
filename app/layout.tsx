@@ -23,6 +23,12 @@ export const metadata: Metadata = {
   title: "BeerBoss — Ontario Beer Price Comparison",
   description:
     "Compare beer prices at The Beer Store in Ontario. Find the best value beer by cost per drink.",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -39,7 +45,7 @@ export default function RootLayout({
         <main className="flex-1">
           {children}
         </main>
-        <footer style={{ backgroundColor: "#3a4047" }} className="py-6 text-center text-sm text-zinc-400">
+        <footer style={{ backgroundColor: "#3a4047", marginTop: "-3px" }} className="py-6 text-center text-sm text-zinc-400">
           Data from{" "}
           <a
             href="https://www.thebeerstore.ca"

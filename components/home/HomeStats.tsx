@@ -28,6 +28,7 @@ export default function HomeStats({ stats, scrapedAt }: Props) {
               ? formatDollarsPerDrink(Math.round(stats.averageDollarsPerDrink * 100) / 100)
               : "N/A"
           }
+          tooltip="Excludes non-alcoholic beers (<1% ABV)"
         />
         <StatCard label="On Sale Now" value={stats.onSaleCount.toLocaleString()} />
       </div>
@@ -38,11 +39,23 @@ export default function HomeStats({ stats, scrapedAt }: Props) {
   );
 }
 
-function StatCard({ label, value }: { label: string; value: string }) {
+function StatCard({ label, value, tooltip }: { label: string; value: string; tooltip?: string }) {
   return (
     <div className="rounded-lg border border-zinc-200 bg-white p-4 text-center shadow-sm">
       <p className="text-2xl font-bold text-zinc-900">{value}</p>
-      <p className="mt-1 text-xs text-zinc-500">{label}</p>
+      <p className="mt-1 text-xs text-zinc-500 flex items-center justify-center gap-1">
+        {label}
+        {tooltip && (
+          <span className="group relative inline-flex">
+            <span className="w-3.5 h-3.5 rounded-full bg-zinc-300 text-zinc-600 text-[9px] font-bold flex items-center justify-center cursor-default leading-none">
+              i
+            </span>
+            <span className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 w-44 rounded bg-zinc-800 px-2 py-1 text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity z-10">
+              {tooltip}
+            </span>
+          </span>
+        )}
+      </p>
     </div>
   );
 }

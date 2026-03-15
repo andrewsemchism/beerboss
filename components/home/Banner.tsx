@@ -8,9 +8,10 @@ export default function Banner() {
 
   useEffect(() => {
     let anim: { destroy: () => void } | null = null;
+    let destroyed = false;
 
     import("lottie-web").then((lottie) => {
-      if (!animationContainer.current) return;
+      if (destroyed || !animationContainer.current) return;
       anim = lottie.default.loadAnimation({
         container: animationContainer.current,
         renderer: "svg",
@@ -18,9 +19,13 @@ export default function Banner() {
         loop: false,
         path: "/lottie/beerBanner.json",
       });
+      if (destroyed) anim.destroy();
     });
 
-    return () => anim?.destroy();
+    return () => {
+      destroyed = true;
+      anim?.destroy();
+    };
   }, []);
 
   return (

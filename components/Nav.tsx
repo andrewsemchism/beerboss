@@ -15,30 +15,24 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav style={{ backgroundColor: "#343a40" }} className="text-white relative z-10">
-      <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <Link
-            href="/"
-            style={{
-              fontFamily: "var(--font-bebas-neue)",
-              color: "#e99a2c",
-              fontSize: "36px",
-              lineHeight: 1,
-            }}
-            className="hover:opacity-80 transition-opacity"
-          >
-            BEER BOSS
-          </Link>
+    <nav style={{ backgroundColor: "#212529" }} className="text-white relative z-10">
+      <div className="px-3 sm:px-6">
+        <div className="flex h-20 items-center justify-between">
 
-          {/* Desktop nav */}
-          <div className="hidden sm:flex items-center gap-1">
+          {/* Logo + desktop links side by side */}
+          <div className="hidden sm:flex items-center gap-4">
+            <Link
+              href="/"
+              style={{ fontFamily: "var(--font-bebas-neue)", color: "#e99a2c", fontSize: "44px", lineHeight: 1 }}
+              className="hover:opacity-80 transition-opacity"
+            >
+              BEER BOSS
+            </Link>
             {links.map(({ href, label }) => (
               <Link
                 key={href}
                 href={href}
-                style={{ fontFamily: "var(--font-bebas-neue)", fontSize: "22px" }}
+                style={{ fontFamily: "var(--font-bebas-neue)", fontSize: "26px" }}
                 className={`px-3 py-1 rounded transition-colors ${
                   pathname?.startsWith(href)
                     ? "text-white bg-white/10"
@@ -50,7 +44,14 @@ export default function Nav() {
             ))}
           </div>
 
-          {/* Mobile hamburger */}
+          {/* Mobile: logo + hamburger */}
+          <Link
+            href="/"
+            style={{ fontFamily: "var(--font-bebas-neue)", color: "#e99a2c", fontSize: "44px", lineHeight: 1 }}
+            className="sm:hidden hover:opacity-80 transition-opacity"
+          >
+            BEER BOSS
+          </Link>
           <button
             className="sm:hidden rounded-md p-2 text-zinc-300 hover:bg-white/10 hover:text-white transition-colors"
             onClick={() => setMenuOpen((o) => !o)}

@@ -3,16 +3,16 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn how BeerBoss calculates cost per drink and how beer prices are sourced from The Beer Store in Ontario.",
+    "Learn how Beer Boss calculates cost per drink and how beer prices are sourced from The Beer Store in Ontario.",
 };
 
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:px-8 space-y-8">
       <div>
-        <h1 className="text-2xl font-bold text-zinc-900">About BeerBoss</h1>
+        <h1 className="text-2xl font-bold text-zinc-900">About Beer Boss</h1>
         <p className="mt-2 text-zinc-600">
-          BeerBoss is a free tool for comparing beer prices at The Beer Store in Ontario.
+          Beer Boss is a free tool for comparing beer prices at The Beer Store in Ontario.
         </p>
       </div>
 

@@ -24,14 +24,14 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | BeerBoss",
-    default: "BeerBoss — Ontario Beer Price Comparison",
+    template: "%s | Beer Boss",
+    default: "Beer Boss — Ontario Beer Price Comparison",
   },
   description:
     "Compare beer prices at The Beer Store in Ontario. Find the best value beer by cost per drink.",
   metadataBase: new URL("https://beerboss.ca"),
   openGraph: {
-    siteName: "BeerBoss",
+    siteName: "Beer Boss",
     type: "website",
     locale: "en_CA",
   },

@@ -1,6 +1,9 @@
 import httpx
 import json
+import sys
 from datetime import datetime, timezone
+
+MIN_BEERS = 1200
 
 
 ALGOLIA_HEADERS = {
@@ -111,6 +114,10 @@ def main():
     print("Scraping beers...")
     beers = scrape_all_beers()
     print(f"Found {len(beers)} listings.")
+
+    if len(beers) < MIN_BEERS:
+        print(f"ERROR: Only scraped {len(beers)} listings, expected at least {MIN_BEERS}. Aborting to protect existing data.")
+        sys.exit(1)
 
     output = {
         "scraped_at": datetime.now(timezone.utc).isoformat(),

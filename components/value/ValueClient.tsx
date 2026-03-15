@@ -97,7 +97,7 @@ export default function ValueClient() {
       <div>
         <h1 className="text-2xl font-bold text-zinc-900">Best Value Analyzer</h1>
         <p className="mt-1 text-sm text-zinc-500">
-          Select a beer to compare all pack sizes by cost per serving of alcohol.
+          Select a beer to find the cheapest way to buy it across all available package sizes.
         </p>
       </div>
 
@@ -140,6 +140,7 @@ export default function ValueClient() {
                 <th className="px-3 py-2.5 text-left text-xs font-semibold text-zinc-600">Price</th>
                 <th className="px-3 py-2.5 text-left text-xs font-semibold text-zinc-600">$/Drink</th>
                 <th className="px-3 py-2.5 text-left text-xs font-semibold text-zinc-600">ABV</th>
+                <th className="px-3 py-2.5"></th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/40">
@@ -178,6 +179,16 @@ export default function ValueClient() {
                       )}
                     </td>
                     <td className="px-3 py-2.5">{beer.abv}%</td>
+                    <td className="px-3 py-2.5">
+                      <a
+                        href={beer.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs underline opacity-60 hover:opacity-100 whitespace-nowrap"
+                      >
+                        View
+                      </a>
+                    </td>
                   </tr>
                 );
               })}

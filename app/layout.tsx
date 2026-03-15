@@ -36,14 +36,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} antialiased bg-zinc-50 text-zinc-900 min-h-screen flex flex-col`}
       >
         <Nav />
-        <main className="flex-1 mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <main className="flex-1">
           {children}
         </main>
-        <footer className="border-t border-zinc-200 bg-white py-6 text-center text-sm text-zinc-500">
+        <footer style={{ backgroundColor: "#3a4047" }} className="py-6 text-center text-sm text-zinc-400">
           Data from{" "}
           <a
             href="https://www.thebeerstore.ca"
-            className="underline hover:text-zinc-800"
+            className="underline hover:text-white"
             target="_blank"
             rel="noopener noreferrer"
           >

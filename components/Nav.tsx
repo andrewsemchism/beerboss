@@ -15,7 +15,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav style={{ backgroundColor: "#343a40" }} className="text-white">
+    <nav style={{ backgroundColor: "#343a40" }} className="text-white relative z-10">
       <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}

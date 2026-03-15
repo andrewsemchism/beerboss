@@ -71,7 +71,7 @@ export default function AllBeersClient() {
   }
 
   return (
-    <div className="space-y-4">
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 space-y-4">
       {/* Mobile filter toggle */}
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-zinc-900">All Beers</h1>

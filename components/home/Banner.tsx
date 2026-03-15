@@ -49,7 +49,7 @@ export default function Banner() {
           </div>
           <div
             ref={animationContainer}
-            className="w-48 sm:w-64 lg:w-80 flex-shrink-0 self-center"
+            className="w-48 sm:w-64 lg:w-80 aspect-[1392/1920] flex-shrink-0 self-center"
           />
         </div>
       </div>

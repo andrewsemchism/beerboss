@@ -11,8 +11,7 @@ easily determine the cheapest package size to buy.
 ## How does it work
 
 A Python script scrapes every product on The Beer Store website and outputs it to a JSON file. A GitHub
-Action runs the scraper daily and commits the updated data to the repository. Cloudflare Pages automatically
-deploys the site on each push.
+Action runs the scraper daily and commits the updated data to the repository.
 
 ## Running locally
 

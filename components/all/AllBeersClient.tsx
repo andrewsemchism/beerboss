@@ -66,11 +66,8 @@ export default function AllBeersClient() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center py-24 text-zinc-400">
-        <div className="text-center space-y-2">
-          <div className="text-3xl animate-bounce">🍺</div>
-          <p className="text-sm">Loading beer data...</p>
-        </div>
+      <div className="flex items-center justify-center py-24">
+        <div className="w-8 h-8 rounded-full border-2 border-zinc-200 border-t-zinc-500 animate-spin" />
       </div>
     );
   }

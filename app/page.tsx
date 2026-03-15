@@ -16,16 +16,8 @@ export default function HomePage() {
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 space-y-10">
         {/* Stats */}
         {loading && (
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-            {[...Array(4)].map((_, i) => (
-              <div
-                key={i}
-                className="rounded-lg border border-zinc-200 bg-white p-4 text-center shadow-sm animate-pulse"
-              >
-                <div className="h-8 bg-zinc-200 rounded mx-auto w-20 mb-2" />
-                <div className="h-3 bg-zinc-100 rounded mx-auto w-16" />
-              </div>
-            ))}
+          <div className="flex items-center justify-center py-8">
+            <div className="w-8 h-8 rounded-full border-2 border-zinc-200 border-t-zinc-500 animate-spin" />
           </div>
         )}
         {error && (

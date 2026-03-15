@@ -36,6 +36,7 @@ export function formatSize(beer: Beer): string {
 
 export interface BeerStats {
   totalCount: number;
+  uniqueBeerCount: number;
   cheapestDollarsPerDrink: number | null;
   averageDollarsPerDrink: number | null;
   onSaleCount: number;
@@ -53,6 +54,7 @@ export function computeBeerStats(beers: Beer[]): BeerStats {
 
   return {
     totalCount: beers.length,
+    uniqueBeerCount: new Set(beers.map((b) => b.beer_name)).size,
     cheapestDollarsPerDrink: cheapest,
     averageDollarsPerDrink: average,
     onSaleCount: beers.filter((b) => b.original_price != null).length,

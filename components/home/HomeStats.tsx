@@ -16,7 +16,7 @@ export default function HomeStats({ stats, scrapedAt }: Props) {
   return (
     <div>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-        <StatCard label="Total Listings" value={stats.totalCount.toLocaleString()} />
+        <StatCard label="Beers" value={stats.uniqueBeerCount.toLocaleString()} />
         <StatCard
           label="Cheapest $/Drink"
           value={formatDollarsPerDrink(stats.cheapestDollarsPerDrink)}

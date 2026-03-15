@@ -35,14 +35,14 @@ export default function Banner() {
           <div className="flex-1 flex flex-col items-center justify-center pt-16 gap-3">
             <h1
               style={{ fontFamily: "var(--font-bebas-neue)" }}
-              className="text-white text-4xl sm:text-5xl lg:text-7xl leading-[1.1] text-center"
+              className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-[5.25rem] leading-[1.1] text-center"
             >
               SAVE MONEY ON BEER<br />FROM THE BEER STORE
             </h1>
             <Link
               href="/all"
               style={{ fontFamily: "var(--font-bebas-neue)" }}
-              className="px-2 py-1 bg-white text-zinc-800 rounded border-1 border-zinc-400 hover:bg-zinc-100 active:translate-y-0.5 transition-all text-xl lg:text-3xl"
+              className="px-3 py-2 bg-white text-zinc-800 rounded border-1 border-zinc-400 hover:bg-zinc-100 active:translate-y-0.5 transition-all text-xl lg:text-3xl"
             >
               START NOW
             </Link>

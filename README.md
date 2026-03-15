@@ -8,29 +8,23 @@ Beer Boss can help you find the cheapest beers in Ontario without the hassle of 
 of beers on the Beer Store website manually. If you already have a particular beer in mind, Beer Boss can
 easily determine the cheapest package size to buy.
 
-Beer Boss can even factor in the bottle deposits into the calculations to ensure you are getting the best price.
-
 ## How does it work
 
-A python script scrapes every product on The Beer Store website and uploads it
-to a MySQL database. The website reads this data and displays it for the user.
-Currently, the python script is not included in the repository.
+A Python script scrapes every product on The Beer Store website and outputs it to a JSON file. A GitHub
+Action runs the scraper daily and commits the updated data to the repository. Cloudflare Pages automatically
+deploys the site on each push.
 
 ## Running locally
 
-To run the site locally for development, install [Docker](https://docs.docker.com/get-docker/) and run
-`docker compose --profile dev up`
+```bash
+npm run dev
+```
 
-<!-- Update this section for new tech stack
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Built With
 
-- React
-- Typescript
-- Bootstrap
-- [DataTables](https://github.com/DataTables/DataTables)
-- Express
-- MySQL
-- Python (beautifulsoup, requests, MySQL Connector)
-
--->
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Python (httpx)

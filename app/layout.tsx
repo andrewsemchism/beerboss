@@ -20,15 +20,29 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "BeerBoss — Ontario Beer Price Comparison",
+  title: {
+    template: "%s | BeerBoss",
+    default: "BeerBoss — Ontario Beer Price Comparison",
+  },
   description:
     "Compare beer prices at The Beer Store in Ontario. Find the best value beer by cost per drink.",
+  metadataBase: new URL("https://beerboss.ca"),
+  openGraph: {
+    siteName: "BeerBoss",
+    type: "website",
+    locale: "en_CA",
+  },
+  twitter: {
+    card: "summary",
+  },
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon.png", type: "image/png" },
     ],
+    apple: "/favicon.png",
   },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({

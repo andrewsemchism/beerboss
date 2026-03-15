@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn how BeerBoss calculates cost per drink and how beer prices are sourced from The Beer Store in Ontario.",
+};
+
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 lg:px-8 space-y-8">

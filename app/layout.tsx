@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bebas_Neue } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/Nav";
+
+const GA_ID = "G-WFD71XSS84";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,6 +55,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+      <Script id="gtag-init" strategy="afterInteractive">{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${GA_ID}');
+      `}</Script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} antialiased bg-zinc-50 text-zinc-900 min-h-screen flex flex-col`}
       >

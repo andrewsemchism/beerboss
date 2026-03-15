@@ -86,7 +86,7 @@ export default function AllBeersClient() {
       <div>
         <h1 className="text-2xl font-bold text-zinc-900">All Beers</h1>
         <p className="mt-1 text-sm text-zinc-500">
-          Every Beer Store product in every available package size — over {data?.beers ? new Set(data.beers.map(b => b.beer_name)).size.toLocaleString() : "700"} beers and {data?.count ? data.count.toLocaleString() : "2,500"}+ purchasing options.
+          View every beer in every available package size — over {data?.beers ? (Math.floor(new Set(data.beers.map(b => b.beer_name)).size / 100) * 100).toLocaleString() : "700"} beers and {data?.count ? data.count.toLocaleString() : "2,500"}+ purchasing options.
           Use the filters to narrow things down. <strong>Sorted by lowest cost per serving of alcohol ($/Drink) by default.</strong>
         </p>
         <button

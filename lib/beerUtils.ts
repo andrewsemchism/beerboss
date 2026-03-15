@@ -9,7 +9,7 @@ export function getContainerSubType(beer: Beer): ContainerSubType {
     return size_ml < 400 ? "bottle-regular" : "bottle-large";
   }
   // Keg: size_ml is in milliliters (30L = 30000ml)
-  return size_ml < 30000 ? "keg-small" : "keg-large";
+  return size_ml <= 30000 ? "keg-small" : "keg-large";
 }
 
 export const NAMED_PACK_SIZES = [1, 6, 12, 15, 18, 20, 24, 28, 30, 48];
@@ -29,7 +29,8 @@ export function formatPrice(price: number): string {
 
 export function formatSize(beer: Beer): string {
   if (beer.case_type === "Keg") {
-    return `${(beer.size_ml / 1000).toFixed(0)}L`;
+    const litres = beer.size_ml / 1000;
+    return `${parseFloat(litres.toFixed(2))}L`;
   }
   return `${beer.size_ml}ml`;
 }

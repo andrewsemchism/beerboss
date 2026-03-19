@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-03-18T08:36:37.647889+00:00",
+  "scraped_at": "2026-03-19T08:30:32.218302+00:00",
   "count": 2830,
   "beers": [
     {
@@ -109,7 +109,7 @@
     },
     {
       "id": 8,
-      "beer_name": "Muskoka Detour",
+      "beer_name": "Muskoka Brewery Detour",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 355,
@@ -119,7 +119,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-detour_24-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-detour_24-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.3493
     },
     {
@@ -214,7 +214,7 @@
     },
     {
       "id": 15,
-      "beer_name": "Muskoka Detour",
+      "beer_name": "Muskoka Brewery Detour",
       "quantity": 6,
       "case_type": "Can",
       "size_ml": 473,
@@ -224,7 +224,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-detour_6-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-detour_6-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.5658
     },
     {
@@ -349,7 +349,7 @@
     },
     {
       "id": 24,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 48,
       "case_type": "Can",
       "size_ml": 355,
@@ -359,7 +359,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_48-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_48-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.1352
     },
     {
@@ -994,7 +994,7 @@
     },
     {
       "id": 67,
-      "beer_name": "Muskoka Detour",
+      "beer_name": "Muskoka Brewery Detour",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 355,
@@ -1004,7 +1004,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-detour_12-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-detour_12-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.7122
     },
     {
@@ -2194,7 +2194,7 @@
     },
     {
       "id": 147,
-      "beer_name": "Muskoka Craft Lager",
+      "beer_name": "Muskoka Brewery Lager",
       "quantity": 48,
       "case_type": "Can",
       "size_ml": 355,
@@ -2204,12 +2204,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-craft-lager_48-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-lager_48-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 1.9529
     },
     {
       "id": 148,
-      "beer_name": "Muskoka Detour",
+      "beer_name": "Muskoka Brewery Detour",
       "quantity": 48,
       "case_type": "Can",
       "size_ml": 355,
@@ -2219,7 +2219,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-detour_48-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-detour_48-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.3253
     },
     {
@@ -3664,7 +3664,7 @@
     },
     {
       "id": 245,
-      "beer_name": "Muskoka Veer Cream Ale",
+      "beer_name": "Muskoka Brewery Veer Cream Ale",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 355,
@@ -3674,7 +3674,7 @@
       "country": "Canada",
       "category": "Non Alcoholic",
       "beer_type": "Non Beer",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-veer-cream-ale_24-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-veer-cream-ale_24-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 16.6625
     },
     {
@@ -4939,7 +4939,7 @@
     },
     {
       "id": 330,
-      "beer_name": "Muskoka Veer Hazy Ipa Non-Alcholic Beer",
+      "beer_name": "Muskoka Brewery Veer Hazy Ipa",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 355,
@@ -4949,7 +4949,7 @@
       "country": "Canada",
       "category": "Non Alcoholic",
       "beer_type": "Non Beer",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-veer-hazy-ipa-non-alcholic-beer_24-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-veer-hazy-ipa_24-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 83.3125
     },
     {
@@ -5449,7 +5449,7 @@
     },
     {
       "id": 364,
-      "beer_name": "Veer Alcohol Free Lager With Lime",
+      "beer_name": "Muskoka Brewery Veer Lager With Lime",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 355,
@@ -5459,7 +5459,7 @@
       "country": "Canada",
       "category": "Non Alcoholic",
       "beer_type": "Non Beer",
-      "url": "https://www.thebeerstore.ca/beers/veer-alcohol-free-lager-with-lime_24-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-veer-lager-with-lime_24-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 166.625
     },
     {
@@ -7279,7 +7279,7 @@
     },
     {
       "id": 486,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 568,
@@ -7289,12 +7289,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_24-X-Can-568-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_24-X-Can-568-ml",
       "dollars_per_serving_of_alcohol": 2.1156
     },
     {
       "id": 487,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 473,
@@ -7304,12 +7304,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_24-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_24-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.345
     },
     {
       "id": 488,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 355,
@@ -7319,7 +7319,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_24-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_24-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.3953
     },
     {
@@ -8074,7 +8074,7 @@
     },
     {
       "id": 539,
-      "beer_name": "Muskoka Hazed And Confused",
+      "beer_name": "Muskoka Brwery Hazed & Confused",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 473,
@@ -8084,12 +8084,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-hazed-and-confused_24-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brwery-hazed-and-confused_24-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 1.7558
     },
     {
       "id": 540,
-      "beer_name": "Muskoka Hazed And Confused",
+      "beer_name": "Muskoka Brwery Hazed & Confused",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 355,
@@ -8099,7 +8099,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-hazed-and-confused_24-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brwery-hazed-and-confused_24-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 1.7946
     },
     {
@@ -9889,7 +9889,7 @@
     },
     {
       "id": 660,
-      "beer_name": "Muskoka Craft Lager",
+      "beer_name": "Muskoka Brewery Lager",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 473,
@@ -9899,12 +9899,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-craft-lager_24-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-lager_24-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.0356
     },
     {
       "id": 661,
-      "beer_name": "Muskoka Craft Lager",
+      "beer_name": "Muskoka Brewery Lager",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 355,
@@ -9914,12 +9914,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-craft-lager_24-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-lager_24-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.1046
     },
     {
       "id": 662,
-      "beer_name": "Muskoka Detour",
+      "beer_name": "Muskoka Brewery Detour",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 473,
@@ -9929,7 +9929,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-detour_24-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-detour_24-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.4287
     },
     {
@@ -9964,7 +9964,7 @@
     },
     {
       "id": 665,
-      "beer_name": "Muskoka Cream Ale",
+      "beer_name": "Muskoka Brewery Cream Ale",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 473,
@@ -9974,12 +9974,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-cream-ale_24-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-cream-ale_24-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.0887
     },
     {
       "id": 666,
-      "beer_name": "Muskoka Cream Ale",
+      "beer_name": "Muskoka Brewery Cream Ale",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 355,
@@ -9989,7 +9989,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-cream-ale_24-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-cream-ale_24-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.1871
     },
     {
@@ -14629,7 +14629,7 @@
     },
     {
       "id": 976,
-      "beer_name": "Muskoka Veer Cream Ale",
+      "beer_name": "Muskoka Brewery Veer Cream Ale",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 355,
@@ -14639,7 +14639,7 @@
       "country": "Canada",
       "category": "Non Alcoholic",
       "beer_type": "Non Beer",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-veer-cream-ale_12-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-veer-cream-ale_12-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 20.825
     },
     {
@@ -15694,7 +15694,7 @@
     },
     {
       "id": 1047,
-      "beer_name": "Muskoka Veer Hazy Ipa Non-Alcholic Beer",
+      "beer_name": "Muskoka Brewery Veer Hazy Ipa",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 355,
@@ -15704,7 +15704,7 @@
       "country": "Canada",
       "category": "Non Alcoholic",
       "beer_type": "Non Beer",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-veer-hazy-ipa-non-alcholic-beer_12-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-veer-hazy-ipa_12-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 104.125
     },
     {
@@ -16069,7 +16069,7 @@
     },
     {
       "id": 1072,
-      "beer_name": "Veer Alcohol Free Lager With Lime",
+      "beer_name": "Muskoka Brewery Veer Lager With Lime",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 355,
@@ -16079,7 +16079,7 @@
       "country": "Canada",
       "category": "Non Alcoholic",
       "beer_type": "Non Beer",
-      "url": "https://www.thebeerstore.ca/beers/veer-alcohol-free-lager-with-lime_12-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-veer-lager-with-lime_12-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 208.25
     },
     {
@@ -17314,7 +17314,7 @@
     },
     {
       "id": 1155,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 568,
@@ -17324,12 +17324,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_12-X-Can-568-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_12-X-Can-568-ml",
       "dollars_per_serving_of_alcohol": 2.2129
     },
     {
       "id": 1156,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 473,
@@ -17339,12 +17339,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_12-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_12-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.5792
     },
     {
       "id": 1157,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 355,
@@ -17354,7 +17354,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_12-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_12-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.7073
     },
     {
@@ -17794,7 +17794,7 @@
     },
     {
       "id": 1187,
-      "beer_name": "Muskoka Hazed And Confused",
+      "beer_name": "Muskoka Brwery Hazed & Confused",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 473,
@@ -17804,12 +17804,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-hazed-and-confused_12-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brwery-hazed-and-confused_12-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 1.8282
     },
     {
       "id": 1188,
-      "beer_name": "Muskoka Hazed And Confused",
+      "beer_name": "Muskoka Brwery Hazed & Confused",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 355,
@@ -17819,7 +17819,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-hazed-and-confused_12-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brwery-hazed-and-confused_12-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 1.9545
     },
     {
@@ -18664,7 +18664,7 @@
     },
     {
       "id": 1245,
-      "beer_name": "Muskoka Craft Lager",
+      "beer_name": "Muskoka Brewery Lager",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 473,
@@ -18674,12 +18674,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-craft-lager_12-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-lager_12-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.2145
     },
     {
       "id": 1246,
-      "beer_name": "Muskoka Craft Lager",
+      "beer_name": "Muskoka Brewery Lager",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 355,
@@ -18689,12 +18689,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-craft-lager_12-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-lager_12-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.3863
     },
     {
       "id": 1247,
-      "beer_name": "Muskoka Detour",
+      "beer_name": "Muskoka Brewery Detour",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 473,
@@ -18704,7 +18704,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-detour_12-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-detour_12-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.6538
     },
     {
@@ -18739,7 +18739,7 @@
     },
     {
       "id": 1250,
-      "beer_name": "Muskoka Cream Ale",
+      "beer_name": "Muskoka Brewery Cream Ale",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 473,
@@ -18749,12 +18749,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-cream-ale_12-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-cream-ale_12-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.2822
     },
     {
       "id": 1251,
-      "beer_name": "Muskoka Cream Ale",
+      "beer_name": "Muskoka Brewery Cream Ale",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 355,
@@ -18764,7 +18764,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-cream-ale_12-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-cream-ale_12-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.4992
     },
     {
@@ -24934,7 +24934,7 @@
     },
     {
       "id": 1663,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 6,
       "case_type": "Can",
       "size_ml": 568,
@@ -24944,12 +24944,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_6-X-Can-568-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_6-X-Can-568-ml",
       "dollars_per_serving_of_alcohol": 2.3294
     },
     {
       "id": 1664,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 6,
       "case_type": "Can",
       "size_ml": 473,
@@ -24959,7 +24959,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_6-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_6-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.5002
     },
     {
@@ -25474,7 +25474,7 @@
     },
     {
       "id": 1699,
-      "beer_name": "Muskoka Hazed And Confused",
+      "beer_name": "Muskoka Brwery Hazed & Confused",
       "quantity": 6,
       "case_type": "Can",
       "size_ml": 473,
@@ -25484,7 +25484,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-hazed-and-confused_6-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brwery-hazed-and-confused_6-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 1.8657
     },
     {
@@ -26224,7 +26224,7 @@
     },
     {
       "id": 1749,
-      "beer_name": "Muskoka Craft Lager",
+      "beer_name": "Muskoka Brewery Lager",
       "quantity": 6,
       "case_type": "Can",
       "size_ml": 473,
@@ -26234,7 +26234,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-craft-lager_6-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-lager_6-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.2529
     },
     {
@@ -26254,7 +26254,7 @@
     },
     {
       "id": 1751,
-      "beer_name": "Muskoka Cream Ale",
+      "beer_name": "Muskoka Brewery Cream Ale",
       "quantity": 6,
       "case_type": "Can",
       "size_ml": 473,
@@ -26264,7 +26264,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-cream-ale_6-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-cream-ale_6-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.3629
     },
     {
@@ -28384,7 +28384,7 @@
     },
     {
       "id": 1893,
-      "beer_name": "Muskoka Veer Cream Ale",
+      "beer_name": "Muskoka Brewery Veer Cream Ale",
       "quantity": 4,
       "case_type": "Can",
       "size_ml": 355,
@@ -28394,7 +28394,7 @@
       "country": "Canada",
       "category": "Non Alcoholic",
       "beer_type": "Non Beer",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-veer-cream-ale_4-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-veer-cream-ale_4-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 24.975
     },
     {
@@ -28594,7 +28594,7 @@
     },
     {
       "id": 1907,
-      "beer_name": "Muskoka Veer Hazy Ipa Non-Alcholic Beer",
+      "beer_name": "Muskoka Brewery Veer Hazy Ipa",
       "quantity": 4,
       "case_type": "Can",
       "size_ml": 355,
@@ -28604,7 +28604,7 @@
       "country": "Canada",
       "category": "Non Alcoholic",
       "beer_type": "Non Beer",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-veer-hazy-ipa-non-alcholic-beer_4-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-veer-hazy-ipa_4-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 124.875
     },
     {
@@ -28744,7 +28744,7 @@
     },
     {
       "id": 1917,
-      "beer_name": "Veer Alcohol Free Lager With Lime",
+      "beer_name": "Muskoka Brewery Veer Lager With Lime",
       "quantity": 4,
       "case_type": "Can",
       "size_ml": 355,
@@ -28754,7 +28754,7 @@
       "country": "Canada",
       "category": "Non Alcoholic",
       "beer_type": "Non Beer",
-      "url": "https://www.thebeerstore.ca/beers/veer-alcohol-free-lager-with-lime_4-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-veer-lager-with-lime_4-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 249.75
     },
     {
@@ -36124,7 +36124,7 @@
     },
     {
       "id": 2409,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 1,
       "case_type": "Can",
       "size_ml": 568,
@@ -36134,12 +36134,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_1-X-Can-568-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_1-X-Can-568-ml",
       "dollars_per_serving_of_alcohol": 2.4141
     },
     {
       "id": 2410,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 20000,
@@ -36149,12 +36149,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_1-X-Keg-20-L",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_1-X-Keg-20-L",
       "dollars_per_serving_of_alcohol": 2.5516
     },
     {
       "id": 2411,
-      "beer_name": "Muskoka Tread Lightly",
+      "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 58600,
@@ -36164,7 +36164,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-tread-lightly_1-X-Keg-58.6-L",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-tread-lightly_1-X-Keg-58.6-L",
       "dollars_per_serving_of_alcohol": 2.1582
     },
     {
@@ -37009,7 +37009,7 @@
     },
     {
       "id": 2468,
-      "beer_name": "Muskoka Hazed And Confused",
+      "beer_name": "Muskoka Brwery Hazed & Confused",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 20000,
@@ -37019,12 +37019,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-hazed-and-confused_1-X-Keg-20-L",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brwery-hazed-and-confused_1-X-Keg-20-L",
       "dollars_per_serving_of_alcohol": 1.7477
     },
     {
       "id": 2469,
-      "beer_name": "Muskoka Hazed And Confused",
+      "beer_name": "Muskoka Brwery Hazed & Confused",
       "quantity": 1,
       "case_type": "Can",
       "size_ml": 473,
@@ -37034,7 +37034,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-hazed-and-confused_1-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brwery-hazed-and-confused_1-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.0149
     },
     {
@@ -38644,7 +38644,7 @@
     },
     {
       "id": 2577,
-      "beer_name": "Muskoka Craft Lager",
+      "beer_name": "Muskoka Brewery Lager",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 20000,
@@ -38654,12 +38654,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-craft-lager_1-X-Keg-20-L",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-lager_1-X-Keg-20-L",
       "dollars_per_serving_of_alcohol": 2.2742
     },
     {
       "id": 2578,
-      "beer_name": "Muskoka Craft Lager",
+      "beer_name": "Muskoka Brewery Lager",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 58600,
@@ -38669,12 +38669,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-craft-lager_1-X-Keg-58.6-L",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-lager_1-X-Keg-58.6-L",
       "dollars_per_serving_of_alcohol": 1.8868
     },
     {
       "id": 2579,
-      "beer_name": "Muskoka Craft Lager",
+      "beer_name": "Muskoka Brewery Lager",
       "quantity": 1,
       "case_type": "Can",
       "size_ml": 473,
@@ -38684,12 +38684,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-craft-lager_1-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-lager_1-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.4939
     },
     {
       "id": 2580,
-      "beer_name": "Muskoka Detour",
+      "beer_name": "Muskoka Brewery Detour",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 20000,
@@ -38699,12 +38699,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-detour_1-X-Keg-20-L",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-detour_1-X-Keg-20-L",
       "dollars_per_serving_of_alcohol": 2.5387
     },
     {
       "id": 2581,
-      "beer_name": "Muskoka Detour",
+      "beer_name": "Muskoka Brewery Detour",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 58600,
@@ -38714,12 +38714,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-detour_1-X-Keg-58.6-L",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-detour_1-X-Keg-58.6-L",
       "dollars_per_serving_of_alcohol": 2.1062
     },
     {
       "id": 2582,
-      "beer_name": "Muskoka Detour",
+      "beer_name": "Muskoka Brewery Detour",
       "quantity": 1,
       "case_type": "Can",
       "size_ml": 473,
@@ -38729,7 +38729,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-detour_1-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-detour_1-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.9585
     },
     {
@@ -38779,7 +38779,7 @@
     },
     {
       "id": 2586,
-      "beer_name": "Muskoka Cream Ale",
+      "beer_name": "Muskoka Brewery Cream Ale",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 20000,
@@ -38789,12 +38789,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-cream-ale_1-X-Keg-20-L",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-cream-ale_1-X-Keg-20-L",
       "dollars_per_serving_of_alcohol": 2.1832
     },
     {
       "id": 2587,
-      "beer_name": "Muskoka Cream Ale",
+      "beer_name": "Muskoka Brewery Cream Ale",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 58600,
@@ -38804,12 +38804,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-cream-ale_1-X-Keg-58.6-L",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-cream-ale_1-X-Keg-58.6-L",
       "dollars_per_serving_of_alcohol": 1.8113
     },
     {
       "id": 2588,
-      "beer_name": "Muskoka Cream Ale",
+      "beer_name": "Muskoka Brewery Cream Ale",
       "quantity": 1,
       "case_type": "Can",
       "size_ml": 473,
@@ -38819,7 +38819,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-cream-ale_1-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-cream-ale_1-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.5443
     },
     {

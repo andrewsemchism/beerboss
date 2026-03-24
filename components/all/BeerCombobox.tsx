@@ -74,7 +74,7 @@ export default function BeerCombobox({
               {name}
               <button
                 onClick={() => remove(name)}
-                className="hover:text-amber-600 leading-none"
+                className="hover:text-amber-600 leading-none cursor-pointer px-1 -mx-1 text-base"
                 aria-label={`Remove ${name}`}
               >
                 ×

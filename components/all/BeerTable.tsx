@@ -8,10 +8,11 @@ import {
   createColumnHelper,
   flexRender,
   SortingState,
+  VisibilityState,
 } from "@tanstack/react-table";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Beer } from "@/lib/types";
-import { formatDollarsPerDrink, formatPrice, formatSize } from "@/lib/beerUtils";
+import { formatDollarsPerDrink, formatPrice, formatPricePer355ml, formatSize } from "@/lib/beerUtils";
 
 const columnHelper = createColumnHelper<Beer>();
 
@@ -68,6 +69,16 @@ const columns = [
       return av - bv;
     },
   }),
+  columnHelper.accessor("price", {
+    id: "price_per_355ml",
+    header: "$/355ml",
+    cell: (info) => formatPricePer355ml(info.row.original),
+    sortingFn: (a, b) => {
+      const av = a.original.price / (a.original.quantity * a.original.size_ml / 355);
+      const bv = b.original.price / (b.original.quantity * b.original.size_ml / 355);
+      return av - bv;
+    },
+  }),
   columnHelper.accessor("abv", {
     header: "ABV",
     cell: (info) => `${info.getValue()}%`,
@@ -78,6 +89,22 @@ const columns = [
   }),
 ];
 
+// Columns the user can toggle (Beer is always visible)
+const TOGGLEABLE_COLUMNS: { id: string; label: string }[] = [
+  { id: "pack", label: "Pack" },
+  { id: "case_type", label: "Type" },
+  { id: "price", label: "Price" },
+  { id: "dollars_per_serving_of_alcohol", label: "$/Drink" },
+  { id: "price_per_355ml", label: "$/355ml" },
+  { id: "abv", label: "ABV" },
+  { id: "country", label: "Country" },
+];
+
+const DEFAULT_VISIBILITY: VisibilityState = {
+  price_per_355ml: false,
+  country: false,
+};
+
 interface Props {
   data: Beer[];
 }
@@ -86,12 +113,26 @@ export default function BeerTable({ data }: Props) {
   const [sorting, setSorting] = useState<SortingState>([
     { id: "dollars_per_serving_of_alcohol", desc: false },
   ]);
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(DEFAULT_VISIBILITY);
+  const [columnsOpen, setColumnsOpen] = useState(false);
+  const columnsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (columnsRef.current && !columnsRef.current.contains(e.target as Node)) {
+        setColumnsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const table = useReactTable({
     data,
     columns,
-    state: { sorting },
+    state: { sorting, columnVisibility },
     onSortingChange: setSorting,
+    onColumnVisibilityChange: setColumnVisibility,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
@@ -100,9 +141,53 @@ export default function BeerTable({ data }: Props) {
 
   const { pageIndex } = table.getState().pagination;
   const pageCount = table.getPageCount();
+  const visibleColumnCount = table.getVisibleLeafColumns().length;
 
   return (
     <div className="space-y-3">
+      {/* Column visibility dropdown */}
+      <div className="flex justify-end" ref={columnsRef}>
+        <div className="relative">
+          <button
+            onClick={() => setColumnsOpen((o) => !o)}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded border border-zinc-300 text-zinc-600 hover:bg-zinc-50 hover:border-zinc-400 transition-colors"
+          >
+            <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <rect x="1" y="3" width="4" height="10" rx="0.5" />
+              <rect x="6" y="3" width="4" height="10" rx="0.5" />
+              <rect x="11" y="3" width="4" height="10" rx="0.5" />
+            </svg>
+            Columns
+            <svg className={`w-3 h-3 transition-transform ${columnsOpen ? "rotate-180" : ""}`} viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M2 4l4 4 4-4" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          {columnsOpen && (
+            <div className="absolute right-0 mt-1 w-36 bg-white border border-zinc-200 rounded-lg shadow-lg z-10 py-1">
+              {TOGGLEABLE_COLUMNS.map(({ id, label }) => {
+                const col = table.getColumn(id);
+                if (!col) return null;
+                const visible = col.getIsVisible();
+                return (
+                  <label
+                    key={id}
+                    className="flex items-center gap-2.5 px-3 py-1.5 text-sm text-zinc-700 hover:bg-zinc-50 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      checked={visible}
+                      onChange={() => col.toggleVisibility()}
+                      className="accent-amber-600 w-3.5 h-3.5"
+                    />
+                    {label}
+                  </label>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      </div>
+
       <div className="overflow-x-auto rounded-lg border border-zinc-200">
         <table className="w-full text-sm min-w-[700px]">
           <thead className="bg-zinc-100 border-b border-zinc-200">
@@ -145,7 +230,7 @@ export default function BeerTable({ data }: Props) {
             ))}
             {table.getRowModel().rows.length === 0 && (
               <tr>
-                <td colSpan={columns.length} className="px-3 py-8 text-center text-zinc-400">
+                <td colSpan={visibleColumnCount} className="px-3 py-8 text-center text-zinc-400">
                   No beers match the current filters.
                 </td>
               </tr>

@@ -27,6 +27,12 @@ export function formatPrice(price: number): string {
   return `$${price.toFixed(2)}`;
 }
 
+export function formatPricePer355ml(beer: Beer): string {
+  const totalMl = beer.quantity * beer.size_ml;
+  if (!totalMl) return "N/A";
+  return formatPrice(beer.price / (totalMl / 355));
+}
+
 export function formatSize(beer: Beer): string {
   if (beer.case_type === "Keg") {
     const litres = beer.size_ml / 1000;

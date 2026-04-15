@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-14T09:08:44.993258+00:00",
+  "scraped_at": "2026-04-15T09:09:38.252111+00:00",
   "count": 2789,
   "beers": [
     {
@@ -2719,7 +2719,7 @@
     },
     {
       "id": 182,
-      "beer_name": "Beau'S Lug Lite Lager",
+      "beer_name": "Beau'S Lite Lager",
       "quantity": 48,
       "case_type": "Can",
       "size_ml": 355,
@@ -2729,7 +2729,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/beaus-lug-lite-lager_48-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/beaus-lite-lager_48-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.0831
     },
     {
@@ -6334,7 +6334,7 @@
     },
     {
       "id": 423,
-      "beer_name": "Beau'S Lug Lite Lager",
+      "beer_name": "Beau'S Lite Lager",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 473,
@@ -6344,12 +6344,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/beaus-lug-lite-lager_24-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/beaus-lite-lager_24-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.1496
     },
     {
       "id": 424,
-      "beer_name": "Beau'S Lug Lite Lager",
+      "beer_name": "Beau'S Lite Lager",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 355,
@@ -6359,7 +6359,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/beaus-lug-lite-lager_24-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/beaus-lite-lager_24-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.2391
     },
     {
@@ -16339,7 +16339,7 @@
     },
     {
       "id": 1090,
-      "beer_name": "Beau'S Lug Lite Lager",
+      "beer_name": "Beau'S Lite Lager",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 473,
@@ -16349,12 +16349,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/beaus-lug-lite-lager_12-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/beaus-lite-lager_12-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.2664
     },
     {
       "id": 1091,
-      "beer_name": "Beau'S Lug Lite Lager",
+      "beer_name": "Beau'S Lite Lager",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 355,
@@ -16364,7 +16364,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/beaus-lug-lite-lager_12-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/beaus-lite-lager_12-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.551
     },
     {
@@ -24064,7 +24064,7 @@
     },
     {
       "id": 1605,
-      "beer_name": "Beau'S Lug Lite Lager",
+      "beer_name": "Beau'S Lite Lager",
       "quantity": 6,
       "case_type": "Can",
       "size_ml": 473,
@@ -24074,7 +24074,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/beaus-lug-lite-lager_6-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/beaus-lite-lager_6-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.4064
     },
     {
@@ -30409,7 +30409,7 @@
     },
     {
       "id": 2028,
-      "beer_name": "Beau'S Lug Lite Lager",
+      "beer_name": "Beau'S Lite Lager",
       "quantity": 2,
       "case_type": "Can",
       "size_ml": 473,
@@ -30419,7 +30419,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/beaus-lug-lite-lager_2-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/beaus-lite-lager_2-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.1062
     },
     {
@@ -33709,7 +33709,7 @@
     },
     {
       "id": 2248,
-      "beer_name": "Beau'S Lug Lite Lager",
+      "beer_name": "Beau'S Lite Lager",
       "quantity": 1,
       "case_type": "Can",
       "size_ml": 473,
@@ -33719,12 +33719,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/beaus-lug-lite-lager_1-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/beaus-lite-lager_1-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.336
     },
     {
       "id": 2249,
-      "beer_name": "Beau'S Lug Lite Lager",
+      "beer_name": "Beau'S Lite Lager",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 50000,
@@ -33734,12 +33734,12 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/beaus-lug-lite-lager_1-X-Keg-50-L",
+      "url": "https://www.thebeerstore.ca/beers/beaus-lite-lager_1-X-Keg-50-L",
       "dollars_per_serving_of_alcohol": 1.766
     },
     {
       "id": 2250,
-      "beer_name": "Beau'S Lug Lite Lager",
+      "beer_name": "Beau'S Lite Lager",
       "quantity": 1,
       "case_type": "Keg",
       "size_ml": 30000,
@@ -33749,7 +33749,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/beaus-lug-lite-lager_1-X-Keg-30-L",
+      "url": "https://www.thebeerstore.ca/beers/beaus-lite-lager_1-X-Keg-30-L",
       "dollars_per_serving_of_alcohol": 1.8044
     },
     {

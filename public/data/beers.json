@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-05-12T10:22:57.181034+00:00",
-  "count": 2732,
+  "scraped_at": "2026-05-13T10:12:27.434793+00:00",
+  "count": 2731,
   "beers": [
     {
       "id": 1,
@@ -39979,21 +39979,6 @@
     },
     {
       "id": 2666,
-      "beer_name": "Mill Street Tankhouse Ale",
-      "quantity": 1,
-      "case_type": "Keg",
-      "size_ml": 30000,
-      "price": 186.24,
-      "original_price": null,
-      "abv": 5.2,
-      "country": "Canada",
-      "category": "Ontario Craft",
-      "beer_type": "Ale",
-      "url": "https://www.thebeerstore.ca/beers/mill-street-tankhouse-ale_1-X-Keg-30-L",
-      "dollars_per_serving_of_alcohol": 2.1191
-    },
-    {
-      "id": 2667,
       "beer_name": "Old Comrade Amber Ale",
       "quantity": 1,
       "case_type": "Can",
@@ -40008,7 +39993,7 @@
       "dollars_per_serving_of_alcohol": 2.3314
     },
     {
-      "id": 2668,
+      "id": 2667,
       "beer_name": "Steam Whistle Premium Pilsner",
       "quantity": 1,
       "case_type": "Can",
@@ -40023,7 +40008,7 @@
       "dollars_per_serving_of_alcohol": 2.4312
     },
     {
-      "id": 2669,
+      "id": 2668,
       "beer_name": "Steam Whistle Premium Pilsner",
       "quantity": 1,
       "case_type": "Can",
@@ -40038,7 +40023,7 @@
       "dollars_per_serving_of_alcohol": 2.4692
     },
     {
-      "id": 2670,
+      "id": 2669,
       "beer_name": "Steam Whistle Premium Pilsner",
       "quantity": 1,
       "case_type": "Keg",
@@ -40053,7 +40038,7 @@
       "dollars_per_serving_of_alcohol": 2.5906
     },
     {
-      "id": 2671,
+      "id": 2670,
       "beer_name": "Steam Whistle Premium Pilsner",
       "quantity": 1,
       "case_type": "Keg",
@@ -40068,7 +40053,7 @@
       "dollars_per_serving_of_alcohol": 2.1299
     },
     {
-      "id": 2672,
+      "id": 2671,
       "beer_name": "Steam Whistle Premium Pilsner",
       "quantity": 1,
       "case_type": "Keg",
@@ -40083,7 +40068,7 @@
       "dollars_per_serving_of_alcohol": 1.9595
     },
     {
-      "id": 2673,
+      "id": 2672,
       "beer_name": "Molson Cold Shots",
       "quantity": 1,
       "case_type": "Can",
@@ -40098,7 +40083,7 @@
       "dollars_per_serving_of_alcohol": 1.3384
     },
     {
-      "id": 2674,
+      "id": 2673,
       "beer_name": "Carling Light",
       "quantity": 1,
       "case_type": "Can",
@@ -40113,7 +40098,7 @@
       "dollars_per_serving_of_alcohol": 2.0077
     },
     {
-      "id": 2675,
+      "id": 2674,
       "beer_name": "Coors Light",
       "quantity": 1,
       "case_type": "Keg",
@@ -40128,7 +40113,7 @@
       "dollars_per_serving_of_alcohol": 2.8171
     },
     {
-      "id": 2676,
+      "id": 2675,
       "beer_name": "Coors Light",
       "quantity": 1,
       "case_type": "Keg",
@@ -40143,7 +40128,7 @@
       "dollars_per_serving_of_alcohol": 2.4695
     },
     {
-      "id": 2677,
+      "id": 2676,
       "beer_name": "Coors Light",
       "quantity": 1,
       "case_type": "Can",
@@ -40158,7 +40143,7 @@
       "dollars_per_serving_of_alcohol": 2.3687
     },
     {
-      "id": 2678,
+      "id": 2677,
       "beer_name": "Coors Light",
       "quantity": 1,
       "case_type": "Can",
@@ -40173,7 +40158,7 @@
       "dollars_per_serving_of_alcohol": 2.6175
     },
     {
-      "id": 2679,
+      "id": 2678,
       "beer_name": "Molson Dry",
       "quantity": 1,
       "case_type": "Can",
@@ -40188,7 +40173,7 @@
       "dollars_per_serving_of_alcohol": 1.2227
     },
     {
-      "id": 2680,
+      "id": 2679,
       "beer_name": "Molson Dry",
       "quantity": 1,
       "case_type": "Can",
@@ -40203,7 +40188,7 @@
       "dollars_per_serving_of_alcohol": 1.4942
     },
     {
-      "id": 2681,
+      "id": 2680,
       "beer_name": "Carling Lager",
       "quantity": 1,
       "case_type": "Can",
@@ -40218,7 +40203,7 @@
       "dollars_per_serving_of_alcohol": 1.6389
     },
     {
-      "id": 2682,
+      "id": 2681,
       "beer_name": "Molson Canadian",
       "quantity": 1,
       "case_type": "Keg",
@@ -40233,7 +40218,7 @@
       "dollars_per_serving_of_alcohol": 2.2537
     },
     {
-      "id": 2683,
+      "id": 2682,
       "beer_name": "Molson Canadian",
       "quantity": 1,
       "case_type": "Keg",
@@ -40248,7 +40233,7 @@
       "dollars_per_serving_of_alcohol": 1.9756
     },
     {
-      "id": 2684,
+      "id": 2683,
       "beer_name": "Molson Canadian",
       "quantity": 1,
       "case_type": "Can",
@@ -40263,7 +40248,7 @@
       "dollars_per_serving_of_alcohol": 1.895
     },
     {
-      "id": 2685,
+      "id": 2684,
       "beer_name": "Molson Canadian",
       "quantity": 1,
       "case_type": "Can",
@@ -40278,7 +40263,7 @@
       "dollars_per_serving_of_alcohol": 2.094
     },
     {
-      "id": 2686,
+      "id": 2685,
       "beer_name": "Carling Ice",
       "quantity": 1,
       "case_type": "Can",
@@ -40293,7 +40278,7 @@
       "dollars_per_serving_of_alcohol": 1.4601
     },
     {
-      "id": 2687,
+      "id": 2686,
       "beer_name": "Rickards Red",
       "quantity": 1,
       "case_type": "Keg",
@@ -40308,7 +40293,7 @@
       "dollars_per_serving_of_alcohol": 2.3932
     },
     {
-      "id": 2688,
+      "id": 2687,
       "beer_name": "Rickards Red",
       "quantity": 1,
       "case_type": "Keg",
@@ -40323,7 +40308,7 @@
       "dollars_per_serving_of_alcohol": 2.017
     },
     {
-      "id": 2689,
+      "id": 2688,
       "beer_name": "Rickards Red",
       "quantity": 1,
       "case_type": "Can",
@@ -40338,7 +40323,7 @@
       "dollars_per_serving_of_alcohol": 2.1578
     },
     {
-      "id": 2690,
+      "id": 2689,
       "beer_name": "Molson Export",
       "quantity": 1,
       "case_type": "Keg",
@@ -40353,7 +40338,7 @@
       "dollars_per_serving_of_alcohol": 2.0162
     },
     {
-      "id": 2691,
+      "id": 2690,
       "beer_name": "Molson Export",
       "quantity": 1,
       "case_type": "Can",
@@ -40368,7 +40353,7 @@
       "dollars_per_serving_of_alcohol": 2.094
     },
     {
-      "id": 2692,
+      "id": 2691,
       "beer_name": "Molson Ultra",
       "quantity": 1,
       "case_type": "Keg",
@@ -40383,7 +40368,7 @@
       "dollars_per_serving_of_alcohol": 3.313
     },
     {
-      "id": 2693,
+      "id": 2692,
       "beer_name": "Molson Ultra",
       "quantity": 1,
       "case_type": "Can",
@@ -40398,7 +40383,7 @@
       "dollars_per_serving_of_alcohol": 3.7401
     },
     {
-      "id": 2694,
+      "id": 2693,
       "beer_name": "Busch Light",
       "quantity": 1,
       "case_type": "Can",
@@ -40413,7 +40398,7 @@
       "dollars_per_serving_of_alcohol": 2.0077
     },
     {
-      "id": 2695,
+      "id": 2694,
       "beer_name": "Busch Lager",
       "quantity": 1,
       "case_type": "Can",
@@ -40428,7 +40413,7 @@
       "dollars_per_serving_of_alcohol": 1.6791
     },
     {
-      "id": 2696,
+      "id": 2695,
       "beer_name": "Busch Lager",
       "quantity": 1,
       "case_type": "Keg",
@@ -40443,7 +40428,7 @@
       "dollars_per_serving_of_alcohol": 1.7623
     },
     {
-      "id": 2697,
+      "id": 2696,
       "beer_name": "Busch Lager",
       "quantity": 1,
       "case_type": "Can",
@@ -40458,7 +40443,7 @@
       "dollars_per_serving_of_alcohol": 1.7087
     },
     {
-      "id": 2698,
+      "id": 2697,
       "beer_name": "Bud Light",
       "quantity": 1,
       "case_type": "Can",
@@ -40473,7 +40458,7 @@
       "dollars_per_serving_of_alcohol": 2.2727
     },
     {
-      "id": 2699,
+      "id": 2698,
       "beer_name": "Bud Light",
       "quantity": 1,
       "case_type": "Keg",
@@ -40488,7 +40473,7 @@
       "dollars_per_serving_of_alcohol": 2.8174
     },
     {
-      "id": 2700,
+      "id": 2699,
       "beer_name": "Bud Light",
       "quantity": 1,
       "case_type": "Keg",
@@ -40503,7 +40488,7 @@
       "dollars_per_serving_of_alcohol": 2.4694
     },
     {
-      "id": 2701,
+      "id": 2700,
       "beer_name": "Bud Light",
       "quantity": 1,
       "case_type": "Can",
@@ -40518,7 +40503,7 @@
       "dollars_per_serving_of_alcohol": 2.6175
     },
     {
-      "id": 2702,
+      "id": 2701,
       "beer_name": "Maximum Ice",
       "quantity": 1,
       "case_type": "Can",
@@ -40533,7 +40518,7 @@
       "dollars_per_serving_of_alcohol": 1.4218
     },
     {
-      "id": 2703,
+      "id": 2702,
       "beer_name": "Labatt Extra Dry",
       "quantity": 1,
       "case_type": "Can",
@@ -40548,7 +40533,7 @@
       "dollars_per_serving_of_alcohol": 1.4348
     },
     {
-      "id": 2704,
+      "id": 2703,
       "beer_name": "Budweiser",
       "quantity": 1,
       "case_type": "Can",
@@ -40563,7 +40548,7 @@
       "dollars_per_serving_of_alcohol": 1.8182
     },
     {
-      "id": 2705,
+      "id": 2704,
       "beer_name": "Budweiser",
       "quantity": 1,
       "case_type": "Bottle",
@@ -40578,7 +40563,7 @@
       "dollars_per_serving_of_alcohol": 2.045
     },
     {
-      "id": 2706,
+      "id": 2705,
       "beer_name": "Budweiser",
       "quantity": 1,
       "case_type": "Keg",
@@ -40593,7 +40578,7 @@
       "dollars_per_serving_of_alcohol": 2.2539
     },
     {
-      "id": 2707,
+      "id": 2706,
       "beer_name": "Budweiser",
       "quantity": 1,
       "case_type": "Keg",
@@ -40608,7 +40593,7 @@
       "dollars_per_serving_of_alcohol": 1.9755
     },
     {
-      "id": 2708,
+      "id": 2707,
       "beer_name": "Budweiser",
       "quantity": 1,
       "case_type": "Can",
@@ -40623,7 +40608,7 @@
       "dollars_per_serving_of_alcohol": 2.094
     },
     {
-      "id": 2709,
+      "id": 2708,
       "beer_name": "Labatt Blue",
       "quantity": 1,
       "case_type": "Can",
@@ -40638,7 +40623,7 @@
       "dollars_per_serving_of_alcohol": 1.3384
     },
     {
-      "id": 2710,
+      "id": 2709,
       "beer_name": "Labatt Blue",
       "quantity": 1,
       "case_type": "Keg",
@@ -40653,7 +40638,7 @@
       "dollars_per_serving_of_alcohol": 1.9755
     },
     {
-      "id": 2711,
+      "id": 2710,
       "beer_name": "Labatt Blue",
       "quantity": 1,
       "case_type": "Can",
@@ -40668,7 +40653,7 @@
       "dollars_per_serving_of_alcohol": 1.6061
     },
     {
-      "id": 2712,
+      "id": 2711,
       "beer_name": "Rolling Rock Pale Lager",
       "quantity": 1,
       "case_type": "Keg",
@@ -40683,7 +40668,7 @@
       "dollars_per_serving_of_alcohol": 2.7654
     },
     {
-      "id": 2713,
+      "id": 2712,
       "beer_name": "Rolling Rock Pale Lager",
       "quantity": 1,
       "case_type": "Keg",
@@ -40698,7 +40683,7 @@
       "dollars_per_serving_of_alcohol": 2.3308
     },
     {
-      "id": 2714,
+      "id": 2713,
       "beer_name": "Rolling Rock Pale Lager",
       "quantity": 1,
       "case_type": "Can",
@@ -40713,7 +40698,7 @@
       "dollars_per_serving_of_alcohol": 2.2432
     },
     {
-      "id": 2715,
+      "id": 2714,
       "beer_name": "Michelob Ultra",
       "quantity": 1,
       "case_type": "Can",
@@ -40728,7 +40713,7 @@
       "dollars_per_serving_of_alcohol": 2.3927
     },
     {
-      "id": 2716,
+      "id": 2715,
       "beer_name": "Michelob Ultra",
       "quantity": 1,
       "case_type": "Keg",
@@ -40743,7 +40728,7 @@
       "dollars_per_serving_of_alcohol": 3.1111
     },
     {
-      "id": 2717,
+      "id": 2716,
       "beer_name": "Michelob Ultra",
       "quantity": 1,
       "case_type": "Keg",
@@ -40758,7 +40743,7 @@
       "dollars_per_serving_of_alcohol": 2.6221
     },
     {
-      "id": 2718,
+      "id": 2717,
       "beer_name": "Michelob Ultra",
       "quantity": 1,
       "case_type": "Can",
@@ -40773,7 +40758,7 @@
       "dollars_per_serving_of_alcohol": 2.8051
     },
     {
-      "id": 2719,
+      "id": 2718,
       "beer_name": "Bud Light Lime",
       "quantity": 1,
       "case_type": "Can",
@@ -40788,7 +40773,7 @@
       "dollars_per_serving_of_alcohol": 2.8051
     },
     {
-      "id": 2720,
+      "id": 2719,
       "beer_name": "Labatt 50 Ale",
       "quantity": 1,
       "case_type": "Keg",
@@ -40803,7 +40788,7 @@
       "dollars_per_serving_of_alcohol": 1.9755
     },
     {
-      "id": 2721,
+      "id": 2720,
       "beer_name": "Alexander Keiths Ipa",
       "quantity": 1,
       "case_type": "Keg",
@@ -40818,7 +40803,7 @@
       "dollars_per_serving_of_alcohol": 2.4889
     },
     {
-      "id": 2722,
+      "id": 2721,
       "beer_name": "Alexander Keiths Ipa",
       "quantity": 1,
       "case_type": "Keg",
@@ -40833,7 +40818,7 @@
       "dollars_per_serving_of_alcohol": 2.0977
     },
     {
-      "id": 2723,
+      "id": 2722,
       "beer_name": "Alexander Keiths Ipa",
       "quantity": 1,
       "case_type": "Can",
@@ -40848,7 +40833,7 @@
       "dollars_per_serving_of_alcohol": 2.2441
     },
     {
-      "id": 2724,
+      "id": 2723,
       "beer_name": "Alexander Keiths Red",
       "quantity": 1,
       "case_type": "Keg",
@@ -40863,7 +40848,7 @@
       "dollars_per_serving_of_alcohol": 2.0977
     },
     {
-      "id": 2725,
+      "id": 2724,
       "beer_name": "Perth Euro Pilsner",
       "quantity": 1,
       "case_type": "Can",
@@ -40878,7 +40863,7 @@
       "dollars_per_serving_of_alcohol": 2.4737
     },
     {
-      "id": 2726,
+      "id": 2725,
       "beer_name": "Old Style Pilsner",
       "quantity": 1,
       "case_type": "Can",
@@ -40893,7 +40878,7 @@
       "dollars_per_serving_of_alcohol": 1.5686
     },
     {
-      "id": 2727,
+      "id": 2726,
       "beer_name": "Old Style Pilsner",
       "quantity": 1,
       "case_type": "Keg",
@@ -40908,7 +40893,7 @@
       "dollars_per_serving_of_alcohol": 1.6566
     },
     {
-      "id": 2728,
+      "id": 2727,
       "beer_name": "Old Vienna",
       "quantity": 1,
       "case_type": "Keg",
@@ -40923,7 +40908,7 @@
       "dollars_per_serving_of_alcohol": 1.9756
     },
     {
-      "id": 2729,
+      "id": 2728,
       "beer_name": "Old Vienna",
       "quantity": 1,
       "case_type": "Can",
@@ -40938,7 +40923,7 @@
       "dollars_per_serving_of_alcohol": 1.6061
     },
     {
-      "id": 2730,
+      "id": 2729,
       "beer_name": "Black Ice",
       "quantity": 1,
       "case_type": "Can",
@@ -40953,7 +40938,7 @@
       "dollars_per_serving_of_alcohol": 1.1025
     },
     {
-      "id": 2731,
+      "id": 2730,
       "beer_name": "Blue Moon Belgian White",
       "quantity": 1,
       "case_type": "Keg",
@@ -40968,7 +40953,7 @@
       "dollars_per_serving_of_alcohol": 1.9423
     },
     {
-      "id": 2732,
+      "id": 2731,
       "beer_name": "Blue Moon Belgian White",
       "quantity": 1,
       "case_type": "Can",

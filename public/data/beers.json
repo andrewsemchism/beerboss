@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-27T11:28:48.737872+00:00",
+  "scraped_at": "2026-05-28T11:28:47.529533+00:00",
   "count": 2732,
   "beers": [
     {
@@ -49,6 +49,21 @@
     },
     {
       "id": 4,
+      "beer_name": "Michelob Ultra",
+      "quantity": 30,
+      "case_type": "Can",
+      "size_ml": 355,
+      "price": 51.99,
+      "original_price": 54.99,
+      "abv": 4.0,
+      "country": "Canada",
+      "category": "Domestic Specialty",
+      "beer_type": "Lager",
+      "url": "https://www.thebeerstore.ca/beers/michelob-ultra_30-X-Can-355-ml",
+      "dollars_per_serving_of_alcohol": 2.1663
+    },
+    {
+      "id": 5,
       "beer_name": "Carlsberg Pilsner",
       "quantity": 24,
       "case_type": "Bottle",
@@ -63,7 +78,7 @@
       "dollars_per_serving_of_alcohol": 1.927
     },
     {
-      "id": 5,
+      "id": 6,
       "beer_name": "Stella Artois",
       "quantity": 24,
       "case_type": "Bottle",
@@ -78,7 +93,7 @@
       "dollars_per_serving_of_alcohol": 2.1511
     },
     {
-      "id": 6,
+      "id": 7,
       "beer_name": "Beau'S Lug Tread Lagered Ale",
       "quantity": 24,
       "case_type": "Can",
@@ -93,7 +108,7 @@
       "dollars_per_serving_of_alcohol": 1.8826
     },
     {
-      "id": 7,
+      "id": 8,
       "beer_name": "Heineken Nv",
       "quantity": 24,
       "case_type": "Bottle",
@@ -108,7 +123,7 @@
       "dollars_per_serving_of_alcohol": 2.1511
     },
     {
-      "id": 8,
+      "id": 9,
       "beer_name": "Farmer'S Creed Longhorn Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -123,7 +138,7 @@
       "dollars_per_serving_of_alcohol": 1.7506
     },
     {
-      "id": 9,
+      "id": 10,
       "beer_name": "Steam Whistle Premium Pilsner",
       "quantity": 12,
       "case_type": "Can",
@@ -138,7 +153,7 @@
       "dollars_per_serving_of_alcohol": 1.8132
     },
     {
-      "id": 10,
+      "id": 11,
       "beer_name": "Farmer'S Creed Rough Stock Ipa",
       "quantity": 6,
       "case_type": "Can",
@@ -153,7 +168,7 @@
       "dollars_per_serving_of_alcohol": 1.6668
     },
     {
-      "id": 11,
+      "id": 12,
       "beer_name": "Carlsberg Pilsner",
       "quantity": 6,
       "case_type": "Can",
@@ -168,7 +183,7 @@
       "dollars_per_serving_of_alcohol": 1.75
     },
     {
-      "id": 12,
+      "id": 13,
       "beer_name": "Grolsch Premium Pilsner",
       "quantity": 6,
       "case_type": "Can",
@@ -183,7 +198,7 @@
       "dollars_per_serving_of_alcohol": 1.9001
     },
     {
-      "id": 13,
+      "id": 14,
       "beer_name": "Busch Light",
       "quantity": 30,
       "case_type": "Can",
@@ -196,21 +211,6 @@
       "beer_type": "Light",
       "url": "https://www.thebeerstore.ca/beers/busch-light_30-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 1.9163
-    },
-    {
-      "id": 14,
-      "beer_name": "Michelob Ultra",
-      "quantity": 30,
-      "case_type": "Can",
-      "size_ml": 355,
-      "price": 51.99,
-      "original_price": null,
-      "abv": 4.0,
-      "country": "Canada",
-      "category": "Domestic Specialty",
-      "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/michelob-ultra_30-X-Can-355-ml",
-      "dollars_per_serving_of_alcohol": 2.1663
     },
     {
       "id": 15,

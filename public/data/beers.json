@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-02T11:56:22.389157+00:00",
+  "scraped_at": "2026-06-03T12:29:12.679234+00:00",
   "count": 2732,
   "beers": [
     {
@@ -21233,14 +21233,14 @@
       "quantity": 8,
       "case_type": "Can",
       "size_ml": 500,
-      "price": 24.19,
+      "price": 24.59,
       "original_price": null,
       "abv": 5.1,
       "country": "Italy",
       "category": "Import",
       "beer_type": "Lager",
       "url": "https://www.thebeerstore.ca/beers/peroni-nastro-azzurro_8-X-Can-500-ml",
-      "dollars_per_serving_of_alcohol": 2.1048
+      "dollars_per_serving_of_alcohol": 2.1396
     },
     {
       "id": 1417,
@@ -28643,14 +28643,14 @@
       "quantity": 4,
       "case_type": "Can",
       "size_ml": 500,
-      "price": 13.29,
+      "price": 13.49,
       "original_price": null,
       "abv": 5.1,
       "country": "Italy",
       "category": "Import",
       "beer_type": "Lager",
       "url": "https://www.thebeerstore.ca/beers/peroni-nastro-azzurro_4-X-Can-500-ml",
-      "dollars_per_serving_of_alcohol": 2.3127
+      "dollars_per_serving_of_alcohol": 2.3475
     },
     {
       "id": 1911,

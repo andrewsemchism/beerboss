@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-11T12:02:25.228339+00:00",
+  "scraped_at": "2026-06-12T11:33:55.741092+00:00",
   "count": 2739,
   "beers": [
     {
@@ -15934,6 +15934,21 @@
     },
     {
       "id": 1063,
+      "beer_name": "Newark Helles Lager",
+      "quantity": 12,
+      "case_type": "Can",
+      "size_ml": 473,
+      "price": 28.1,
+      "original_price": null,
+      "abv": 5.0,
+      "country": "Canada",
+      "category": "Ontario Craft",
+      "beer_type": "Lager",
+      "url": "https://www.thebeerstore.ca/beers/newark-helles-lager_12-X-Can-473-ml",
+      "dollars_per_serving_of_alcohol": 1.7575
+    },
+    {
+      "id": 1064,
       "beer_name": "Corona Light",
       "quantity": 12,
       "case_type": "Bottle",
@@ -15948,7 +15963,7 @@
       "dollars_per_serving_of_alcohol": 3.7823
     },
     {
-      "id": 1064,
+      "id": 1065,
       "beer_name": "Lake Of The Woods Channel Marker",
       "quantity": 12,
       "case_type": "Can",
@@ -15963,7 +15978,7 @@
       "dollars_per_serving_of_alcohol": 2.7152
     },
     {
-      "id": 1065,
+      "id": 1066,
       "beer_name": "Flywheel",
       "quantity": 12,
       "case_type": "Can",
@@ -15978,7 +15993,7 @@
       "dollars_per_serving_of_alcohol": 2.1102
     },
     {
-      "id": 1066,
+      "id": 1067,
       "beer_name": "Lost Craft Revivale",
       "quantity": 12,
       "case_type": "Can",
@@ -15993,7 +16008,7 @@
       "dollars_per_serving_of_alcohol": 2.234
     },
     {
-      "id": 1067,
+      "id": 1068,
       "beer_name": "Cowbell Brewing Co. Smooth Sailing Light Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -16008,7 +16023,7 @@
       "dollars_per_serving_of_alcohol": 2.5792
     },
     {
-      "id": 1068,
+      "id": 1069,
       "beer_name": "Arizona Hard M Green Tea",
       "quantity": 12,
       "case_type": "Can",
@@ -16023,7 +16038,7 @@
       "dollars_per_serving_of_alcohol": 1.9382
     },
     {
-      "id": 1069,
+      "id": 1070,
       "beer_name": "Arizona Hard Lemon Ice Tea",
       "quantity": 12,
       "case_type": "Can",
@@ -16038,7 +16053,7 @@
       "dollars_per_serving_of_alcohol": 1.9382
     },
     {
-      "id": 1070,
+      "id": 1071,
       "beer_name": "Dab Ultimate Low Carb, Low Cal Light Beer",
       "quantity": 12,
       "case_type": "Can",
@@ -16053,7 +16068,7 @@
       "dollars_per_serving_of_alcohol": 1.8815
     },
     {
-      "id": 1071,
+      "id": 1072,
       "beer_name": "Refined Fool Van Full Of Weirdos Juicy Ipa",
       "quantity": 12,
       "case_type": "Can",
@@ -16068,7 +16083,7 @@
       "dollars_per_serving_of_alcohol": 1.7628
     },
     {
-      "id": 1072,
+      "id": 1073,
       "beer_name": "Cameron'S Cruising Through The Galaxy Hazy Ipa",
       "quantity": 12,
       "case_type": "Can",
@@ -16083,7 +16098,7 @@
       "dollars_per_serving_of_alcohol": 1.6604
     },
     {
-      "id": 1073,
+      "id": 1074,
       "beer_name": "Cowbell Brewing Co. Hazy Days Ipa",
       "quantity": 12,
       "case_type": "Can",
@@ -16098,7 +16113,7 @@
       "dollars_per_serving_of_alcohol": 1.8758
     },
     {
-      "id": 1074,
+      "id": 1075,
       "beer_name": "Cowbell Brewing Co. Hazy Days Ipa",
       "quantity": 12,
       "case_type": "Can",
@@ -16113,7 +16128,7 @@
       "dollars_per_serving_of_alcohol": 1.9437
     },
     {
-      "id": 1075,
+      "id": 1076,
       "beer_name": "Bangarang Pink Lemonade Hard Seltzer",
       "quantity": 12,
       "case_type": "Can",
@@ -16128,7 +16143,7 @@
       "dollars_per_serving_of_alcohol": 1.4379
     },
     {
-      "id": 1076,
+      "id": 1077,
       "beer_name": "Tona Cerveza",
       "quantity": 12,
       "case_type": "Can",
@@ -16143,7 +16158,7 @@
       "dollars_per_serving_of_alcohol": 2.0388
     },
     {
-      "id": 1077,
+      "id": 1078,
       "beer_name": "Waterloo Tart Cherry Radler",
       "quantity": 12,
       "case_type": "Can",
@@ -16158,7 +16173,7 @@
       "dollars_per_serving_of_alcohol": 4.1679
     },
     {
-      "id": 1078,
+      "id": 1079,
       "beer_name": "Hop Valley Bubble Stash",
       "quantity": 12,
       "case_type": "Can",
@@ -16173,7 +16188,7 @@
       "dollars_per_serving_of_alcohol": 1.7699
     },
     {
-      "id": 1079,
+      "id": 1080,
       "beer_name": "Hop Valley Bubble Stash",
       "quantity": 12,
       "case_type": "Can",
@@ -16188,7 +16203,7 @@
       "dollars_per_serving_of_alcohol": 1.881
     },
     {
-      "id": 1080,
+      "id": 1081,
       "beer_name": "Vizzy Hard Seltzer Blueberry Pomegranate",
       "quantity": 12,
       "case_type": "Can",
@@ -16201,21 +16216,6 @@
       "beer_type": "Seltzer",
       "url": "https://www.thebeerstore.ca/beers/vizzy-hard-seltzer-blueberry-pomegranate_12-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.0008
-    },
-    {
-      "id": 1081,
-      "beer_name": "Russell Craft Crusher Mix Pack",
-      "quantity": 12,
-      "case_type": "Can",
-      "size_ml": 355,
-      "price": 31.06,
-      "original_price": null,
-      "abv": 6.4,
-      "country": "Canada",
-      "category": "Import",
-      "beer_type": "Mixed Case",
-      "url": "https://www.thebeerstore.ca/beers/russell-craft-crusher-mix-pack_12-X-Can-355-ml",
-      "dollars_per_serving_of_alcohol": 2.0221
     },
     {
       "id": 1082,
@@ -20599,7 +20599,7 @@
     },
     {
       "id": 1374,
-      "beer_name": "Phillips Brewing Dinosour Jurassic Mix Pack",
+      "beer_name": "Phillips Brewing Dinosour Jurassic Mix Pack 2025",
       "quantity": 8,
       "case_type": "Can",
       "size_ml": 473,
@@ -20609,7 +20609,7 @@
       "country": "Canada",
       "category": "Import",
       "beer_type": "Mixed Case",
-      "url": "https://www.thebeerstore.ca/beers/phillips-brewing-dinosour-jurassic-mix-pack_8-X-Can-473-ml",
+      "url": "https://www.thebeerstore.ca/beers/phillips-brewing-dinosour-jurassic-mix-pack-2025_8-X-Can-473-ml",
       "dollars_per_serving_of_alcohol": 2.8815
     },
     {

@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-11T08:42:34.079028+00:00",
+  "scraped_at": "2026-08-12T09:00:02.414548+00:00",
   "count": 2647,
   "beers": [
     {
@@ -13984,7 +13984,7 @@
     },
     {
       "id": 933,
-      "beer_name": "Muskoka Brewery Venture Pack",
+      "beer_name": "Muskoka Brewery Venture Pack 2025",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 355,
@@ -13994,7 +13994,7 @@
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Mixed Case",
-      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-venture-pack_12-X-Can-355-ml",
+      "url": "https://www.thebeerstore.ca/beers/muskoka-brewery-venture-pack-2025_12-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 2.0231
     },
     {

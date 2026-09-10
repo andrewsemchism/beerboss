@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-09T12:33:35.428983+00:00",
+  "scraped_at": "2026-09-10T12:27:29.074313+00:00",
   "count": 2651,
   "beers": [
     {
@@ -2123,14 +2123,14 @@
       "quantity": 48,
       "case_type": "Can",
       "size_ml": 473,
-      "price": 116.82,
+      "price": 118.95,
       "original_price": null,
       "abv": 4.5,
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
       "url": "https://www.thebeerstore.ca/beers/iron-spike-red_48-X-Can-473-ml",
-      "dollars_per_serving_of_alcohol": 2.0296
+      "dollars_per_serving_of_alcohol": 2.0666
     },
     {
       "id": 143,
@@ -29318,14 +29318,14 @@
       "quantity": 1,
       "case_type": "Can",
       "size_ml": 473,
-      "price": 3.87,
+      "price": 3.6,
       "original_price": null,
       "abv": 4.5,
       "country": "Canada",
       "category": "Ontario Craft",
       "beer_type": "Ale",
       "url": "https://www.thebeerstore.ca/beers/iron-spike-red_1-X-Can-473-ml",
-      "dollars_per_serving_of_alcohol": 3.2273
+      "dollars_per_serving_of_alcohol": 3.0021
     },
     {
       "id": 1956,

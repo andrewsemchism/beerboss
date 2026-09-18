@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-17T12:51:45.868382+00:00",
+  "scraped_at": "2026-09-18T12:27:24.383634+00:00",
   "count": 2644,
   "beers": [
     {
@@ -259,6 +259,21 @@
     },
     {
       "id": 18,
+      "beer_name": "Bud Light",
+      "quantity": 30,
+      "case_type": "Can",
+      "size_ml": 355,
+      "price": 51.99,
+      "original_price": null,
+      "abv": 4.0,
+      "country": "Canada",
+      "category": "Premium",
+      "beer_type": "Light",
+      "url": "https://www.thebeerstore.ca/beers/bud-light_30-X-Can-355-ml",
+      "dollars_per_serving_of_alcohol": 2.1663
+    },
+    {
+      "id": 19,
       "beer_name": "Michelob Ultra",
       "quantity": 30,
       "case_type": "Can",
@@ -273,7 +288,7 @@
       "dollars_per_serving_of_alcohol": 2.1663
     },
     {
-      "id": 19,
+      "id": 20,
       "beer_name": "Coors Light",
       "quantity": 60,
       "case_type": "Can",
@@ -288,7 +303,7 @@
       "dollars_per_serving_of_alcohol": 1.9575
     },
     {
-      "id": 20,
+      "id": 21,
       "beer_name": "Molson Canadian",
       "quantity": 60,
       "case_type": "Can",
@@ -303,7 +318,7 @@
       "dollars_per_serving_of_alcohol": 1.566
     },
     {
-      "id": 21,
+      "id": 22,
       "beer_name": "Michelob Ultra",
       "quantity": 60,
       "case_type": "Can",
@@ -318,7 +333,7 @@
       "dollars_per_serving_of_alcohol": 2.166
     },
     {
-      "id": 22,
+      "id": 23,
       "beer_name": "Beau'S Lug Tread Lagered Ale",
       "quantity": 48,
       "case_type": "Can",
@@ -333,7 +348,7 @@
       "dollars_per_serving_of_alcohol": 1.6236
     },
     {
-      "id": 23,
+      "id": 24,
       "beer_name": "Cracked Canoe",
       "quantity": 48,
       "case_type": "Can",
@@ -348,7 +363,7 @@
       "dollars_per_serving_of_alcohol": 2.5443
     },
     {
-      "id": 24,
+      "id": 25,
       "beer_name": "Moosehead Lager",
       "quantity": 48,
       "case_type": "Can",
@@ -363,7 +378,7 @@
       "dollars_per_serving_of_alcohol": 1.781
     },
     {
-      "id": 25,
+      "id": 26,
       "beer_name": "Steam Whistle Premium Pilsner",
       "quantity": 48,
       "case_type": "Can",
@@ -378,7 +393,7 @@
       "dollars_per_serving_of_alcohol": 1.6885
     },
     {
-      "id": 26,
+      "id": 27,
       "beer_name": "Budweiser",
       "quantity": 36,
       "case_type": "Can",
@@ -393,7 +408,7 @@
       "dollars_per_serving_of_alcohol": 1.3608
     },
     {
-      "id": 27,
+      "id": 28,
       "beer_name": "James Ready 5.5",
       "quantity": 30,
       "case_type": "Can",
@@ -408,7 +423,7 @@
       "dollars_per_serving_of_alcohol": 1.3936
     },
     {
-      "id": 28,
+      "id": 29,
       "beer_name": "Budweiser",
       "quantity": 30,
       "case_type": "Can",
@@ -423,7 +438,7 @@
       "dollars_per_serving_of_alcohol": 1.633
     },
     {
-      "id": 29,
+      "id": 30,
       "beer_name": "Bud Light",
       "quantity": 28,
       "case_type": "Bottle",
@@ -438,7 +453,7 @@
       "dollars_per_serving_of_alcohol": 1.9748
     },
     {
-      "id": 30,
+      "id": 31,
       "beer_name": "Molson Canadian",
       "quantity": 28,
       "case_type": "Bottle",
@@ -453,7 +468,7 @@
       "dollars_per_serving_of_alcohol": 1.5054
     },
     {
-      "id": 31,
+      "id": 32,
       "beer_name": "Laker Gold",
       "quantity": 24,
       "case_type": "Can",
@@ -468,7 +483,7 @@
       "dollars_per_serving_of_alcohol": 1.128
     },
     {
-      "id": 32,
+      "id": 33,
       "beer_name": "Heineken Silver",
       "quantity": 24,
       "case_type": "Can",
@@ -483,7 +498,7 @@
       "dollars_per_serving_of_alcohol": 2.672
     },
     {
-      "id": 33,
+      "id": 34,
       "beer_name": "Kronenbourg 1664 Blanc",
       "quantity": 24,
       "case_type": "Bottle",
@@ -498,7 +513,7 @@
       "dollars_per_serving_of_alcohol": 2.1421
     },
     {
-      "id": 34,
+      "id": 35,
       "beer_name": "Nickel Brook Lager",
       "quantity": 24,
       "case_type": "Can",
@@ -513,7 +528,7 @@
       "dollars_per_serving_of_alcohol": 2.0212
     },
     {
-      "id": 35,
+      "id": 36,
       "beer_name": "Madri Excepcional Lager",
       "quantity": 24,
       "case_type": "Can",
@@ -528,7 +543,7 @@
       "dollars_per_serving_of_alcohol": 2.2595
     },
     {
-      "id": 36,
+      "id": 37,
       "beer_name": "Carlsberg Lite",
       "quantity": 24,
       "case_type": "Can",
@@ -543,7 +558,7 @@
       "dollars_per_serving_of_alcohol": 2.0636
     },
     {
-      "id": 37,
+      "id": 38,
       "beer_name": "Carlsberg Pilsner",
       "quantity": 24,
       "case_type": "Bottle",
@@ -558,7 +573,7 @@
       "dollars_per_serving_of_alcohol": 1.927
     },
     {
-      "id": 38,
+      "id": 39,
       "beer_name": "Sober Carpenter Non-Alcoholic Irish Red",
       "quantity": 24,
       "case_type": "Can",
@@ -573,7 +588,7 @@
       "dollars_per_serving_of_alcohol": 25.6378
     },
     {
-      "id": 39,
+      "id": 40,
       "beer_name": "Sober Carpenter Non-Alcoholic Ipa",
       "quantity": 24,
       "case_type": "Can",
@@ -588,7 +603,7 @@
       "dollars_per_serving_of_alcohol": 19.2284
     },
     {
-      "id": 40,
+      "id": 41,
       "beer_name": "Sober Carpenter Non-Alcoholic White",
       "quantity": 24,
       "case_type": "Can",
@@ -603,7 +618,7 @@
       "dollars_per_serving_of_alcohol": 19.2284
     },
     {
-      "id": 41,
+      "id": 42,
       "beer_name": "Refined Fool Van Full Of Weirdos Juicy Ipa",
       "quantity": 24,
       "case_type": "Can",
@@ -618,7 +633,7 @@
       "dollars_per_serving_of_alcohol": 1.5119
     },
     {
-      "id": 42,
+      "id": 43,
       "beer_name": "Bangarang Hard Seltzer - Mixer Pack",
       "quantity": 24,
       "case_type": "Can",
@@ -633,7 +648,7 @@
       "dollars_per_serving_of_alcohol": 1.6884
     },
     {
-      "id": 43,
+      "id": 44,
       "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 24,
       "case_type": "Can",
@@ -648,7 +663,7 @@
       "dollars_per_serving_of_alcohol": 2.187
     },
     {
-      "id": 44,
+      "id": 45,
       "beer_name": "Coors Original",
       "quantity": 24,
       "case_type": "Can",
@@ -663,7 +678,7 @@
       "dollars_per_serving_of_alcohol": 1.6852
     },
     {
-      "id": 45,
+      "id": 46,
       "beer_name": "Miller High Life",
       "quantity": 24,
       "case_type": "Can",
@@ -678,7 +693,7 @@
       "dollars_per_serving_of_alcohol": 1.4579
     },
     {
-      "id": 46,
+      "id": 47,
       "beer_name": "Miller Genuine Draft",
       "quantity": 24,
       "case_type": "Can",
@@ -693,7 +708,7 @@
       "dollars_per_serving_of_alcohol": 2.0164
     },
     {
-      "id": 47,
+      "id": 48,
       "beer_name": "Cracked Canoe",
       "quantity": 24,
       "case_type": "Can",
@@ -708,7 +723,7 @@
       "dollars_per_serving_of_alcohol": 2.2779
     },
     {
-      "id": 48,
+      "id": 49,
       "beer_name": "Cracked Canoe",
       "quantity": 24,
       "case_type": "Can",
@@ -723,7 +738,7 @@
       "dollars_per_serving_of_alcohol": 2.5589
     },
     {
-      "id": 49,
+      "id": 50,
       "beer_name": "Moosehead Lager",
       "quantity": 24,
       "case_type": "Can",
@@ -738,7 +753,7 @@
       "dollars_per_serving_of_alcohol": 1.5946
     },
     {
-      "id": 50,
+      "id": 51,
       "beer_name": "Moosehead Lager",
       "quantity": 24,
       "case_type": "Can",
@@ -753,7 +768,7 @@
       "dollars_per_serving_of_alcohol": 1.7913
     },
     {
-      "id": 51,
+      "id": 52,
       "beer_name": "Moosehead Light",
       "quantity": 24,
       "case_type": "Can",
@@ -768,7 +783,7 @@
       "dollars_per_serving_of_alcohol": 2.2391
     },
     {
-      "id": 52,
+      "id": 53,
       "beer_name": "Nickel Brook Naughty Neighbour Apa",
       "quantity": 24,
       "case_type": "Can",
@@ -783,7 +798,7 @@
       "dollars_per_serving_of_alcohol": 1.8492
     },
     {
-      "id": 53,
+      "id": 54,
       "beer_name": "Nickel Brook Headstock Ipa",
       "quantity": 24,
       "case_type": "Can",
@@ -798,7 +813,7 @@
       "dollars_per_serving_of_alcohol": 1.3838
     },
     {
-      "id": 54,
+      "id": 55,
       "beer_name": "Old Milwaukee",
       "quantity": 24,
       "case_type": "Can",
@@ -813,7 +828,7 @@
       "dollars_per_serving_of_alcohol": 1.458
     },
     {
-      "id": 55,
+      "id": 56,
       "beer_name": "Laker Lager",
       "quantity": 24,
       "case_type": "Bottle",
@@ -828,7 +843,7 @@
       "dollars_per_serving_of_alcohol": 1.5178
     },
     {
-      "id": 56,
+      "id": 57,
       "beer_name": "Landshark Lager",
       "quantity": 24,
       "case_type": "Bottle",
@@ -843,7 +858,7 @@
       "dollars_per_serving_of_alcohol": 1.9244
     },
     {
-      "id": 57,
+      "id": 58,
       "beer_name": "Bitburger",
       "quantity": 24,
       "case_type": "Can",
@@ -858,7 +873,7 @@
       "dollars_per_serving_of_alcohol": 1.7208
     },
     {
-      "id": 58,
+      "id": 59,
       "beer_name": "Mill Street Original Organic",
       "quantity": 24,
       "case_type": "Bottle",
@@ -873,7 +888,7 @@
       "dollars_per_serving_of_alcohol": 2.4007
     },
     {
-      "id": 59,
+      "id": 60,
       "beer_name": "Coors Light",
       "quantity": 24,
       "case_type": "Can",
@@ -888,7 +903,7 @@
       "dollars_per_serving_of_alcohol": 1.9893
     },
     {
-      "id": 60,
+      "id": 61,
       "beer_name": "Molson Canadian",
       "quantity": 24,
       "case_type": "Can",
@@ -903,7 +918,7 @@
       "dollars_per_serving_of_alcohol": 1.654
     },
     {
-      "id": 61,
+      "id": 62,
       "beer_name": "Busch Lager",
       "quantity": 24,
       "case_type": "Can",
@@ -918,7 +933,7 @@
       "dollars_per_serving_of_alcohol": 1.4964
     },
     {
-      "id": 62,
+      "id": 63,
       "beer_name": "Bud Light",
       "quantity": 24,
       "case_type": "Can",
@@ -933,7 +948,7 @@
       "dollars_per_serving_of_alcohol": 2.0319
     },
     {
-      "id": 63,
+      "id": 64,
       "beer_name": "Blue Moon Belgian White",
       "quantity": 24,
       "case_type": "Can",
@@ -948,7 +963,7 @@
       "dollars_per_serving_of_alcohol": 1.8129
     },
     {
-      "id": 64,
+      "id": 65,
       "beer_name": "Cowbell Brewing Co. Simply The Best Mix Pack",
       "quantity": 15,
       "case_type": "Can",
@@ -963,7 +978,7 @@
       "dollars_per_serving_of_alcohol": 1.9993
     },
     {
-      "id": 65,
+      "id": 66,
       "beer_name": "Landshark Lager",
       "quantity": 15,
       "case_type": "Can",
@@ -978,7 +993,7 @@
       "dollars_per_serving_of_alcohol": 1.992
     },
     {
-      "id": 66,
+      "id": 67,
       "beer_name": "Turbo Salted Lemon Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -993,7 +1008,7 @@
       "dollars_per_serving_of_alcohol": 2.7321
     },
     {
-      "id": 67,
+      "id": 68,
       "beer_name": "Farmer'S Creed Gone Fishin Light Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -1008,7 +1023,7 @@
       "dollars_per_serving_of_alcohol": 2.0319
     },
     {
-      "id": 68,
+      "id": 69,
       "beer_name": "Simply Spiked Signature Limeade",
       "quantity": 12,
       "case_type": "Can",
@@ -1023,7 +1038,7 @@
       "dollars_per_serving_of_alcohol": 1.9992
     },
     {
-      "id": 69,
+      "id": 70,
       "beer_name": "Coors Seltzer Mixables Pack",
       "quantity": 12,
       "case_type": "Can",
@@ -1038,7 +1053,7 @@
       "dollars_per_serving_of_alcohol": 2.2213
     },
     {
-      "id": 70,
+      "id": 71,
       "beer_name": "Vizzy Cream Pop Variety Pack",
       "quantity": 12,
       "case_type": "Can",
@@ -1053,7 +1068,7 @@
       "dollars_per_serving_of_alcohol": 2.0825
     },
     {
-      "id": 71,
+      "id": 72,
       "beer_name": "Farmer'S Creed Rough Stock Ipa",
       "quantity": 12,
       "case_type": "Can",
@@ -1068,7 +1083,7 @@
       "dollars_per_serving_of_alcohol": 1.5631
     },
     {
-      "id": 72,
+      "id": 73,
       "beer_name": "Ipa Fun Box Special Edition",
       "quantity": 12,
       "case_type": "Can",
@@ -1083,7 +1098,7 @@
       "dollars_per_serving_of_alcohol": 1.7296
     },
     {
-      "id": 73,
+      "id": 74,
       "beer_name": "Madri Excepcional Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -1098,7 +1113,7 @@
       "dollars_per_serving_of_alcohol": 2.2636
     },
     {
-      "id": 74,
+      "id": 75,
       "beer_name": "Cowbell Brewing Co. Cencerro Cerveza Mexican Style Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -1113,7 +1128,7 @@
       "dollars_per_serving_of_alcohol": 2.175
     },
     {
-      "id": 75,
+      "id": 76,
       "beer_name": "White Claw Hard Seltzer Variety Pack",
       "quantity": 12,
       "case_type": "Can",
@@ -1128,7 +1143,7 @@
       "dollars_per_serving_of_alcohol": 2.08
     },
     {
-      "id": 76,
+      "id": 77,
       "beer_name": "Sober Carpenter Non-Alcoholic Irish Red",
       "quantity": 12,
       "case_type": "Can",
@@ -1143,7 +1158,7 @@
       "dollars_per_serving_of_alcohol": 27.4777
     },
     {
-      "id": 77,
+      "id": 78,
       "beer_name": "Sober Carpenter Non-Alcoholic Ipa",
       "quantity": 12,
       "case_type": "Can",
@@ -1158,7 +1173,7 @@
       "dollars_per_serving_of_alcohol": 20.6083
     },
     {
-      "id": 78,
+      "id": 79,
       "beer_name": "Sober Carpenter Non-Alcoholic White",
       "quantity": 12,
       "case_type": "Can",
@@ -1173,7 +1188,7 @@
       "dollars_per_serving_of_alcohol": 20.6083
     },
     {
-      "id": 79,
+      "id": 80,
       "beer_name": "Farmer'S Creed Longhorn Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -1188,7 +1203,7 @@
       "dollars_per_serving_of_alcohol": 1.6881
     },
     {
-      "id": 80,
+      "id": 81,
       "beer_name": "Cowbell Brewing Co. Hazy Days Ipa",
       "quantity": 12,
       "case_type": "Can",
@@ -1203,7 +1218,7 @@
       "dollars_per_serving_of_alcohol": 1.7354
     },
     {
-      "id": 81,
+      "id": 82,
       "beer_name": "Corona",
       "quantity": 12,
       "case_type": "Can",
@@ -1218,7 +1233,7 @@
       "dollars_per_serving_of_alcohol": 2.2427
     },
     {
-      "id": 82,
+      "id": 83,
       "beer_name": "Cowbell Brewing Co. Shindig Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -1233,7 +1248,7 @@
       "dollars_per_serving_of_alcohol": 2.175
     },
     {
-      "id": 83,
+      "id": 84,
       "beer_name": "Miller High Life",
       "quantity": 12,
       "case_type": "Can",
@@ -1248,7 +1263,7 @@
       "dollars_per_serving_of_alcohol": 1.4609
     },
     {
-      "id": 84,
+      "id": 85,
       "beer_name": "Cowbell Brewing Co. Absent Landlord",
       "quantity": 12,
       "case_type": "Can",
@@ -1263,7 +1278,7 @@
       "dollars_per_serving_of_alcohol": 1.8467
     },
     {
-      "id": 85,
+      "id": 86,
       "beer_name": "Old Milwaukee",
       "quantity": 12,
       "case_type": "Can",
@@ -1278,7 +1293,7 @@
       "dollars_per_serving_of_alcohol": 1.4672
     },
     {
-      "id": 86,
+      "id": 87,
       "beer_name": "Creemore Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -1293,7 +1308,7 @@
       "dollars_per_serving_of_alcohol": 2.0008
     },
     {
-      "id": 87,
+      "id": 88,
       "beer_name": "Laker Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -1308,7 +1323,7 @@
       "dollars_per_serving_of_alcohol": 1.3441
     },
     {
-      "id": 88,
+      "id": 89,
       "beer_name": "Bavaria Premium Beer",
       "quantity": 12,
       "case_type": "Can",
@@ -1323,7 +1338,7 @@
       "dollars_per_serving_of_alcohol": 1.7051
     },
     {
-      "id": 89,
+      "id": 90,
       "beer_name": "Molson Canadian",
       "quantity": 12,
       "case_type": "Can",
@@ -1338,7 +1353,7 @@
       "dollars_per_serving_of_alcohol": 1.6568
     },
     {
-      "id": 90,
+      "id": 91,
       "beer_name": "Busch Lager",
       "quantity": 12,
       "case_type": "Can",
@@ -1353,7 +1368,7 @@
       "dollars_per_serving_of_alcohol": 1.4964
     },
     {
-      "id": 91,
+      "id": 92,
       "beer_name": "Bud Light",
       "quantity": 12,
       "case_type": "Can",
@@ -1368,7 +1383,7 @@
       "dollars_per_serving_of_alcohol": 2.071
     },
     {
-      "id": 92,
+      "id": 93,
       "beer_name": "Laker Gold",
       "quantity": 6,
       "case_type": "Can",
@@ -1383,7 +1398,7 @@
       "dollars_per_serving_of_alcohol": 1.1845
     },
     {
-      "id": 93,
+      "id": 94,
       "beer_name": "Refined Fool Beer League Mix Pack",
       "quantity": 6,
       "case_type": "Can",
@@ -1398,7 +1413,7 @@
       "dollars_per_serving_of_alcohol": 1.651
     },
     {
-      "id": 94,
+      "id": 95,
       "beer_name": "Farmer'S Creed Gone Fishin Light Lager",
       "quantity": 6,
       "case_type": "Can",
@@ -1413,7 +1428,7 @@
       "dollars_per_serving_of_alcohol": 2.1875
     },
     {
-      "id": 95,
+      "id": 96,
       "beer_name": "Refined Fool, Hazy Roy, A Hazy Boy, Neipa",
       "quantity": 6,
       "case_type": "Can",
@@ -1428,7 +1443,7 @@
       "dollars_per_serving_of_alcohol": 1.7147
     },
     {
-      "id": 96,
+      "id": 97,
       "beer_name": "Farmer'S Creed Rough Stock Ipa",
       "quantity": 6,
       "case_type": "Can",
@@ -1443,7 +1458,7 @@
       "dollars_per_serving_of_alcohol": 1.6668
     },
     {
-      "id": 97,
+      "id": 98,
       "beer_name": "Kronenbourg 1664 Blanc",
       "quantity": 6,
       "case_type": "Bottle",
@@ -1458,7 +1473,7 @@
       "dollars_per_serving_of_alcohol": 2.329
     },
     {
-      "id": 98,
+      "id": 99,
       "beer_name": "Carlsberg Pilsner",
       "quantity": 6,
       "case_type": "Bottle",
@@ -1473,7 +1488,7 @@
       "dollars_per_serving_of_alcohol": 2.329
     },
     {
-      "id": 99,
+      "id": 100,
       "beer_name": "Poppers Lemonade Mixed Pack",
       "quantity": 6,
       "case_type": "Can",
@@ -1488,7 +1503,7 @@
       "dollars_per_serving_of_alcohol": 1.3083
     },
     {
-      "id": 100,
+      "id": 101,
       "beer_name": "Farmer'S Creed Longhorn Lager",
       "quantity": 6,
       "case_type": "Can",
@@ -1503,7 +1518,7 @@
       "dollars_per_serving_of_alcohol": 1.8751
     },
     {
-      "id": 101,
+      "id": 102,
       "beer_name": "Blue Mountain Light Lager",
       "quantity": 6,
       "case_type": "Can",
@@ -1518,7 +1533,7 @@
       "dollars_per_serving_of_alcohol": 2.2625
     },
     {
-      "id": 102,
+      "id": 103,
       "beer_name": "Asahi Super Dry",
       "quantity": 6,
       "case_type": "Bottle",
@@ -1533,7 +1548,7 @@
       "dollars_per_serving_of_alcohol": 2.6876
     },
     {
-      "id": 103,
+      "id": 104,
       "beer_name": "Muskoka Mad Tom Ipa",
       "quantity": 6,
       "case_type": "Can",
@@ -1548,7 +1563,7 @@
       "dollars_per_serving_of_alcohol": 1.7727
     },
     {
-      "id": 104,
+      "id": 105,
       "beer_name": "Czechvar",
       "quantity": 6,
       "case_type": "Bottle",
@@ -1563,7 +1578,7 @@
       "dollars_per_serving_of_alcohol": 2.1981
     },
     {
-      "id": 105,
+      "id": 106,
       "beer_name": "Pilsner Urquell",
       "quantity": 6,
       "case_type": "Bottle",
@@ -1578,7 +1593,7 @@
       "dollars_per_serving_of_alcohol": 2.7485
     },
     {
-      "id": 106,
+      "id": 107,
       "beer_name": "Dab Original Lager",
       "quantity": 6,
       "case_type": "Can",
@@ -1593,7 +1608,7 @@
       "dollars_per_serving_of_alcohol": 1.4886
     },
     {
-      "id": 107,
+      "id": 108,
       "beer_name": "Apollo Seven Strong Beer",
       "quantity": 4,
       "case_type": "Can",
@@ -1608,7 +1623,7 @@
       "dollars_per_serving_of_alcohol": 1.3174
     },
     {
-      "id": 108,
+      "id": 109,
       "beer_name": "Florida Stole My Parents, Oj Ipa",
       "quantity": 4,
       "case_type": "Can",
@@ -1623,7 +1638,7 @@
       "dollars_per_serving_of_alcohol": 2.0134
     },
     {
-      "id": 109,
+      "id": 110,
       "beer_name": "Sober Carpenter Non-Alcoholic Irish Red",
       "quantity": 4,
       "case_type": "Can",
@@ -1638,7 +1653,7 @@
       "dollars_per_serving_of_alcohol": 29.3019
     },
     {
-      "id": 110,
+      "id": 111,
       "beer_name": "Sober Carpenter Non-Alcoholic Ipa",
       "quantity": 4,
       "case_type": "Can",
@@ -1653,7 +1668,7 @@
       "dollars_per_serving_of_alcohol": 21.9764
     },
     {
-      "id": 111,
+      "id": 112,
       "beer_name": "Sober Carpenter Non-Alcoholic White",
       "quantity": 4,
       "case_type": "Can",
@@ -1668,7 +1683,7 @@
       "dollars_per_serving_of_alcohol": 21.9764
     },
     {
-      "id": 112,
+      "id": 113,
       "beer_name": "Bavaria 8.6",
       "quantity": 4,
       "case_type": "Can",
@@ -1683,7 +1698,7 @@
       "dollars_per_serving_of_alcohol": 1.1754
     },
     {
-      "id": 113,
+      "id": 114,
       "beer_name": "Sober Carpenter Non-Alcoholic Irish Red",
       "quantity": 2,
       "case_type": "Can",
@@ -1698,7 +1713,7 @@
       "dollars_per_serving_of_alcohol": 29.2706
     },
     {
-      "id": 114,
+      "id": 115,
       "beer_name": "Sober Carpenter Non-Alcoholic Ipa",
       "quantity": 2,
       "case_type": "Can",
@@ -1713,7 +1728,7 @@
       "dollars_per_serving_of_alcohol": 21.953
     },
     {
-      "id": 115,
+      "id": 116,
       "beer_name": "Sober Carpenter Non-Alcoholic White",
       "quantity": 2,
       "case_type": "Can",
@@ -1728,7 +1743,7 @@
       "dollars_per_serving_of_alcohol": 21.953
     },
     {
-      "id": 116,
+      "id": 117,
       "beer_name": "8.6 Ipa Strong Beer",
       "quantity": 1,
       "case_type": "Can",
@@ -1743,7 +1758,7 @@
       "dollars_per_serving_of_alcohol": 1.4048
     },
     {
-      "id": 117,
+      "id": 118,
       "beer_name": "Muskoka Rally Ultra Light Lager",
       "quantity": 1,
       "case_type": "Can",
@@ -1758,7 +1773,7 @@
       "dollars_per_serving_of_alcohol": 2.7283
     },
     {
-      "id": 118,
+      "id": 119,
       "beer_name": "Laker Gold",
       "quantity": 1,
       "case_type": "Can",
@@ -1773,7 +1788,7 @@
       "dollars_per_serving_of_alcohol": 1.2866
     },
     {
-      "id": 119,
+      "id": 120,
       "beer_name": "Flying Monkeys Light Moves Small Ipa",
       "quantity": 1,
       "case_type": "Can",
@@ -1788,7 +1803,7 @@
       "dollars_per_serving_of_alcohol": 2.9458
     },
     {
-      "id": 120,
+      "id": 121,
       "beer_name": "Poppers Berry Explosion",
       "quantity": 1,
       "case_type": "Can",
@@ -1803,7 +1818,7 @@
       "dollars_per_serving_of_alcohol": 1.3829
     },
     {
-      "id": 121,
+      "id": 122,
       "beer_name": "Poppers Cran Ice 5.4",
       "quantity": 1,
       "case_type": "Can",
@@ -1818,7 +1833,7 @@
       "dollars_per_serving_of_alcohol": 1.3829
     },
     {
-      "id": 122,
+      "id": 123,
       "beer_name": "Poppers Hard Ice 5.4",
       "quantity": 1,
       "case_type": "Can",
@@ -1833,7 +1848,7 @@
       "dollars_per_serving_of_alcohol": 1.3829
     },
     {
-      "id": 123,
+      "id": 124,
       "beer_name": "Kronenbourg 1664 Lager",
       "quantity": 1,
       "case_type": "Can",
@@ -1848,7 +1863,7 @@
       "dollars_per_serving_of_alcohol": 2.1315
     },
     {
-      "id": 124,
+      "id": 125,
       "beer_name": "Carlsberg Lite",
       "quantity": 1,
       "case_type": "Can",
@@ -1863,7 +1878,7 @@
       "dollars_per_serving_of_alcohol": 2.4767
     },
     {
-      "id": 125,
+      "id": 126,
       "beer_name": "Sober Carpenter Non-Alcoholic Irish Red",
       "quantity": 1,
       "case_type": "Can",
@@ -1878,7 +1893,7 @@
       "dollars_per_serving_of_alcohol": 32.0226
     },
     {
-      "id": 126,
+      "id": 127,
       "beer_name": "Sober Carpenter Non-Alcoholic Ipa",
       "quantity": 1,
       "case_type": "Can",
@@ -1893,7 +1908,7 @@
       "dollars_per_serving_of_alcohol": 24.0169
     },
     {
-      "id": 127,
+      "id": 128,
       "beer_name": "Sober Carpenter Non-Alcoholic White",
       "quantity": 1,
       "case_type": "Can",
@@ -1908,7 +1923,7 @@
       "dollars_per_serving_of_alcohol": 24.0169
     },
     {
-      "id": 128,
+      "id": 129,
       "beer_name": "Estrella Damm",
       "quantity": 1,
       "case_type": "Can",
@@ -1923,7 +1938,7 @@
       "dollars_per_serving_of_alcohol": 1.8605
     },
     {
-      "id": 129,
+      "id": 130,
       "beer_name": "Kozel",
       "quantity": 1,
       "case_type": "Can",
@@ -1938,7 +1953,7 @@
       "dollars_per_serving_of_alcohol": 1.8445
     },
     {
-      "id": 130,
+      "id": 131,
       "beer_name": "Mill Street Tankhouse Ale",
       "quantity": 1,
       "case_type": "Can",
@@ -1953,7 +1968,7 @@
       "dollars_per_serving_of_alcohol": 2.3021
     },
     {
-      "id": 131,
+      "id": 132,
       "beer_name": "Busch Ice 6.0",
       "quantity": 60,
       "case_type": "Can",
@@ -1968,7 +1983,7 @@
       "dollars_per_serving_of_alcohol": 1.2915
     },
     {
-      "id": 132,
+      "id": 133,
       "beer_name": "Miller Lite",
       "quantity": 60,
       "case_type": "Can",
@@ -1983,7 +1998,7 @@
       "dollars_per_serving_of_alcohol": 2.1456
     },
     {
-      "id": 133,
+      "id": 134,
       "beer_name": "Moosehead Lager",
       "quantity": 60,
       "case_type": "Can",
@@ -1998,7 +2013,7 @@
       "dollars_per_serving_of_alcohol": 1.6665
     },
     {
-      "id": 134,
+      "id": 135,
       "beer_name": "James Ready 5.5",
       "quantity": 60,
       "case_type": "Can",
@@ -2013,7 +2028,7 @@
       "dollars_per_serving_of_alcohol": 1.3786
     },
     {
-      "id": 135,
+      "id": 136,
       "beer_name": "Sleeman Clear 2.0",
       "quantity": 60,
       "case_type": "Can",
@@ -2028,7 +2043,7 @@
       "dollars_per_serving_of_alcohol": 1.9575
     },
     {
-      "id": 136,
+      "id": 137,
       "beer_name": "Pabst Blue Ribbon",
       "quantity": 60,
       "case_type": "Can",
@@ -2043,7 +2058,7 @@
       "dollars_per_serving_of_alcohol": 1.5815
     },
     {
-      "id": 137,
+      "id": 138,
       "beer_name": "Old Milwaukee",
       "quantity": 60,
       "case_type": "Can",
@@ -2058,7 +2073,7 @@
       "dollars_per_serving_of_alcohol": 1.5815
     },
     {
-      "id": 138,
+      "id": 139,
       "beer_name": "Sleeman Original Lager",
       "quantity": 60,
       "case_type": "Can",
@@ -2073,7 +2088,7 @@
       "dollars_per_serving_of_alcohol": 1.6665
     },
     {
-      "id": 139,
+      "id": 140,
       "beer_name": "Alberta Genuine Draft",
       "quantity": 60,
       "case_type": "Can",
@@ -2088,7 +2103,7 @@
       "dollars_per_serving_of_alcohol": 1.4648
     },
     {
-      "id": 140,
+      "id": 141,
       "beer_name": "Carling Light",
       "quantity": 60,
       "case_type": "Can",
@@ -2103,7 +2118,7 @@
       "dollars_per_serving_of_alcohol": 1.8956
     },
     {
-      "id": 141,
+      "id": 142,
       "beer_name": "Carling Lager",
       "quantity": 60,
       "case_type": "Can",
@@ -2118,7 +2133,7 @@
       "dollars_per_serving_of_alcohol": 1.5474
     },
     {
-      "id": 142,
+      "id": 143,
       "beer_name": "Busch Light",
       "quantity": 60,
       "case_type": "Can",
@@ -2133,7 +2148,7 @@
       "dollars_per_serving_of_alcohol": 1.9373
     },
     {
-      "id": 143,
+      "id": 144,
       "beer_name": "Busch Lager",
       "quantity": 60,
       "case_type": "Can",
@@ -2148,7 +2163,7 @@
       "dollars_per_serving_of_alcohol": 1.6488
     },
     {
-      "id": 144,
+      "id": 145,
       "beer_name": "Bud Light",
       "quantity": 60,
       "case_type": "Can",
@@ -2163,7 +2178,7 @@
       "dollars_per_serving_of_alcohol": 2.0831
     },
     {
-      "id": 145,
+      "id": 146,
       "beer_name": "Budweiser",
       "quantity": 60,
       "case_type": "Can",
@@ -2178,7 +2193,7 @@
       "dollars_per_serving_of_alcohol": 1.6665
     },
     {
-      "id": 146,
+      "id": 147,
       "beer_name": "Old Style Pilsner",
       "quantity": 60,
       "case_type": "Can",
@@ -2193,7 +2208,7 @@
       "dollars_per_serving_of_alcohol": 1.5165
     },
     {
-      "id": 147,
+      "id": 148,
       "beer_name": "Iron Spike Red",
       "quantity": 48,
       "case_type": "Can",
@@ -2208,7 +2223,7 @@
       "dollars_per_serving_of_alcohol": 2.0666
     },
     {
-      "id": 148,
+      "id": 149,
       "beer_name": "Lightweight Lager",
       "quantity": 48,
       "case_type": "Can",
@@ -2223,7 +2238,7 @@
       "dollars_per_serving_of_alcohol": 1.8187
     },
     {
-      "id": 149,
+      "id": 150,
       "beer_name": "Grolsch Premium Pilsner",
       "quantity": 48,
       "case_type": "Can",
@@ -2238,7 +2253,7 @@
       "dollars_per_serving_of_alcohol": 1.5727
     },
     {
-      "id": 150,
+      "id": 151,
       "beer_name": "Side Launch Northbound Lager",
       "quantity": 48,
       "case_type": "Can",
@@ -2253,7 +2268,7 @@
       "dollars_per_serving_of_alcohol": 2.132
     },
     {
-      "id": 151,
+      "id": 152,
       "beer_name": "Beau'S Lite Lager",
       "quantity": 48,
       "case_type": "Can",
@@ -2268,7 +2283,7 @@
       "dollars_per_serving_of_alcohol": 2.052
     },
     {
-      "id": 152,
+      "id": 153,
       "beer_name": "White Claw Hard Seltzer Variety Pack",
       "quantity": 48,
       "case_type": "Can",
@@ -2283,7 +2298,7 @@
       "dollars_per_serving_of_alcohol": 2.0823
     },
     {
-      "id": 153,
+      "id": 154,
       "beer_name": "Corona",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2298,7 +2313,7 @@
       "dollars_per_serving_of_alcohol": 2.4114
     },
     {
-      "id": 154,
+      "id": 155,
       "beer_name": "Corona",
       "quantity": 48,
       "case_type": "Can",
@@ -2313,7 +2328,7 @@
       "dollars_per_serving_of_alcohol": 2.2416
     },
     {
-      "id": 155,
+      "id": 156,
       "beer_name": "Muskoka Brewery Tread Lightly",
       "quantity": 48,
       "case_type": "Can",
@@ -2328,7 +2343,7 @@
       "dollars_per_serving_of_alcohol": 2.3435
     },
     {
-      "id": 156,
+      "id": 157,
       "beer_name": "Collective Arts Life In The Clouds",
       "quantity": 48,
       "case_type": "Can",
@@ -2343,7 +2358,7 @@
       "dollars_per_serving_of_alcohol": 1.5763
     },
     {
-      "id": 157,
+      "id": 158,
       "beer_name": "Collective Arts Hazy State",
       "quantity": 48,
       "case_type": "Can",
@@ -2358,7 +2373,7 @@
       "dollars_per_serving_of_alcohol": 2.2308
     },
     {
-      "id": 158,
+      "id": 159,
       "beer_name": "Wellington Upside Ipa",
       "quantity": 48,
       "case_type": "Can",
@@ -2373,7 +2388,7 @@
       "dollars_per_serving_of_alcohol": 1.437
     },
     {
-      "id": 159,
+      "id": 160,
       "beer_name": "Beau'S Lug Tread Lagered Ale",
       "quantity": 48,
       "case_type": "Can",
@@ -2388,7 +2403,7 @@
       "dollars_per_serving_of_alcohol": 1.9028
     },
     {
-      "id": 160,
+      "id": 161,
       "beer_name": "Lakeport Light",
       "quantity": 48,
       "case_type": "Can",
@@ -2403,7 +2418,7 @@
       "dollars_per_serving_of_alcohol": 1.9919
     },
     {
-      "id": 161,
+      "id": 162,
       "beer_name": "James Ready 5.5",
       "quantity": 48,
       "case_type": "Can",
@@ -2418,7 +2433,7 @@
       "dollars_per_serving_of_alcohol": 1.4119
     },
     {
-      "id": 162,
+      "id": 163,
       "beer_name": "Muskoka Brewery Lager",
       "quantity": 48,
       "case_type": "Can",
@@ -2433,7 +2448,7 @@
       "dollars_per_serving_of_alcohol": 1.9529
     },
     {
-      "id": 163,
+      "id": 164,
       "beer_name": "Muskoka Brewery Detour",
       "quantity": 48,
       "case_type": "Can",
@@ -2448,7 +2463,7 @@
       "dollars_per_serving_of_alcohol": 2.3253
     },
     {
-      "id": 164,
+      "id": 165,
       "beer_name": "Collective Arts Ransack The Universe",
       "quantity": 48,
       "case_type": "Can",
@@ -2463,7 +2478,7 @@
       "dollars_per_serving_of_alcohol": 1.414
     },
     {
-      "id": 165,
+      "id": 166,
       "beer_name": "Sleeman Clear 2.0",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2478,7 +2493,7 @@
       "dollars_per_serving_of_alcohol": 2.1144
     },
     {
-      "id": 166,
+      "id": 167,
       "beer_name": "Sleeman Clear 2.0",
       "quantity": 48,
       "case_type": "Can",
@@ -2493,7 +2508,7 @@
       "dollars_per_serving_of_alcohol": 2.1612
     },
     {
-      "id": 167,
+      "id": 168,
       "beer_name": "Maclays",
       "quantity": 48,
       "case_type": "Can",
@@ -2508,7 +2523,7 @@
       "dollars_per_serving_of_alcohol": 1.5531
     },
     {
-      "id": 168,
+      "id": 169,
       "beer_name": "Pabst Blue Ribbon",
       "quantity": 48,
       "case_type": "Can",
@@ -2523,7 +2538,7 @@
       "dollars_per_serving_of_alcohol": 1.5848
     },
     {
-      "id": 169,
+      "id": 170,
       "beer_name": "Old Milwaukee",
       "quantity": 48,
       "case_type": "Can",
@@ -2538,7 +2553,7 @@
       "dollars_per_serving_of_alcohol": 1.5848
     },
     {
-      "id": 170,
+      "id": 171,
       "beer_name": "Sleeman Original Lager",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2553,7 +2568,7 @@
       "dollars_per_serving_of_alcohol": 1.6915
     },
     {
-      "id": 171,
+      "id": 172,
       "beer_name": "Sleeman Original Lager",
       "quantity": 48,
       "case_type": "Can",
@@ -2568,7 +2583,7 @@
       "dollars_per_serving_of_alcohol": 1.729
     },
     {
-      "id": 172,
+      "id": 173,
       "beer_name": "Wellington Helles Lager",
       "quantity": 48,
       "case_type": "Can",
@@ -2583,7 +2598,7 @@
       "dollars_per_serving_of_alcohol": 2.1988
     },
     {
-      "id": 173,
+      "id": 174,
       "beer_name": "Wellington Helles Lager",
       "quantity": 48,
       "case_type": "Can",
@@ -2598,7 +2613,7 @@
       "dollars_per_serving_of_alcohol": 2.0846
     },
     {
-      "id": 174,
+      "id": 175,
       "beer_name": "Wellington S.P.A",
       "quantity": 48,
       "case_type": "Can",
@@ -2613,7 +2628,7 @@
       "dollars_per_serving_of_alcohol": 2.1541
     },
     {
-      "id": 175,
+      "id": 176,
       "beer_name": "Laker Red",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2628,7 +2643,7 @@
       "dollars_per_serving_of_alcohol": 1.4983
     },
     {
-      "id": 176,
+      "id": 177,
       "beer_name": "Laker Light",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2643,7 +2658,7 @@
       "dollars_per_serving_of_alcohol": 1.9788
     },
     {
-      "id": 177,
+      "id": 178,
       "beer_name": "Laker Lager",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2658,7 +2673,7 @@
       "dollars_per_serving_of_alcohol": 1.5831
     },
     {
-      "id": 178,
+      "id": 179,
       "beer_name": "Laker Ice",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2673,7 +2688,7 @@
       "dollars_per_serving_of_alcohol": 1.4983
     },
     {
-      "id": 179,
+      "id": 180,
       "beer_name": "Landshark Lager",
       "quantity": 48,
       "case_type": "Can",
@@ -2688,7 +2703,7 @@
       "dollars_per_serving_of_alcohol": 1.8114
     },
     {
-      "id": 180,
+      "id": 181,
       "beer_name": "Steam Whistle Premium Pilsner",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2703,7 +2718,7 @@
       "dollars_per_serving_of_alcohol": 2.1253
     },
     {
-      "id": 181,
+      "id": 182,
       "beer_name": "Steam Whistle Premium Pilsner",
       "quantity": 48,
       "case_type": "Can",
@@ -2718,7 +2733,7 @@
       "dollars_per_serving_of_alcohol": 1.979
     },
     {
-      "id": 182,
+      "id": 183,
       "beer_name": "Coors Light",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2733,7 +2748,7 @@
       "dollars_per_serving_of_alcohol": 2.1144
     },
     {
-      "id": 183,
+      "id": 184,
       "beer_name": "Coors Light",
       "quantity": 48,
       "case_type": "Can",
@@ -2748,7 +2763,7 @@
       "dollars_per_serving_of_alcohol": 2.2393
     },
     {
-      "id": 184,
+      "id": 185,
       "beer_name": "Molson Canadian",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2763,7 +2778,7 @@
       "dollars_per_serving_of_alcohol": 1.6915
     },
     {
-      "id": 185,
+      "id": 186,
       "beer_name": "Molson Canadian",
       "quantity": 48,
       "case_type": "Can",
@@ -2778,7 +2793,7 @@
       "dollars_per_serving_of_alcohol": 1.7915
     },
     {
-      "id": 186,
+      "id": 187,
       "beer_name": "Bud Light",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2793,7 +2808,7 @@
       "dollars_per_serving_of_alcohol": 2.1144
     },
     {
-      "id": 187,
+      "id": 188,
       "beer_name": "Bud Light",
       "quantity": 48,
       "case_type": "Can",
@@ -2808,7 +2823,7 @@
       "dollars_per_serving_of_alcohol": 2.2393
     },
     {
-      "id": 188,
+      "id": 189,
       "beer_name": "Blue Light",
       "quantity": 48,
       "case_type": "Can",
@@ -2823,7 +2838,7 @@
       "dollars_per_serving_of_alcohol": 1.9008
     },
     {
-      "id": 189,
+      "id": 190,
       "beer_name": "Budweiser",
       "quantity": 48,
       "case_type": "Bottle",
@@ -2838,7 +2853,7 @@
       "dollars_per_serving_of_alcohol": 1.6915
     },
     {
-      "id": 190,
+      "id": 191,
       "beer_name": "Budweiser",
       "quantity": 48,
       "case_type": "Can",
@@ -2853,7 +2868,7 @@
       "dollars_per_serving_of_alcohol": 1.7915
     },
     {
-      "id": 191,
+      "id": 192,
       "beer_name": "Labatt Blue",
       "quantity": 48,
       "case_type": "Can",
@@ -2868,7 +2883,7 @@
       "dollars_per_serving_of_alcohol": 1.5206
     },
     {
-      "id": 192,
+      "id": 193,
       "beer_name": "Alexander Keiths Ipa",
       "quantity": 48,
       "case_type": "Can",
@@ -2883,7 +2898,7 @@
       "dollars_per_serving_of_alcohol": 1.9373
     },
     {
-      "id": 193,
+      "id": 194,
       "beer_name": "Old Milwaukee",
       "quantity": 45,
       "case_type": "Can",
@@ -2898,7 +2913,7 @@
       "dollars_per_serving_of_alcohol": 1.6551
     },
     {
-      "id": 194,
+      "id": 195,
       "beer_name": "Pabst Blue Ribbon",
       "quantity": 40,
       "case_type": "Can",
@@ -2913,7 +2928,7 @@
       "dollars_per_serving_of_alcohol": 1.5939
     },
     {
-      "id": 195,
+      "id": 196,
       "beer_name": "Coors Light",
       "quantity": 36,
       "case_type": "Bottle",
@@ -2928,7 +2943,7 @@
       "dollars_per_serving_of_alcohol": 2.2589
     },
     {
-      "id": 196,
+      "id": 197,
       "beer_name": "Molson Canadian",
       "quantity": 36,
       "case_type": "Bottle",
@@ -2943,7 +2958,7 @@
       "dollars_per_serving_of_alcohol": 1.8071
     },
     {
-      "id": 197,
+      "id": 198,
       "beer_name": "Bud Light",
       "quantity": 36,
       "case_type": "Bottle",
@@ -2958,7 +2973,7 @@
       "dollars_per_serving_of_alcohol": 2.2589
     },
     {
-      "id": 198,
+      "id": 199,
       "beer_name": "Budweiser",
       "quantity": 36,
       "case_type": "Bottle",
@@ -2973,7 +2988,7 @@
       "dollars_per_serving_of_alcohol": 1.8071
     },
     {
-      "id": 199,
+      "id": 200,
       "beer_name": "Coors Original",
       "quantity": 30,
       "case_type": "Can",
@@ -2988,7 +3003,7 @@
       "dollars_per_serving_of_alcohol": 1.833
     },
     {
-      "id": 200,
+      "id": 201,
       "beer_name": "Busch Ice 6.0",
       "quantity": 30,
       "case_type": "Can",
@@ -3003,7 +3018,7 @@
       "dollars_per_serving_of_alcohol": 1.3608
     },
     {
-      "id": 201,
+      "id": 202,
       "beer_name": "Cracked Canoe",
       "quantity": 30,
       "case_type": "Can",
@@ -3018,7 +3033,7 @@
       "dollars_per_serving_of_alcohol": 2.4757
     },
     {
-      "id": 202,
+      "id": 203,
       "beer_name": "Moosehead Lager",
       "quantity": 30,
       "case_type": "Can",
@@ -3033,7 +3048,7 @@
       "dollars_per_serving_of_alcohol": 1.733
     },
     {
-      "id": 203,
+      "id": 204,
       "beer_name": "Sleeman Honey Brown Lager",
       "quantity": 30,
       "case_type": "Can",
@@ -3048,7 +3063,7 @@
       "dollars_per_serving_of_alcohol": 1.6949
     },
     {
-      "id": 204,
+      "id": 205,
       "beer_name": "Old Milwaukee",
       "quantity": 30,
       "case_type": "Can",
@@ -3063,7 +3078,7 @@
       "dollars_per_serving_of_alcohol": 1.6663
     },
     {
-      "id": 205,
+      "id": 206,
       "beer_name": "Sleeman Original Lager",
       "quantity": 30,
       "case_type": "Can",
@@ -3078,7 +3093,7 @@
       "dollars_per_serving_of_alcohol": 1.733
     },
     {
-      "id": 206,
+      "id": 207,
       "beer_name": "Alberta Genuine Draft",
       "quantity": 30,
       "case_type": "Can",
@@ -3093,7 +3108,7 @@
       "dollars_per_serving_of_alcohol": 1.533
     },
     {
-      "id": 207,
+      "id": 208,
       "beer_name": "Carling Light",
       "quantity": 30,
       "case_type": "Can",
@@ -3108,7 +3123,7 @@
       "dollars_per_serving_of_alcohol": 2.0413
     },
     {
-      "id": 208,
+      "id": 209,
       "beer_name": "Coors Light",
       "quantity": 30,
       "case_type": "Bottle",
@@ -3123,7 +3138,7 @@
       "dollars_per_serving_of_alcohol": 2.2118
     },
     {
-      "id": 209,
+      "id": 210,
       "beer_name": "Carling Lager",
       "quantity": 30,
       "case_type": "Can",
@@ -3138,7 +3153,7 @@
       "dollars_per_serving_of_alcohol": 1.6663
     },
     {
-      "id": 210,
+      "id": 211,
       "beer_name": "Molson Canadian",
       "quantity": 30,
       "case_type": "Can",
@@ -3153,7 +3168,7 @@
       "dollars_per_serving_of_alcohol": 1.6663
     },
     {
-      "id": 211,
+      "id": 212,
       "beer_name": "Molson Canadian",
       "quantity": 30,
       "case_type": "Bottle",
@@ -3168,7 +3183,7 @@
       "dollars_per_serving_of_alcohol": 1.7694
     },
     {
-      "id": 212,
+      "id": 213,
       "beer_name": "Molson Export",
       "quantity": 30,
       "case_type": "Can",
@@ -3183,7 +3198,7 @@
       "dollars_per_serving_of_alcohol": 1.733
     },
     {
-      "id": 213,
+      "id": 214,
       "beer_name": "Keystone Light",
       "quantity": 30,
       "case_type": "Can",
@@ -3198,7 +3213,7 @@
       "dollars_per_serving_of_alcohol": 2.0413
     },
     {
-      "id": 214,
+      "id": 215,
       "beer_name": "Busch Lager",
       "quantity": 30,
       "case_type": "Can",
@@ -3211,21 +3226,6 @@
       "beer_type": "Lager",
       "url": "https://www.thebeerstore.ca/beers/busch-lager_30-X-Can-355-ml",
       "dollars_per_serving_of_alcohol": 1.7372
-    },
-    {
-      "id": 215,
-      "beer_name": "Bud Light",
-      "quantity": 30,
-      "case_type": "Can",
-      "size_ml": 355,
-      "price": 51.99,
-      "original_price": null,
-      "abv": 4.0,
-      "country": "Canada",
-      "category": "Premium",
-      "beer_type": "Light",
-      "url": "https://www.thebeerstore.ca/beers/bud-light_30-X-Can-355-ml",
-      "dollars_per_serving_of_alcohol": 2.1663
     },
     {
       "id": 216,

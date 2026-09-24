@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-23T13:06:25.295380+00:00",
+  "scraped_at": "2026-09-24T13:00:17.577233+00:00",
   "count": 2643,
   "beers": [
     {
@@ -214,7 +214,7 @@
     },
     {
       "id": 15,
-      "beer_name": "Paulaner Hell Munchner Lager",
+      "beer_name": "Paulaner Munchner Hell Lager",
       "quantity": 4,
       "case_type": "Can",
       "size_ml": 500,
@@ -224,7 +224,7 @@
       "country": "Germany",
       "category": "Import",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/paulaner-hell-munchner-lager_4-X-Can-500-ml",
+      "url": "https://www.thebeerstore.ca/beers/paulaner-munchner-hell-lager_4-X-Can-500-ml",
       "dollars_per_serving_of_alcohol": 1.5848
     },
     {
@@ -6349,7 +6349,7 @@
     },
     {
       "id": 424,
-      "beer_name": "Paulaner Hell Munchner Lager",
+      "beer_name": "Paulaner Munchner Hell Lager",
       "quantity": 24,
       "case_type": "Can",
       "size_ml": 500,
@@ -6359,7 +6359,7 @@
       "country": "Germany",
       "category": "Import",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/paulaner-hell-munchner-lager_24-X-Can-500-ml",
+      "url": "https://www.thebeerstore.ca/beers/paulaner-munchner-hell-lager_24-X-Can-500-ml",
       "dollars_per_serving_of_alcohol": 1.6754
     },
     {
@@ -15394,7 +15394,7 @@
     },
     {
       "id": 1027,
-      "beer_name": "Paulaner Hell Munchner Lager",
+      "beer_name": "Paulaner Munchner Hell Lager",
       "quantity": 12,
       "case_type": "Can",
       "size_ml": 500,
@@ -15404,7 +15404,7 @@
       "country": "Germany",
       "category": "Import",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/paulaner-hell-munchner-lager_12-X-Can-500-ml",
+      "url": "https://www.thebeerstore.ca/beers/paulaner-munchner-hell-lager_12-X-Can-500-ml",
       "dollars_per_serving_of_alcohol": 1.7207
     },
     {
@@ -22624,7 +22624,7 @@
     },
     {
       "id": 1509,
-      "beer_name": "Paulaner Hell Munchner Lager",
+      "beer_name": "Paulaner Munchner Hell Lager",
       "quantity": 6,
       "case_type": "Can",
       "size_ml": 500,
@@ -22634,7 +22634,7 @@
       "country": "Germany",
       "category": "Import",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/paulaner-hell-munchner-lager_6-X-Can-500-ml",
+      "url": "https://www.thebeerstore.ca/beers/paulaner-munchner-hell-lager_6-X-Can-500-ml",
       "dollars_per_serving_of_alcohol": 1.7509
     },
     {
@@ -33049,7 +33049,7 @@
     },
     {
       "id": 2204,
-      "beer_name": "Paulaner Hell Munchner Lager",
+      "beer_name": "Paulaner Munchner Hell Lager",
       "quantity": 1,
       "case_type": "Can",
       "size_ml": 500,
@@ -33059,7 +33059,7 @@
       "country": "Germany",
       "category": "Import",
       "beer_type": "Lager",
-      "url": "https://www.thebeerstore.ca/beers/paulaner-hell-munchner-lager_1-X-Can-500-ml",
+      "url": "https://www.thebeerstore.ca/beers/paulaner-munchner-hell-lager_1-X-Can-500-ml",
       "dollars_per_serving_of_alcohol": 1.8257
     },
     {
